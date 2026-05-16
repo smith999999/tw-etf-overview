@@ -721,7 +721,55 @@ tbody td:first-child {
   .holding-item { padding: 10px 0; }
   .holding-name { font-size: 0.8rem; }
   .holding-percent { font-size: 0.8rem; }
+  
+  .show-mobile-only { display: flex !important; }
+  .show-mobile-important { display: table-cell !important; }
+  
+  .mobile-period-selector {
+    margin: 4px 0 16px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .selector-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .period-btns {
+    display: flex;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px;
+    flex: 1;
+  }
+  
+  .period-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    padding: 6px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+  }
+  
+  .period-btn.active {
+    background: var(--accent-blue);
+    color: #0a0e17;
+  }
 }
+
+.show-mobile-only { display: none; }
+.show-mobile-important { display: none; }
 
 /* ────────── Tooltip ────────── */
 .etf-row-clickhint {

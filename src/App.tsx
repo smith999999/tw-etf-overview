@@ -19,6 +19,14 @@ function App() {
   const [loadingDetail, setLoadingDetail] = useState<string | null>(null);
   const [sortKey, setSortKey] = useState<SortKey>('symbol');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
+  const [mobileReturnPeriod, setMobileReturnPeriod] = useState<SortKey>('r1y');
+
+  const periodOptions: { key: SortKey; label: string }[] = [
+    { key: 'r3m', label: '3M' },
+    { key: 'r6m', label: '6M' },
+    { key: 'r1y', label: '1Y' },
+    { key: 'r3y', label: '3Y' },
+  ];
 
   useEffect(() => {
     const load = async () => {
@@ -209,13 +217,29 @@ function App() {
           </button>
         ))}
         <div className="search-box">
-          <Search size={14} className="search-icon" />
+          <Search className="search-icon" size={16} />
           <input
             type="text"
             placeholder="搜尋 ETF 代號或名稱..."
             value={search}
-            onChange={e => setSearch(e.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
           />
+        </div>
+      </div>
+
+      {/* Mobile Return Period Selector */}
+      <div className="mobile-period-selector show-mobile-only">
+        <span className="selector-label">報酬率期間:</span>
+        <div className="period-btns">
+          {periodOptions.map(opt => (
+            <button
+              key={opt.key}
+              className={`period-btn ${mobileReturnPeriod === opt.key ? 'active' : ''}`}
+              onClick={() => setMobileReturnPeriod(opt.key)}
+            >
+              {opt.label}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -290,7 +314,12 @@ function App() {
                   <SortHeader label="管理費" sKey="expense" className="hide-mobile" />
                   <SortHeader label="3M" sKey="r3m" className="hide-mobile" />
                   <SortHeader label="6M" sKey="r6m" className="hide-mobile" />
-                  <SortHeader label="1Y" sKey="r1y" />
+                  <SortHeader 
+                    label={periodOptions.find(o => o.key === mobileReturnPeriod)?.label + ' 報酬'} 
+                    sKey={mobileReturnPeriod} 
+                    className="show-mobile-important"
+                  />
+                  <SortHeader label="1Y" sKey="r1y" className="hide-mobile" />
                   <SortHeader label="3Y" sKey="r3y" className="hide-mobile" />
                   <SortHeader label="殖利率" sKey="yield" />
                   <th style={{ width: 40, cursor: 'default' }}><ArrowUpDown size={14} /></th>
@@ -347,7 +376,15 @@ function App() {
                         </td>
                         <td className="hide-mobile">{renderReturn(d?.returns.threeMonth ?? null)}</td>
                         <td className="hide-mobile">{renderReturn(d?.returns.sixMonth ?? null)}</td>
-                        <td>{renderReturn(d?.returns.oneYear ?? null)}</td>
+                        <td className="show-mobile-important">
+                          {renderReturn(
+                            mobileReturnPeriod === 'r3m' ? (d?.returns.threeMonth ?? null) :
+                            mobileReturnPeriod === 'r6m' ? (d?.returns.sixMonth ?? null) :
+                            mobileReturnPeriod === 'r3y' ? (d?.returns.threeYear ?? null) :
+                            (d?.returns.oneYear ?? null)
+                          )}
+                        </td>
+                        <td className="hide-mobile">{renderReturn(d?.returns.oneYear ?? null)}</td>
                         <td className="hide-mobile">{renderReturn(d?.returns.threeYear ?? null)}</td>
                         <td>
                           {d?.dividendYield !== null && d?.dividendYield !== undefined ? (
