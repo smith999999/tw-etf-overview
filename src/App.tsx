@@ -340,6 +340,9 @@ function App() {
                             <div>
                               <div className="etf-symbol">{etf.symbol}</div>
                               <div className="etf-name">{etf.name}</div>
+                              <div className="show-mobile-only etf-mobile-meta">
+                                {etf.expenseRatio.toFixed(2)}% • {etf.category}
+                              </div>
                             </div>
                             <span
                               className="category-badge hide-mobile"
