@@ -365,16 +365,16 @@ function App() {
                         <tr key={`${etf.symbol}-expanded`} className="expanded-row">
                           <td colSpan={11}>
                             <div className="expanded-content">
-                              {/* Top 5 Holdings */}
+                              {/* Top 10 Holdings */}
                               <div className="expanded-section">
-                                <h4>📋 前 5 大持股</h4>
+                                <h4>📋 前 10 大持股</h4>
                                 {loadingDetail === etf.symbol ? (
                                   <div className="no-data">
                                     <div className="spinner" style={{ width: 24, height: 24, borderWidth: 2 }} />
                                   </div>
                                 ) : holdings[etf.symbol]?.length ? (
                                   <ul className="holdings-list">
-                                    {holdings[etf.symbol].slice(0, 5).map((h, i) => (
+                                    {holdings[etf.symbol].slice(0, 10).map((h, i) => (
                                       <li key={h.symbol}>
                                         <div className="holding-info">
                                           <span className="holding-rank">{i + 1}</span>

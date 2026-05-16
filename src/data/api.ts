@@ -474,7 +474,7 @@ export const fetchTopHoldings = async (symbol: string): Promise<Holding[]> => {
           weight: h.proportion,
         }))
         .sort((a: Holding, b: Holding) => b.weight - a.weight)
-        .slice(0, 5);
+        .slice(0, 10);
       if (current.length > 0) {
         setCache(`holdings_${symbol}`, current);
         return current;
