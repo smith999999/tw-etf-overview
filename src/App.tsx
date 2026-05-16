@@ -429,7 +429,7 @@ function App() {
                               <div className="expanded-section">
                                 <h4>📋 前 10 大持股</h4>
                                 <div className="section-subtitle">
-                                  <span>與前日變動 (張數)</span>
+                                  <span>與前日變動 (張數 / %)</span>
                                   <span className="hide-mobile"> • 今日個股漲跌 (▲▼)</span>
                                 </div>
 
@@ -463,6 +463,11 @@ function App() {
                                               {h.sharesChange !== undefined && h.sharesChange !== 0 && (
                                                 <span className={`weight-change-mini ${h.sharesChange > 0 ? 'positive' : 'negative'}`}>
                                                   {h.sharesChange > 0 ? '+' : ''}{h.sharesChange.toLocaleString()}張
+                                                  {h.sharesChangePercent !== undefined && (
+                                                    <span style={{ marginLeft: 4, fontSize: '0.6rem', opacity: 0.8 }}>
+                                                      ({h.sharesChangePercent > 0 ? '+' : ''}{h.sharesChangePercent}%)
+                                                    </span>
+                                                  )}
                                                 </span>
                                               )}
                                             </div>

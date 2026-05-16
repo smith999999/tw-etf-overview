@@ -1,10 +1,10 @@
-name: Daily ETF NAV Scraper
+name: Daily ETF Data Update
 
 on:
   schedule:
     # 每天台灣時間下午 4:30 執行 (UTC 時間早上 8:30)
-    # 台股收盤後，投信通常會在下午陸續更新當日淨值
-    - cron: '30 8 * * 1-5'
+    # 此時台股已收盤，投信與 MoneyDJ 通常已更新當日淨值與持股資訊
+    - cron: '30 8 * * *'
   workflow_dispatch: # 允許手動觸發
 
 jobs:
@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 確保能抓到歷史紀錄以進行比對
 
       - name: Set up Python
         uses: actions/setup-python@v4

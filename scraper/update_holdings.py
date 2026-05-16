@@ -60,7 +60,9 @@ def scrape_holdings(symbol_with_suffix):
                     if len(tds) >= 3:
                         shares_raw = tds[2].text.strip().replace(',', '')
                         try:
-                            shares = int(shares_raw)
+                            # MoneyDJ displays total shares, often with .00 suffix
+                            # Convert to "Lots" (張) by dividing by 1000
+                            shares = int(float(shares_raw)) // 1000
                         except ValueError:
                             shares = 0
                         
@@ -133,10 +135,13 @@ def main():
                     ps = prev_shares_map.get(h["symbol"], 0)
                     if ps > 0 and h["shares"] > 0:
                         h["sharesChange"] = h["shares"] - ps
+                        h["sharesChangePercent"] = round((h["shares"] - ps) / ps * 100, 2)
                     elif h["shares"] > 0:
-                        # New addition to top 10, but might have existed before
-                        # For now, if not in previous record, we just show current shares as the change
                         h["sharesChange"] = h["shares"]
+                        h["sharesChangePercent"] = 100.0
+                    else:
+                        h["sharesChange"] = 0
+                        h["sharesChangePercent"] = 0.0
         
         # --- Calculate Weekly Top Changes (existing logic) ---
         # Find the closest date around 7 days ago
