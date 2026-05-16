@@ -428,6 +428,11 @@ function App() {
                               {/* Top 10 Holdings */}
                               <div className="expanded-section">
                                 <h4>📋 前 10 大持股</h4>
+                                <div className="section-subtitle">
+                                  <span>與上次更新變動 (%)</span>
+                                  <span className="hide-mobile"> • 今日個股漲跌 (▲▼)</span>
+                                </div>
+
                                 {loadingDetail === etf.symbol ? (
                                   <div className="no-data">
                                     <div className="spinner" style={{ width: 24, height: 24, borderWidth: 2 }} />
