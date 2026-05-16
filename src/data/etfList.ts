@@ -23,6 +23,7 @@ export const ETF_LIST: ETFInfo[] = [
   // ESG 型
   { symbol: '00850', name: '元大臺灣ESG永續', category: 'ESG型', expenseRatio: 0.46, issuer: '元大', launchDate: '2019-08-23' },
   // 科技型
+  { symbol: '0052', name: '富邦科技', category: '科技型', expenseRatio: 0.32, issuer: '富邦', launchDate: '2006-09-12' },
   { symbol: '00881', name: '國泰台灣5G+', category: '科技型', expenseRatio: 0.50, issuer: '國泰', launchDate: '2020-12-10' },
   { symbol: '00947', name: '台新臺灣IC設計動能', category: '科技型', expenseRatio: 0.40, issuer: '台新', launchDate: '2024-06-12' },
   // 高息型 (近期新增)
