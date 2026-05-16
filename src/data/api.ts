@@ -119,6 +119,20 @@ export const fetchNAV = async (symbol: string): Promise<number | null> => {
   return STATIC_NAV[symbol] || null;
 };
 
+let liveNavCache: any = null;
+const fetchLiveNavData = async () => {
+  if (liveNavCache) return liveNavCache;
+  try {
+    const baseUrl = import.meta.env?.BASE_URL || '/';
+    const res = await fetch(`${baseUrl}live_nav.json`);
+    const json = await res.json();
+    liveNavCache = json.data;
+    return liveNavCache;
+  } catch {
+    return null;
+  }
+};
+
 // ────────────────────── Batch Fetch All ──────────────────────
 
 // Main batch loader: fetches price + returns + yield for ALL symbols
@@ -138,6 +152,9 @@ export const fetchAllETFData = async (
     return results;
   }
 
+  // Pre-fetch live NAV data from scraper output
+  await fetchLiveNavData();
+
   // Process in small batches of 3 with delays between batches
   const BATCH_SIZE = 3;
   const BATCH_DELAY = 800; // ms between batches
@@ -151,7 +168,6 @@ export const fetchAllETFData = async (
       if (cached) return cached as ETFFullData;
 
       try {
-        // Fetch price + returns in one combined request (same dataset, different date range)
         const [price, returns, dividendYield] = await Promise.allSettled([
           fetchLatestPrice(symbol),
           fetchReturns(symbol),
@@ -159,18 +175,23 @@ export const fetchAllETFData = async (
         ]);
 
         let priceVal = price.status === 'fulfilled' ? price.value : null;
+        const liveData = liveNavCache ? liveNavCache[symbol] : null;
         
-        // Use static price fallback if API returns null
-        if (!priceVal && STATIC_PRICE[symbol]) {
-          priceVal = {
-            date: new Date().toISOString().split('T')[0],
-            close: STATIC_PRICE[symbol],
-            change: 0,
-            changePercent: 0
-          };
+        // Use scraper live price or static price fallback if API returns null
+        if (!priceVal) {
+          const fallbackPrice = liveData?.price || STATIC_PRICE[symbol];
+          if (fallbackPrice) {
+            priceVal = {
+              date: new Date().toISOString().split('T')[0],
+              close: fallbackPrice,
+              change: 0,
+              changePercent: 0
+            };
+          }
         }
 
-        const navVal = STATIC_NAV[symbol] || null;
+        // Use real live NAV, then fallback to static
+        const navVal = liveData?.nav || STATIC_NAV[symbol] || null;
         const premiumDiscount = (priceVal && navVal)
           ? Number(((priceVal.close - navVal) / navVal * 100).toFixed(2))
           : null;
@@ -187,10 +208,11 @@ export const fetchAllETFData = async (
         setCache(`full_${symbol}`, result);
         return result;
       } catch {
-        const fallbackPrice = STATIC_PRICE[symbol];
-        const fallbackNav = STATIC_NAV[symbol];
+        const liveData = liveNavCache ? liveNavCache[symbol] : null;
+        const fallbackPrice = liveData?.price || STATIC_PRICE[symbol];
+        const fallbackNav = liveData?.nav || STATIC_NAV[symbol];
         
-        // Return partial data with static NAV and static price
+        // Return partial data with live/static NAV and static price
         return {
           symbol,
           price: fallbackPrice ? {
