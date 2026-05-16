@@ -1,7 +1,7 @@
 // FinMind API wrapper for Taiwan ETF data
 // Optimized for rate-limit friendly batch loading with persistent cache
 
-const BASE = '/api/finmind/api/v4/data';
+const BASE = 'https://api.finmindtrade.com/api/v4/data';
 
 // ────────────────────── Infrastructure ──────────────────────
 
