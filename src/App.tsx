@@ -436,19 +436,31 @@ function App() {
                                   <ul className="holdings-list">
                                     {holdings[etf.symbol].slice(0, 10).map((h, i) => (
                                       <li key={h.symbol}>
-                                        <div className="holding-info">
-                                          <span className="holding-rank">{i + 1}</span>
-                                          <span className="holding-name">{h.name}</span>
-                                          <span className="holding-symbol">{h.symbol}</span>
-                                        </div>
-                                          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                                          <div className="holding-info">
+                                            <span className="holding-rank">{i + 1}</span>
+                                            <span className="holding-name">{h.name}</span>
+                                            {h.weightChange !== undefined && h.weightChange !== 0 && (
+                                              <span className={`weight-action-badge ${h.weightChange > 0 ? 'plus' : 'minus'}`}>
+                                                {h.weightChange > 0 ? '加碼' : '減碼'}
+                                              </span>
+                                            )}
+                                            <span className="holding-symbol">{h.symbol}</span>
+                                          </div>
+                                          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                                             {h.todayChange !== undefined && h.todayChange !== null && (
                                               <span className={`holding-day-change ${h.todayChange > 0 ? 'positive' : h.todayChange < 0 ? 'negative' : ''}`}>
                                                 {h.todayChange > 0 ? '▲' : h.todayChange < 0 ? '▼' : ''}
                                                 {Math.abs(h.todayChange).toFixed(2)}%
                                               </span>
                                             )}
-                                            <span className="holding-weight">{h.weight.toFixed(2)}%</span>
+                                            <div className="weight-display-group">
+                                              <span className="holding-weight">{h.weight.toFixed(2)}%</span>
+                                              {h.weightChange !== undefined && h.weightChange !== 0 && (
+                                                <span className={`weight-change-mini ${h.weightChange > 0 ? 'positive' : 'negative'}`}>
+                                                  {h.weightChange > 0 ? '+' : ''}{h.weightChange.toFixed(2)}%
+                                                </span>
+                                              )}
+                                            </div>
                                             <div className="weight-bar">
                                               <div className="weight-bar-fill" style={{ width: `${Math.min(h.weight * 1.8, 100)}%` }} />
                                             </div>

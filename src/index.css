@@ -688,6 +688,46 @@ tbody td:first-child {
   letter-spacing: 0.01em;
 }
 
+/* ────────── Weight Changes ────────── */
+.weight-action-badge {
+  font-size: 0.65rem;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-left: 8px;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.weight-action-badge.plus {
+  color: #ff5252;
+  background: rgba(255, 82, 82, 0.1);
+  border: 1px solid rgba(255, 82, 82, 0.2);
+}
+
+.weight-action-badge.minus {
+  color: #00e676;
+  background: rgba(0, 230, 118, 0.1);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+}
+
+.weight-display-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 52px;
+  gap: 1px;
+}
+
+.weight-change-mini {
+  font-size: 0.62rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.weight-change-mini.positive { color: var(--accent-red); }
+.weight-change-mini.negative { color: var(--accent-green); }
+
 /* ────────── Responsive ────────── */
 @media (max-width: 768px) {
   .app { padding: 0 8px 32px; }

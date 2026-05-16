@@ -102,7 +102,25 @@ def main():
         else:
             print(f"  警告: 無法取得 {symbol} 持股資料")
             
-        # Calculate weekly changes
+        # --- Calculate Weight Changes for ALL top 10 holdings ---
+        # Find the most recent date before today
+        history_dates = sorted([d for d in history["history"].keys() if d != today], reverse=True)
+        if history_dates and holdings:
+            prev_date = history_dates[0]
+            if symbol in history["history"][prev_date]:
+                prev_holdings = history["history"][prev_date][symbol]
+                prev_weights = {h["symbol"]: h["weight"] for h in prev_holdings}
+                
+                for h in holdings:
+                    pw = prev_weights.get(h["symbol"])
+                    if pw is not None:
+                        h["weightChange"] = round(h["weight"] - pw, 2)
+                    else:
+                        # If not in previous top 10, we can't be sure if it's new or just moved up
+                        # But for simplicity, we'll treat it as a new addition to top 10
+                        h["weightChange"] = h["weight"]
+        
+        # --- Calculate Weekly Top Changes (existing logic) ---
         # Find the closest date around 7 days ago
         target_date = datetime.now() - timedelta(days=7)
         closest_date = None
