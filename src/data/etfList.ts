@@ -11,6 +11,7 @@ export const ETF_LIST: ETFInfo[] = [
   // 市值型
   { symbol: '0050', name: '元大台灣50', category: '市值型', expenseRatio: 0.355, issuer: '元大', launchDate: '2003-06-30' },
   { symbol: '006208', name: '富邦台50', category: '市值型', expenseRatio: 0.302, issuer: '富邦', launchDate: '2012-07-17' },
+  { symbol: '0051', name: '元大中型100', category: '市值型', expenseRatio: 0.44, issuer: '元大', launchDate: '2006-08-31' },
   // 高息型
   { symbol: '0056', name: '元大高股息', category: '高息型', expenseRatio: 0.66, issuer: '元大', launchDate: '2007-12-26' },
   { symbol: '00878', name: '國泰永續高股息', category: '高息型', expenseRatio: 0.57, issuer: '國泰', launchDate: '2020-07-20' },
