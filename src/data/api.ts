@@ -165,14 +165,21 @@ export const fetchAllETFData = async (
       if (cached) return cached as ETFFullData;
 
       try {
-        const [price, returns, dividendYield] = await Promise.allSettled([
+        const liveData = liveNavCache ? liveNavCache[symbol] : null;
+
+        const [price, dividendYield] = await Promise.allSettled([
           fetchLatestPrice(symbol),
-          fetchReturns(symbol),
           fetchYieldForSymbol(symbol),
         ]);
 
+        let returnsData: ReturnData = { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null };
+        if (liveData?.returns && liveData.returns.threeMonth !== undefined) {
+          returnsData = liveData.returns;
+        } else {
+          try { returnsData = await fetchReturns(symbol); } catch {}
+        }
+
         let priceVal = price.status === 'fulfilled' ? price.value : null;
-        const liveData = liveNavCache ? liveNavCache[symbol] : null;
         
         // Use scraper live price or static price fallback if API returns null
         if (!priceVal) {
@@ -198,7 +205,7 @@ export const fetchAllETFData = async (
           price: priceVal,
           nav: navVal,
           premiumDiscount,
-          returns: returns.status === 'fulfilled' ? returns.value : { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null },
+          returns: returnsData,
           dividendYield: dividendYield.status === 'fulfilled' ? dividendYield.value : null,
         };
 
@@ -222,7 +229,7 @@ export const fetchAllETFData = async (
           premiumDiscount: (fallbackPrice && fallbackNav) 
             ? Number(((fallbackPrice - fallbackNav) / fallbackNav * 100).toFixed(2)) 
             : null,
-          returns: { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null },
+          returns: liveData?.returns || { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null },
           dividendYield: null,
         } as ETFFullData;
       }

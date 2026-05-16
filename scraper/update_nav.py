@@ -6,6 +6,7 @@ import yfinance as yf
 from datetime import datetime
 import re
 import time
+from dateutil.relativedelta import relativedelta
 
 # 目標 ETF 列表
 ETF_LIST = [
@@ -53,6 +54,40 @@ def get_yfinance_data(symbol_with_suffix):
         pass
     return None, None
 
+def get_adjusted_returns(symbol_with_suffix):
+    yf_symbol = f"{symbol_with_suffix}.TW"
+    returns = { "threeMonth": None, "sixMonth": None, "oneYear": None, "threeYear": None }
+    try:
+        ticker = yf.Ticker(yf_symbol)
+        hist = ticker.history(period="3y", auto_adjust=True)
+        if hist.empty:
+            return returns
+        
+        last_date = hist.index[-1]
+        last_price = hist['Close'].iloc[-1]
+        
+        def calc_return(months):
+            target_date = last_date - relativedelta(months=months)
+            # Find closest index
+            idx = hist.index.get_indexer([target_date], method='nearest')[0]
+            if idx != -1:
+                past_date = hist.index[idx]
+                # check if the closest date is somewhat within range (e.g., 10 days)
+                if abs((past_date - target_date).days) <= 10:
+                    past_price = hist['Close'].iloc[idx]
+                    return float(round((last_price - past_price) / past_price * 100, 2))
+            return None
+
+        returns["threeMonth"] = calc_return(3)
+        returns["sixMonth"] = calc_return(6)
+        returns["oneYear"] = calc_return(12)
+        returns["threeYear"] = calc_return(36)
+        
+    except Exception as e:
+        print(f"  計算報酬率失敗: {e}")
+        
+    return returns
+
 def main():
     print(f"[{datetime.now()}] 開始爬取真實 ETF 淨值與報價資料...")
     results = {
@@ -72,12 +107,16 @@ def main():
             print("  MoneyDJ 失敗，嘗試使用 yfinance...")
             nav, price = get_yfinance_data(sym)
             
+        # 3. 取得還原權值的投資報酬率 (3M, 6M, 1Y, 3Y)
+        returns = get_adjusted_returns(sym)
+            
         if nav is not None and price is not None:
             results["data"][symbol] = {
                 "nav": round(float(nav), 4),
-                "price": round(float(price), 4)
+                "price": round(float(price), 4),
+                "returns": returns
             }
-            print(f"  成功: NAV={nav}, Price={price}")
+            print(f"  成功: NAV={nav}, Price={price}, Returns={returns}")
         else:
             print(f"  警告: 無法取得 {symbol} 的完整數據")
             
