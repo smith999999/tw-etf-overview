@@ -55,11 +55,20 @@ def scrape_holdings(symbol_with_suffix):
                         weight = float(weight_raw)
                     except ValueError:
                         continue
+                    
+                    shares = 0
+                    if len(tds) >= 3:
+                        shares_raw = tds[2].text.strip().replace(',', '')
+                        try:
+                            shares = int(shares_raw)
+                        except ValueError:
+                            shares = 0
                         
                     holdings.append({
                         "symbol": stock_id,
                         "name": name,
-                        "weight": weight
+                        "weight": weight,
+                        "shares": shares
                     })
             # Sort by weight descending just to be sure
             holdings = sorted(holdings, key=lambda x: x['weight'], reverse=True)
@@ -110,15 +119,24 @@ def main():
             if symbol in history["history"][prev_date]:
                 prev_holdings = history["history"][prev_date][symbol]
                 prev_weights = {h["symbol"]: h["weight"] for h in prev_holdings}
+                prev_shares_map = {h["symbol"]: h.get("shares", 0) for h in prev_holdings}
                 
                 for h in holdings:
+                    # Weight change
                     pw = prev_weights.get(h["symbol"])
                     if pw is not None:
                         h["weightChange"] = round(h["weight"] - pw, 2)
                     else:
-                        # If not in previous top 10, we can't be sure if it's new or just moved up
-                        # But for simplicity, we'll treat it as a new addition to top 10
                         h["weightChange"] = h["weight"]
+                        
+                    # Shares change
+                    ps = prev_shares_map.get(h["symbol"], 0)
+                    if ps > 0 and h["shares"] > 0:
+                        h["sharesChange"] = h["shares"] - ps
+                    elif h["shares"] > 0:
+                        # New addition to top 10, but might have existed before
+                        # For now, if not in previous record, we just show current shares as the change
+                        h["sharesChange"] = h["shares"]
         
         # --- Calculate Weekly Top Changes (existing logic) ---
         # Find the closest date around 7 days ago

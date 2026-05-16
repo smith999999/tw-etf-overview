@@ -75,6 +75,8 @@ export interface Holding {
   weight: number;
   todayChange?: number;
   weightChange?: number;
+  shares?: number;
+  sharesChange?: number;
 }
 
 export interface HoldingChange {
