@@ -403,6 +403,25 @@ function App() {
                         <tr key={`${etf.symbol}-expanded`} className="expanded-row">
                           <td colSpan={11}>
                             <div className="expanded-content">
+                              <div className="etf-meta-row">
+                                <div className="meta-card">
+                                  <span className="meta-label">經理費 / 管理費</span>
+                                  <span className="meta-value">{etf.expenseRatio.toFixed(2)}%</span>
+                                </div>
+                                <div className="meta-card">
+                                  <span className="meta-label">發行券商</span>
+                                  <span className="meta-value">{etf.issuer}投信</span>
+                                </div>
+                                <div className="meta-card">
+                                  <span className="meta-label">上市日期</span>
+                                  <span className="meta-value">{etf.launchDate}</span>
+                                </div>
+                                <div className="meta-card">
+                                  <span className="meta-label">ETF 類別</span>
+                                  <span className="meta-value">{etf.category}</span>
+                                </div>
+                              </div>
+
                               {/* Top 10 Holdings */}
                               <div className="expanded-section">
                                 <h4>📋 前 10 大持股</h4>
