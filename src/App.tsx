@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './index.css';
 import { ETF_LIST, CATEGORY_COLORS, type ETFInfo } from './data/etfList';
-import { fetchAllETFData, fetchTopHoldings, fetchWeeklyChanges, type ETFFullData, type Holding, type HoldingChange } from './data/api';
+import { fetchAllETFData, fetchTopHoldings, type ETFFullData, type Holding } from './data/api';
 import { TrendingUp, Search, ChevronDown, BarChart3, Wallet, Percent, Zap, ArrowUpDown } from 'lucide-react';
 
 type SortKey = 'symbol' | 'price' | 'nav' | 'premium' | 'expense' | 'r3m' | 'r6m' | 'r1y' | 'r3y' | 'yield';
@@ -15,7 +15,6 @@ function App() {
   const [search, setSearch] = useState('');
   const [expandedRow, setExpandedRow] = useState<string | null>(null);
   const [holdings, setHoldings] = useState<Record<string, Holding[]>>({});
-  const [changes, setChanges] = useState<Record<string, HoldingChange[]>>({});
   const [loadingDetail, setLoadingDetail] = useState<string | null>(null);
   const [sortKey, setSortKey] = useState<SortKey>('symbol');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
@@ -51,13 +50,14 @@ function App() {
     setExpandedRow(symbol);
     if (!holdings[symbol]) {
       setLoadingDetail(symbol);
-      const [h, c] = await Promise.allSettled([
-        fetchTopHoldings(symbol),
-        fetchWeeklyChanges(symbol),
-      ]);
-      setHoldings(prev => ({ ...prev, [symbol]: h.status === 'fulfilled' ? h.value : [] }));
-      setChanges(prev => ({ ...prev, [symbol]: c.status === 'fulfilled' ? c.value : [] }));
-      setLoadingDetail(null);
+      try {
+        const h = await fetchTopHoldings(symbol);
+        setHoldings(prev => ({ ...prev, [symbol]: h }));
+      } catch (err) {
+        console.error("Fetch detail failed:", err);
+      } finally {
+        setLoadingDetail(null);
+      }
     }
   }, [expandedRow, holdings]);
 
@@ -478,36 +478,6 @@ function App() {
                                 )}
                               </div>
 
-                              {/* Weekly Changes */}
-                              <div className="expanded-section">
-                                <h4>📊 本週持股變化</h4>
-                                {loadingDetail === etf.symbol ? (
-                                  <div className="no-data">
-                                    <div className="spinner" style={{ width: 24, height: 24, borderWidth: 2 }} />
-                                  </div>
-                                ) : changes[etf.symbol]?.length ? (
-                                  <div>
-                                    {changes[etf.symbol].slice(0, 8).map(c => (
-                                      <div key={c.symbol} className="change-item">
-                                        <div className="holding-info">
-                                          <span className="holding-name">{c.name}</span>
-                                          <span className="holding-symbol">{c.symbol}</span>
-                                        </div>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                                          <span className={`change-value ${c.change > 0 ? 'positive' : 'negative'}`}>
-                                            {c.change > 0 ? '+' : ''}{c.change.toFixed(2)}%
-                                          </span>
-                                          <span className={`change-badge ${c.status}`}>
-                                            {c.status === 'new' ? '新增' : c.status === 'removed' ? '移除' : c.status === 'increased' ? '增加' : '減少'}
-                                          </span>
-                                        </div>
-                                      </div>
-                                    ))}
-                                  </div>
-                                ) : (
-                                  <div className="no-data">暫無變化資料或尚未換股</div>
-                                )}
-                              </div>
                             </div>
                           </td>
                         </tr>
