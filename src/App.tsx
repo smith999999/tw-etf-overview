@@ -441,12 +441,18 @@ function App() {
                                           <span className="holding-name">{h.name}</span>
                                           <span className="holding-symbol">{h.symbol}</span>
                                         </div>
-                                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                                          <span className="holding-weight">{h.weight.toFixed(2)}%</span>
-                                          <div className="weight-bar">
-                                            <div className="weight-bar-fill" style={{ width: `${Math.min(h.weight * 1.8, 100)}%` }} />
+                                          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                                            {h.todayChange !== undefined && h.todayChange !== null && (
+                                              <span className={`holding-day-change ${h.todayChange > 0 ? 'positive' : h.todayChange < 0 ? 'negative' : ''}`}>
+                                                {h.todayChange > 0 ? '▲' : h.todayChange < 0 ? '▼' : ''}
+                                                {Math.abs(h.todayChange).toFixed(2)}%
+                                              </span>
+                                            )}
+                                            <span className="holding-weight">{h.weight.toFixed(2)}%</span>
+                                            <div className="weight-bar">
+                                              <div className="weight-bar-fill" style={{ width: `${Math.min(h.weight * 1.8, 100)}%` }} />
+                                            </div>
                                           </div>
-                                        </div>
                                       </li>
                                     ))}
                                   </ul>

@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import time
 import re
+import yfinance as yf
 
 ETF_LIST = [
     '0050', '006208', '0051', '0052', '0056', '00878', '00919', '00929', '00940', '00939', '00713', '00850', '00881',
@@ -156,6 +157,70 @@ def main():
             changes_data[symbol] = []
             
         time.sleep(1)
+
+    # 1. Collect all unique stock symbols
+    all_unique_stocks = set()
+    for etf_h in current_data.values():
+        for h in etf_h:
+            # Only fetch for numeric symbols (Taiwan stocks)
+            if re.match(r'^\d+$', h["symbol"]):
+                all_unique_stocks.add(h["symbol"])
+    
+    # 2. Fetch price changes in batch
+    stock_changes = {}
+    if all_unique_stocks:
+        print(f"正在抓取 {len(all_unique_stocks)} 檔個股今日漲跌幅...")
+        try:
+            # First attempt with .TW
+            ticker_list_tw = [f"{s}.TW" for s in all_unique_stocks]
+            data_tw = yf.download(ticker_list_tw, period="2d", group_by='ticker', progress=False)
+            
+            missing_stocks = []
+            for s in all_unique_stocks:
+                sym_tw = f"{s}.TW"
+                found = False
+                try:
+                    if sym_tw in data_tw.columns.levels[0]:
+                        s_data = data_tw[sym_tw]
+                        if len(s_data) >= 2 and not s_data['Close'].isnull().all():
+                            prev_close = s_data['Close'].iloc[-2]
+                            curr_close = s_data['Close'].iloc[-1]
+                            if prev_close > 0:
+                                change_pct = (curr_close - prev_close) / prev_close * 100
+                                stock_changes[s] = round(float(change_pct), 2)
+                                found = True
+                except:
+                    pass
+                
+                if not found:
+                    missing_stocks.append(s)
+            
+            # Second attempt with .TWO for missing stocks
+            if missing_stocks:
+                print(f"  嘗試抓取 {len(missing_stocks)} 檔上櫃個股 (.TWO)...")
+                ticker_list_two = [f"{s}.TWO" for s in missing_stocks]
+                data_two = yf.download(ticker_list_two, period="2d", group_by='ticker', progress=False)
+                
+                for s in missing_stocks:
+                    sym_two = f"{s}.TWO"
+                    try:
+                        if sym_two in data_two.columns.levels[0]:
+                            s_data = data_two[sym_two]
+                            if len(s_data) >= 2 and not s_data['Close'].isnull().all():
+                                prev_close = s_data['Close'].iloc[-2]
+                                curr_close = s_data['Close'].iloc[-1]
+                                if prev_close > 0:
+                                    change_pct = (curr_close - prev_close) / prev_close * 100
+                                    stock_changes[s] = round(float(change_pct), 2)
+                    except:
+                        continue
+        except Exception as e:
+            print(f"批次抓取漲跌幅失敗: {e}")
+
+    # 3. Attach changes to holdings
+    for symbol in current_data:
+        for h in current_data[symbol]:
+            h["todayChange"] = stock_changes.get(h["symbol"])
 
     # Save to JSON
     output_data = {

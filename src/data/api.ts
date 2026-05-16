@@ -73,6 +73,7 @@ export interface Holding {
   symbol: string;
   name: string;
   weight: number;
+  todayChange?: number;
 }
 
 export interface HoldingChange {
