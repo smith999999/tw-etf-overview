@@ -25,15 +25,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
+          pip install requests beautifulsoup4 yfinance
 
-      - name: Run Scraper
+      - name: Run NAV Scraper
         run: python scraper/update_nav.py
+
+      - name: Run Holdings Scraper
+        run: python scraper/update_holdings.py
 
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add public/live_nav.json
+          git add public/live_nav.json public/live_holdings.json
           # 如果資料有更新則 commit
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update ETF NAV and prices [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update ETF NAV and Holdings [skip ci]" && git push)

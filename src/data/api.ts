@@ -435,9 +435,31 @@ const FALLBACK_HOLDINGS: Record<string, Holding[]> = {
   ],
 };
 
+let liveHoldingsCache: any = null;
+const fetchLiveHoldingsData = async () => {
+  if (liveHoldingsCache) return liveHoldingsCache;
+  try {
+    const baseUrl = import.meta.env?.BASE_URL || '/';
+    const res = await fetch(`${baseUrl}live_holdings.json`);
+    const json = await res.json();
+    liveHoldingsCache = json;
+    return liveHoldingsCache;
+  } catch {
+    return null;
+  }
+};
+
 export const fetchTopHoldings = async (symbol: string): Promise<Holding[]> => {
   const cached = getCache(`holdings_${symbol}`, LONG_CACHE_TTL);
   if (cached) return cached;
+
+  // Prefer live_holdings.json data
+  const liveData = await fetchLiveHoldingsData();
+  if (liveData?.data?.[symbol] && liveData.data[symbol].length > 0) {
+    const current = liveData.data[symbol];
+    setCache(`holdings_${symbol}`, current);
+    return current;
+  }
 
   try {
     const res = await fetchWithTimeout(`${BASE}?dataset=TaiwanETFConstituents&data_id=${symbol}`, 8000);
@@ -471,6 +493,17 @@ export const fetchTopHoldings = async (symbol: string): Promise<Holding[]> => {
 export const fetchWeeklyChanges = async (symbol: string): Promise<HoldingChange[]> => {
   const cached = getCache(`changes_${symbol}`, LONG_CACHE_TTL);
   if (cached) return cached;
+
+  // Prefer live_holdings.json data
+  const liveData = await fetchLiveHoldingsData();
+  if (liveData?.changes?.[symbol] && liveData.changes[symbol].length > 0) {
+    const changes = liveData.changes[symbol].map((c: any) => ({
+      ...c,
+      status: c.change > 0 ? 'increased' : (c.change < 0 ? 'decreased' : 'new')
+    }));
+    setCache(`changes_${symbol}`, changes);
+    return changes;
+  }
 
   try {
     const res = await fetchWithTimeout(`${BASE}?dataset=TaiwanETFConstituents&data_id=${symbol}`, 8000);
