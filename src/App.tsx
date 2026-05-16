@@ -123,8 +123,8 @@ function App() {
     );
   };
 
-  const SortHeader = ({ label, sKey }: { label: string; sKey: SortKey }) => (
-    <th onClick={() => handleSort(sKey)} className={sortKey === sKey ? 'sorted' : ''}>
+  const SortHeader = ({ label, sKey, className }: { label: string; sKey: SortKey; className?: string }) => (
+    <th onClick={() => handleSort(sKey)} className={`${sortKey === sKey ? 'sorted' : ''} ${className || ''}`}>
       {label}
       {sortKey === sKey && (
         <span className="sort-arrow">{sortDir === 'asc' ? '↑' : '↓'}</span>
@@ -287,11 +287,11 @@ function App() {
                   <SortHeader label="市價" sKey="price" />
                   <SortHeader label="淨值" sKey="nav" />
                   <SortHeader label="溢價率" sKey="premium" />
-                  <SortHeader label="管理費" sKey="expense" />
-                  <SortHeader label="3M" sKey="r3m" />
-                  <SortHeader label="6M" sKey="r6m" />
+                  <SortHeader label="管理費" sKey="expense" className="hide-mobile" />
+                  <SortHeader label="3M" sKey="r3m" className="hide-mobile" />
+                  <SortHeader label="6M" sKey="r6m" className="hide-mobile" />
                   <SortHeader label="1Y" sKey="r1y" />
-                  <SortHeader label="3Y" sKey="r3y" />
+                  <SortHeader label="3Y" sKey="r3y" className="hide-mobile" />
                   <SortHeader label="殖利率" sKey="yield" />
                   <th style={{ width: 40, cursor: 'default' }}><ArrowUpDown size={14} /></th>
                 </tr>
@@ -313,7 +313,7 @@ function App() {
                               <div className="etf-name">{etf.name}</div>
                             </div>
                             <span
-                              className="category-badge"
+                              className="category-badge hide-mobile"
                               style={{
                                 background: `${CATEGORY_COLORS[etf.category]}20`,
                                 color: CATEGORY_COLORS[etf.category],
@@ -328,7 +328,8 @@ function App() {
                             <div>
                               <div style={{ fontWeight: 600 }}>{d.price.close.toFixed(2)}</div>
                               <div className={d.price.change >= 0 ? 'positive' : 'negative'} style={{ fontSize: '0.7rem' }}>
-                                {d.price.change >= 0 ? '▲' : '▼'} {Math.abs(d.price.change).toFixed(2)} ({d.price.changePercent >= 0 ? '+' : ''}{d.price.changePercent}%)
+                                {d.price.change >= 0 ? '▲' : '▼'} {Math.abs(d.price.change).toFixed(2)}
+                                <span className="hide-mobile"> ({d.price.changePercent >= 0 ? '+' : ''}{d.price.changePercent}%)</span>
                               </div>
                             </div>
                           ) : <span className="skeleton" />}
@@ -341,13 +342,13 @@ function App() {
                             </span>
                           ) : <span className="na-text">—</span>}
                         </td>
-                        <td style={{ color: etf.expenseRatio >= 1 ? 'var(--accent-amber)' : 'var(--text-secondary)' }}>
+                        <td className="hide-mobile" style={{ color: etf.expenseRatio >= 1 ? 'var(--accent-amber)' : 'var(--text-secondary)' }}>
                           {etf.expenseRatio.toFixed(2)}%
                         </td>
-                        <td>{renderReturn(d?.returns.threeMonth ?? null)}</td>
-                        <td>{renderReturn(d?.returns.sixMonth ?? null)}</td>
+                        <td className="hide-mobile">{renderReturn(d?.returns.threeMonth ?? null)}</td>
+                        <td className="hide-mobile">{renderReturn(d?.returns.sixMonth ?? null)}</td>
                         <td>{renderReturn(d?.returns.oneYear ?? null)}</td>
-                        <td>{renderReturn(d?.returns.threeYear ?? null)}</td>
+                        <td className="hide-mobile">{renderReturn(d?.returns.threeYear ?? null)}</td>
                         <td>
                           {d?.dividendYield !== null && d?.dividendYield !== undefined ? (
                             <span style={{ color: 'var(--accent-amber)', fontWeight: 600 }}>
