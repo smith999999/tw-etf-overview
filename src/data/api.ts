@@ -102,17 +102,14 @@ const STATIC_NAV: Record<string, number> = {
   '00878': 28.05, '00919': 25.88, '00929': 25.95,
   '00940': 11.02, '00939': 18.28, '00713': 55.62,
   '00850': 81.25, '00881': 49.78,
-  '00946': 12.95, '00944': 18.68, '00945': 10.88, '00947': 35.85,
+  '00946': 12.95, '00944': 18.68, '00947': 35.85,
   '00981A': 10.00, '00991A': 10.00, '00992A': 10.00, '00987A': 10.00,
   '00982A': 10.00, '00985A': 10.00, '00980A': 10.00, '00984A': 10.00,
-  '00403A': 10.00,
 };
 
 const STATIC_PRICE: Record<string, number> = {
-  '00945': 10.95, // Fallback price for 00945 if API fails
   '00981A': 10.00, '00991A': 10.00, '00992A': 10.00, '00987A': 10.00,
   '00982A': 10.00, '00985A': 10.00, '00980A': 10.00, '00984A': 10.00,
-  '00403A': 10.00,
 };
 
 export const fetchNAV = async (symbol: string): Promise<number | null> => {
@@ -376,11 +373,7 @@ const FALLBACK_HOLDINGS: Record<string, Holding[]> = {
     { symbol: '2379', name: '瑞昱', weight: 7.2 },
     { symbol: '3044', name: '健鼎', weight: 6.8 },
   ],
-  '00945': [
-    { symbol: '2454', name: '聯發科', weight: 9.2 },
-    { symbol: '2379', name: '瑞昱', weight: 8.5 },
-    { symbol: '3034', name: '聯詠', weight: 8.1 },
-  ],
+
   '00981A': [
     { symbol: '2330', name: '台積電', weight: 10.0 },
     { symbol: '2454', name: '聯發科', weight: 8.5 },
@@ -421,11 +414,7 @@ const FALLBACK_HOLDINGS: Record<string, Holding[]> = {
     { symbol: '2603', name: '長榮', weight: 7.0 },
     { symbol: '2609', name: '陽明', weight: 6.5 },
   ],
-  '00403A': [
-    { symbol: '2330', name: '台積電', weight: 15.0 },
-    { symbol: '2454', name: '聯發科', weight: 9.5 },
-    { symbol: '2317', name: '鴻海', weight: 8.5 },
-  ],
+
   '00929': [
     { symbol: '2330', name: '台積電', weight: 15.2 },
     { symbol: '2454', name: '聯發科', weight: 7.8 },

@@ -23,11 +23,11 @@ export const ETF_LIST: ETFInfo[] = [
   { symbol: '00850', name: '元大臺灣ESG永續', category: 'ESG型', expenseRatio: 0.46, issuer: '元大', launchDate: '2019-08-23' },
   // 科技型
   { symbol: '00881', name: '國泰台灣5G+', category: '科技型', expenseRatio: 0.50, issuer: '國泰', launchDate: '2020-12-10' },
+  { symbol: '00947', name: '台新臺灣IC設計動能', category: '科技型', expenseRatio: 0.40, issuer: '台新', launchDate: '2024-06-12' },
+  // 高息型 (近期新增)
+  { symbol: '00944', name: '野村趨勢動能高息', category: '高息型', expenseRatio: 0.40, issuer: '野村', launchDate: '2024-05-09' },
+  { symbol: '00946', name: '群益科技高息成長', category: '高息型', expenseRatio: 0.40, issuer: '群益', launchDate: '2024-05-09' },
   // 主動型 ETF
-  { symbol: '00946', name: '群益台ESG主動優選', category: '主動型', expenseRatio: 1.15, issuer: '群益', launchDate: '2024-08-12' },
-  { symbol: '00944', name: '野村臺灣趨勢動能', category: '主動型', expenseRatio: 1.10, issuer: '野村', launchDate: '2024-07-22' },
-  { symbol: '00945', name: '凱基臺灣優選高息', category: '主動型', expenseRatio: 1.13, issuer: '凱基', launchDate: '2024-07-29' },
-  { symbol: '00947', name: '安聯台灣智慧趨勢', category: '主動型', expenseRatio: 1.20, issuer: '安聯', launchDate: '2024-09-02' },
   { symbol: '00981A', name: '統一台股增長', category: '主動型', expenseRatio: 0.95, issuer: '統一', launchDate: '2024-10-01' },
   { symbol: '00991A', name: '復華未來50', category: '主動型', expenseRatio: 0.99, issuer: '復華', launchDate: '2024-10-01' },
   { symbol: '00992A', name: '群益科技創新', category: '主動型', expenseRatio: 0.95, issuer: '群益', launchDate: '2024-10-01' },
@@ -36,7 +36,6 @@ export const ETF_LIST: ETFInfo[] = [
   { symbol: '00985A', name: '野村台灣增強50', category: '主動型', expenseRatio: 0.99, issuer: '野村', launchDate: '2024-10-01' },
   { symbol: '00980A', name: '野村臺灣智慧優選', category: '主動型', expenseRatio: 0.99, issuer: '野村', launchDate: '2024-10-01' },
   { symbol: '00984A', name: '安聯台灣高息成長', category: '主動型', expenseRatio: 0.95, issuer: '安聯', launchDate: '2024-10-01' },
-  { symbol: '00403A', name: '統一升級50', category: '主動型', expenseRatio: 0.95, issuer: '統一', launchDate: '2024-10-01' },
 ];
 
 export const CATEGORY_COLORS: Record<string, string> = {
