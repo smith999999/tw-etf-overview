@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-16T18:26:31.846248",
+  "updateTime": "2026-05-17T16:25:34.443073",
   "data": {
     "0050": {
       "nav": 95.59,
@@ -237,6 +237,16 @@
       "returns": {
         "threeMonth": 24.52,
         "sixMonth": 42.9,
+        "oneYear": null,
+        "threeYear": null
+      }
+    },
+    "00403A": {
+      "nav": 9.93,
+      "price": 10.0,
+      "returns": {
+        "threeMonth": null,
+        "sixMonth": null,
         "oneYear": null,
         "threeYear": null
       }
