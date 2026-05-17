@@ -38,6 +38,7 @@ export const ETF_LIST: ETFInfo[] = [
   { symbol: '00985A', name: '野村台灣增強50', category: '主動型', expenseRatio: 0.99, issuer: '野村', launchDate: '2024-10-01' },
   { symbol: '00980A', name: '野村臺灣智慧優選', category: '主動型', expenseRatio: 0.99, issuer: '野村', launchDate: '2024-10-01' },
   { symbol: '00984A', name: '安聯台灣高息成長', category: '主動型', expenseRatio: 0.95, issuer: '安聯', launchDate: '2024-10-01' },
+  { symbol: '00403A', name: '統一台股升級50', category: '主動型', expenseRatio: 1.235, issuer: '統一', launchDate: '2026-05-12' },
 ];
 
 export const CATEGORY_COLORS: Record<string, string> = {
