@@ -1,6 +1,9 @@
 name: Daily ETF Data Update
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # 每天台灣時間下午 4:30 執行 (UTC 時間早上 8:30)
     # 此時台股已收盤，投信與 MoneyDJ 通常已更新當日淨值與持股資訊
@@ -42,3 +45,21 @@ jobs:
           git add public/live_nav.json public/live_holdings.json
           # 如果資料有更新則 commit
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update ETF NAV and Holdings [skip ci]" && git push)
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build Web App
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
