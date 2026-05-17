@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-17T08:54:16.954865",
+  "updateTime": "2026-05-17T17:03:19.817281",
   "data": {
     "0050": [
       {
@@ -2455,6 +2455,9 @@
         "name": "台積電",
         "weight": 18.02,
         "shares": 12440,
+        "weightChange": 18.02,
+        "sharesChange": 12440,
+        "sharesChangePercent": 100.0,
         "todayChange": -0.22
       },
       {
@@ -2462,6 +2465,9 @@
         "name": "聯電",
         "weight": 4.2,
         "shares": 59660,
+        "weightChange": 4.2,
+        "sharesChange": 59660,
+        "sharesChangePercent": 100.0,
         "todayChange": 1.85
       },
       {
@@ -2469,6 +2475,9 @@
         "name": "奇鋐",
         "weight": 4.18,
         "shares": 2660,
+        "weightChange": 4.18,
+        "sharesChange": 2660,
+        "sharesChangePercent": 100.0,
         "todayChange": -3.91
       },
       {
@@ -2476,6 +2485,9 @@
         "name": "欣興",
         "weight": 3.81,
         "shares": 7250,
+        "weightChange": 3.81,
+        "sharesChange": 7250,
+        "sharesChangePercent": 100.0,
         "todayChange": -6.81
       },
       {
@@ -2483,6 +2495,9 @@
         "name": "台光電",
         "weight": 3.67,
         "shares": 1244,
+        "weightChange": 3.67,
+        "sharesChange": 1244,
+        "sharesChangePercent": 100.0,
         "todayChange": -6.2
       },
       {
@@ -2490,6 +2505,9 @@
         "name": "日月光投控",
         "weight": 3.12,
         "shares": 8920,
+        "weightChange": 3.12,
+        "sharesChange": 8920,
+        "sharesChangePercent": 100.0,
         "todayChange": -0.18
       },
       {
@@ -2497,6 +2515,9 @@
         "name": "金像電",
         "weight": 3.11,
         "shares": 3770,
+        "weightChange": 3.11,
+        "sharesChange": 3770,
+        "sharesChangePercent": 100.0,
         "todayChange": -9.79
       },
       {
@@ -2504,6 +2525,9 @@
         "name": "台達電",
         "weight": 2.42,
         "shares": 1823,
+        "weightChange": 2.42,
+        "sharesChange": 1823,
+        "sharesChangePercent": 100.0,
         "todayChange": -3.71
       },
       {
@@ -2511,6 +2535,9 @@
         "name": "智邦",
         "weight": 2.4,
         "shares": 1500,
+        "weightChange": 2.4,
+        "sharesChange": 1500,
+        "sharesChangePercent": 100.0,
         "todayChange": -6.36
       },
       {
@@ -2518,6 +2545,9 @@
         "name": "緯穎",
         "weight": 2.0,
         "shares": 610,
+        "weightChange": 2.0,
+        "sharesChange": 610,
+        "sharesChangePercent": 100.0,
         "todayChange": -5.89
       }
     ]
@@ -9289,6 +9319,9 @@
           "name": "台積電",
           "weight": 18.02,
           "shares": 12440,
+          "weightChange": 18.02,
+          "sharesChange": 12440,
+          "sharesChangePercent": 100.0,
           "todayChange": -0.22
         },
         {
@@ -9296,6 +9329,9 @@
           "name": "聯電",
           "weight": 4.2,
           "shares": 59660,
+          "weightChange": 4.2,
+          "sharesChange": 59660,
+          "sharesChangePercent": 100.0,
           "todayChange": 1.85
         },
         {
@@ -9303,6 +9339,9 @@
           "name": "奇鋐",
           "weight": 4.18,
           "shares": 2660,
+          "weightChange": 4.18,
+          "sharesChange": 2660,
+          "sharesChangePercent": 100.0,
           "todayChange": -3.91
         },
         {
@@ -9310,6 +9349,9 @@
           "name": "欣興",
           "weight": 3.81,
           "shares": 7250,
+          "weightChange": 3.81,
+          "sharesChange": 7250,
+          "sharesChangePercent": 100.0,
           "todayChange": -6.81
         },
         {
@@ -9317,6 +9359,9 @@
           "name": "台光電",
           "weight": 3.67,
           "shares": 1244,
+          "weightChange": 3.67,
+          "sharesChange": 1244,
+          "sharesChangePercent": 100.0,
           "todayChange": -6.2
         },
         {
@@ -9324,6 +9369,9 @@
           "name": "日月光投控",
           "weight": 3.12,
           "shares": 8920,
+          "weightChange": 3.12,
+          "sharesChange": 8920,
+          "sharesChangePercent": 100.0,
           "todayChange": -0.18
         },
         {
@@ -9331,6 +9379,9 @@
           "name": "金像電",
           "weight": 3.11,
           "shares": 3770,
+          "weightChange": 3.11,
+          "sharesChange": 3770,
+          "sharesChangePercent": 100.0,
           "todayChange": -9.79
         },
         {
@@ -9338,6 +9389,9 @@
           "name": "台達電",
           "weight": 2.42,
           "shares": 1823,
+          "weightChange": 2.42,
+          "sharesChange": 1823,
+          "sharesChangePercent": 100.0,
           "todayChange": -3.71
         },
         {
@@ -9345,6 +9399,9 @@
           "name": "智邦",
           "weight": 2.4,
           "shares": 1500,
+          "weightChange": 2.4,
+          "sharesChange": 1500,
+          "sharesChangePercent": 100.0,
           "todayChange": -6.36
         },
         {
@@ -9352,6 +9409,9 @@
           "name": "緯穎",
           "weight": 2.0,
           "shares": 610,
+          "weightChange": 2.0,
+          "sharesChange": 610,
+          "sharesChangePercent": 100.0,
           "todayChange": -5.89
         }
       ]

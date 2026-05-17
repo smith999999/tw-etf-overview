@@ -155,6 +155,12 @@ def main():
                     else:
                         h["sharesChange"] = 0
                         h["sharesChangePercent"] = 0.0
+            else:
+                # Symbol not in previous date (newly added ETF like 00403A)
+                for h in holdings:
+                    h["weightChange"] = h["weight"]
+                    h["sharesChange"] = h["shares"]
+                    h["sharesChangePercent"] = 100.0
         
         # --- Calculate Weekly Top Changes (existing logic) ---
         # Find the closest date around 7 days ago
