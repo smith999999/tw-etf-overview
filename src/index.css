@@ -715,7 +715,7 @@ tbody td:first-child {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  min-width: 52px;
+  min-width: 110px;
   gap: 1px;
 }
 
