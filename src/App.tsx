@@ -460,13 +460,19 @@ function App() {
                                             )}
                                             <div className="weight-display-group">
                                               <span className="holding-weight">{h.weight.toFixed(2)}%</span>
-                                              {h.sharesChange !== undefined && h.sharesChange !== 0 && (
-                                                <span className={`weight-change-mini ${h.sharesChange > 0 ? 'positive' : 'negative'}`}>
-                                                  {h.sharesChange > 0 ? '+' : ''}{h.sharesChange.toLocaleString()}張
-                                                  {h.sharesChangePercent !== undefined && (
-                                                    <span style={{ marginLeft: 4, fontSize: '0.6rem', opacity: 0.8 }}>
-                                                      ({h.sharesChangePercent > 0 ? '+' : ''}{h.sharesChangePercent}%)
-                                                    </span>
+                                              {h.sharesChange !== undefined && (
+                                                <span className={`weight-change-mini ${h.sharesChange > 0 ? 'positive' : h.sharesChange < 0 ? 'negative' : 'neutral'}`}>
+                                                  {h.sharesChange === 0 ? (
+                                                    '0張 (0%)'
+                                                  ) : (
+                                                    <>
+                                                      {h.sharesChange > 0 ? '+' : ''}{h.sharesChange.toLocaleString()}張
+                                                      {h.sharesChangePercent !== undefined && (
+                                                        <span style={{ marginLeft: 4, fontSize: '0.6rem', opacity: 0.8 }}>
+                                                          ({h.sharesChangePercent > 0 ? '+' : ''}{h.sharesChangePercent}%)
+                                                        </span>
+                                                      )}
+                                                    </>
                                                   )}
                                                 </span>
                                               )}

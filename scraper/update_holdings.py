@@ -114,10 +114,23 @@ def main():
             print(f"  警告: 無法取得 {symbol} 持股資料")
             
         # --- Calculate Weight Changes for ALL top 10 holdings ---
-        # Find the most recent date before today
+        # Find the most recent date before today that is a weekday (Monday to Friday)
         history_dates = sorted([d for d in history["history"].keys() if d != today], reverse=True)
-        if history_dates and holdings:
+        prev_date = None
+        for d_str in history_dates:
+            try:
+                dt = datetime.strptime(d_str, "%Y-%m-%d")
+                if dt.weekday() < 5:  # 0-4 represent Monday-Friday
+                    prev_date = d_str
+                    break
+            except ValueError:
+                pass
+        
+        # Fallback to the absolute latest if no weekday is found
+        if not prev_date and history_dates:
             prev_date = history_dates[0]
+
+        if prev_date and holdings:
             if symbol in history["history"][prev_date]:
                 prev_holdings = history["history"][prev_date][symbol]
                 prev_weights = {h["symbol"]: h["weight"] for h in prev_holdings}
