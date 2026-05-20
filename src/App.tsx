@@ -444,11 +444,24 @@ function App() {
                                           <div className="holding-info">
                                             <span className="holding-rank">{i + 1}</span>
                                             <span className="holding-name">{h.name}</span>
-                                            {h.weightChange !== undefined && h.weightChange !== 0 && (
-                                              <span className={`weight-action-badge ${h.weightChange > 0 ? 'plus' : 'minus'}`}>
-                                                {h.weightChange > 0 ? '加碼' : '減碼'}
-                                              </span>
-                                            )}
+                                            {(() => {
+                                              if (h.sharesChange !== undefined) {
+                                                if (h.sharesChange > 0) {
+                                                  return <span className="weight-action-badge plus">加碼</span>;
+                                                } else if (h.sharesChange < 0) {
+                                                  return <span className="weight-action-badge minus">減碼</span>;
+                                                }
+                                                return null;
+                                              }
+                                              if (h.weightChange !== undefined && h.weightChange !== 0) {
+                                                return (
+                                                  <span className={`weight-action-badge ${h.weightChange > 0 ? 'plus' : 'minus'}`}>
+                                                    {h.weightChange > 0 ? '加碼' : '減碼'}
+                                                  </span>
+                                                );
+                                              }
+                                              return null;
+                                            })()}
                                             <span className="holding-symbol">{h.symbol}</span>
                                           </div>
                                           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
