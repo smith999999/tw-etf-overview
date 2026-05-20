@@ -178,7 +178,7 @@ export const fetchAllETFData = async (
         ]);
 
         let returnsData: ReturnData = { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null };
-        if (liveData?.returns && liveData.returns.threeMonth !== undefined) {
+        if (symbol !== '0052' && liveData?.returns && liveData.returns.threeMonth !== undefined) {
           returnsData = liveData.returns;
         } else {
           try { returnsData = await fetchReturns(symbol); } catch {}
@@ -234,7 +234,9 @@ export const fetchAllETFData = async (
           premiumDiscount: (fallbackPrice && fallbackNav) 
             ? Number(((fallbackPrice - fallbackNav) / fallbackNav * 100).toFixed(2)) 
             : null,
-          returns: liveData?.returns || { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null },
+          returns: (symbol === '0052')
+            ? (await fetchReturns('0052').catch(() => liveData?.returns || { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null }))
+            : (liveData?.returns || { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null }),
           dividendYield: null,
         } as ETFFullData;
       }
