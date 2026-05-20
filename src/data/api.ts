@@ -126,7 +126,7 @@ const fetchLiveNavData = async () => {
   if (liveNavCache) return liveNavCache;
   try {
     const baseUrl = import.meta.env?.BASE_URL || '/';
-    const res = await fetch(`${baseUrl}live_nav.json`);
+    const res = await fetch(`${baseUrl}live_nav.json?t=${Date.now()}`);
     const json = await res.json();
     liveNavCache = json.data;
     return liveNavCache;
@@ -446,7 +446,7 @@ const fetchLiveHoldingsData = async () => {
   if (liveHoldingsCache) return liveHoldingsCache;
   try {
     const baseUrl = import.meta.env?.BASE_URL || '/';
-    const res = await fetch(`${baseUrl}live_holdings.json`);
+    const res = await fetch(`${baseUrl}live_holdings.json?t=${Date.now()}`);
     const json = await res.json();
     liveHoldingsCache = json;
     return liveHoldingsCache;
