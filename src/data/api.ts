@@ -281,7 +281,7 @@ const fetchLatestPrice = async (symbol: string): Promise<PriceData | null> => {
 // ────────────────────── Returns ──────────────────────
 
 const fetchReturns = async (symbol: string): Promise<ReturnData> => {
-  const cached = getCache(`returns_${symbol}`, LONG_CACHE_TTL);
+  const cached = getCache(`returns_v2_${symbol}`, LONG_CACHE_TTL);
   if (cached) return cached;
 
   const d = new Date();
@@ -366,7 +366,7 @@ const fetchReturns = async (symbol: string): Promise<ReturnData> => {
     oneYear: calc(12),
     threeYear: calc(36),
   };
-  setCache(`returns_${symbol}`, result);
+  setCache(`returns_v2_${symbol}`, result);
   return result;
 };
 
