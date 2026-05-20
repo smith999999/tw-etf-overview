@@ -63,10 +63,10 @@ def get_adjusted_returns(symbol_with_suffix):
         if hist.empty:
             return returns
         
-        # 針對 0052 在 2025-11-26 進行的 1 拆 7 股票分割，進行歷史價格還原
+        # 針對 0052 進行股票分割動態還原 (1拆7)
         if symbol_with_suffix == '0052':
             for date_idx in hist.index:
-                if date_idx.strftime('%Y-%m-%d') < '2025-11-26':
+                if hist.loc[date_idx, 'Close'] > 100.0:
                     hist.loc[date_idx, 'Close'] = hist.loc[date_idx, 'Close'] / 7.0
         
         last_date = hist.index[-1]
