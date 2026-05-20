@@ -294,21 +294,70 @@ const fetchReturns = async (symbol: string): Promise<ReturnData> => {
     return { threeMonth: null, sixMonth: null, oneYear: null, threeYear: null };
   }
 
+  // 抓取 3 年來的配息資料以計算含息總報酬率
+  let dividends: any[] = [];
+  try {
+    const divRes = await fetchWithTimeout(`${BASE}?dataset=TaiwanStockDividend&data_id=${symbol}&start_date=${startDate}`, 8000);
+    const divJson = await divRes.json();
+    dividends = divJson.data || [];
+  } catch (e) {
+    console.error("Failed to fetch dividends for returns calculation", e);
+  }
+
   const data = json.data;
-  const latest = data[data.length - 1].close;
+
+  // 針對 0052 在 2025-11-26 進行的 1 拆 7 股票分割進行價格還原
+  const processedData = data.map((item: any) => {
+    if (symbol === '0052' && item.date < '2025-11-26') {
+      return { ...item, close: item.close / 7.0 };
+    }
+    return item;
+  });
+
+  // 同時，將 2025-11-26 之前的配息也除以 7.0
+  const processedDividends = dividends.map((div: any) => {
+    const divDate = div.ex_dividend_date || div.date;
+    if (symbol === '0052' && divDate && divDate < '2025-11-26') {
+      return {
+        ...div,
+        CashEarningsDistribution: (div.CashEarningsDistribution || 0) / 7.0,
+        CashStatutorySurplus: (div.CashStatutorySurplus || 0) / 7.0
+      };
+    }
+    return div;
+  });
+
+  const latest = processedData[processedData.length - 1].close;
+  const latestDate = processedData[processedData.length - 1].date;
   const now = new Date();
 
-  const findClosestPrice = (monthsAgo: number): number | null => {
+  const findClosestPrice = (monthsAgo: number): { price: number; date: string } | null => {
     const target = new Date(now);
     target.setMonth(target.getMonth() - monthsAgo);
     const targetStr = target.toISOString().split('T')[0];
-    const point = data.find((d: any) => d.date >= targetStr);
-    return point ? point.close : null;
+    const point = processedData.find((d: any) => d.date >= targetStr);
+    return point ? { price: point.close, date: point.date } : null;
   };
 
   const calc = (monthsAgo: number): number | null => {
-    const p = findClosestPrice(monthsAgo);
-    return p ? Number(((latest - p) / p * 100).toFixed(2)) : null;
+    const startPoint = findClosestPrice(monthsAgo);
+    if (!startPoint) return null;
+
+    const p = startPoint.price;
+    const pDate = startPoint.date;
+
+    // 計算這段期間內的配息總和
+    let periodDivSum = 0;
+    processedDividends.forEach((d: any) => {
+      const divDate = d.ex_dividend_date || d.date;
+      if (divDate && divDate >= pDate && divDate <= latestDate) {
+        const cash = (d.CashEarningsDistribution || 0) + (d.CashStatutorySurplus || 0);
+        periodDivSum += cash;
+      }
+    });
+
+    // 計算配息與分割還原後的報酬率
+    return Number((((latest + periodDivSum) - p) / p * 100).toFixed(2));
   };
 
   const result = {
