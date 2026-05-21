@@ -7,7 +7,7 @@ on:
   schedule:
     # 每天台灣時間下午 4:30 執行 (UTC 時間早上 8:30)
     # 此時台股已收盤，投信與 MoneyDJ 通常已更新當日淨值與持股資訊
-    - cron: '30 8 * * *'
+    - cron: '30 8 * * 1-5'
   workflow_dispatch: # 允許手動觸發
 
 jobs:

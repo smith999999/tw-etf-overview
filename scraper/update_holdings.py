@@ -114,35 +114,21 @@ def main():
             print(f"  警告: 無法取得 {symbol} 持股資料")
             
         # --- Calculate Weight Changes for ALL top 10 holdings ---
-        # Find the most recent date before today that has different holdings from today (last active update)
+        # 找前一個交易日（跳過週末）
         history_dates = sorted([d for d in history["history"].keys() if d != today], reverse=True)
         prev_date = None
         
-        # We try to find the most recent date in history where the holdings were actually different.
-        # This prevents showing "0張 (0%)" when MoneyDJ hasn't updated the daily data yet.
         for d_str in history_dates:
             if symbol in history["history"][d_str]:
-                past_holdings = history["history"][d_str][symbol]
-                curr_shares = {h["symbol"]: h.get("shares", 0) for h in holdings}
-                past_shares = {h["symbol"]: h.get("shares", 0) for h in past_holdings}
-                if curr_shares != past_shares:
-                    prev_date = d_str
-                    break
-                    
-        # Fallback to the latest weekday if no different date is found
-        if not prev_date:
-            for d_str in history_dates:
+                # 跳過週末數據（MoneyDJ 不更新，數據跟週五一樣）
                 try:
                     dt = datetime.strptime(d_str, "%Y-%m-%d")
-                    if dt.weekday() < 5:  # 0-4 represent Monday-Friday
-                        prev_date = d_str
-                        break
+                    if dt.weekday() >= 5:  # 5=Sat, 6=Sun
+                        continue
                 except ValueError:
                     pass
-        
-        # Fallback to the absolute latest if no weekday is found
-        if not prev_date and history_dates:
-            prev_date = history_dates[0]
+                prev_date = d_str
+                break
 
         if prev_date and holdings:
             if symbol in history["history"][prev_date]:
