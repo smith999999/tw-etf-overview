@@ -78,6 +78,7 @@ export interface Holding {
   shares?: number;
   sharesChange?: number;
   sharesChangePercent?: number;
+  isNew?: boolean;
 }
 
 export interface HoldingChange {
@@ -493,7 +494,7 @@ const FALLBACK_HOLDINGS: Record<string, Holding[]> = {
 };
 
 let liveHoldingsCache: any = null;
-const fetchLiveHoldingsData = async () => {
+export const fetchLiveHoldingsData = async () => {
   if (liveHoldingsCache) return liveHoldingsCache;
   try {
     const baseUrl = import.meta.env?.BASE_URL || '/';
@@ -622,3 +623,180 @@ export const fetchWeeklyChanges = async (symbol: string): Promise<HoldingChange[
     return [];
   }
 };
+
+// ────────────────────── K-Line OHLC Data ──────────────────────
+
+export interface OHLCPoint {
+  time: string;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
+}
+
+export const fetchOHLCData = async (symbol: string, period: string): Promise<OHLCPoint[]> => {
+  const cacheKey = `ohlc_${symbol}_${period}`;
+  const cached = getCache(cacheKey, CACHE_TTL);
+  if (cached) return cached;
+
+  const d = new Date();
+  if (period === '1M') d.setMonth(d.getMonth() - 1);
+  else if (period === '3M') d.setMonth(d.getMonth() - 3);
+  else if (period === '6M') d.setMonth(d.getMonth() - 6);
+  else if (period === '1Y') d.setFullYear(d.getFullYear() - 1);
+  else if (period === '3Y') d.setFullYear(d.getFullYear() - 3);
+  else d.setFullYear(d.getFullYear() - 1); // default 1Y
+
+  const startDate = d.toISOString().split('T')[0];
+
+  try {
+    const res = await fetchWithTimeout(`${BASE}?dataset=TaiwanStockPrice&data_id=${symbol}&start_date=${startDate}`);
+    const json = await res.json();
+    if (!json.data || json.data.length === 0) return [];
+
+    const rawData = json.data.map((item: any) => {
+      let open = item.open || item.close;
+      let high = item.max || item.close;
+      let low = item.min || item.close;
+      let close = item.close;
+      let volume = item.Trading_Volume || 0;
+
+      // Handle 0052 split (1 to 7) before 2025-11-26
+      if (symbol === '0052' && item.date < '2025-11-26') {
+        open = Number((open / 7.0).toFixed(2));
+        high = Number((high / 7.0).toFixed(2));
+        low = Number((low / 7.0).toFixed(2));
+        close = Number((close / 7.0).toFixed(2));
+        volume = Math.round(volume * 7);
+      }
+
+      return {
+        time: item.date,
+        open,
+        high,
+        low,
+        close,
+        volume
+      };
+    });
+
+    setCache(cacheKey, rawData);
+    return rawData;
+  } catch (err) {
+    console.error('Failed to fetch OHLC data', err);
+    return [];
+  }
+};
+
+// ────────────────────── Dividend History ──────────────────────
+
+export interface DividendPoint {
+  date: string;
+  amount: number;
+}
+
+export const fetchDividendHistory = async (symbol: string): Promise<DividendPoint[]> => {
+  const cacheKey = `div_hist_${symbol}`;
+  const cached = getCache(cacheKey, LONG_CACHE_TTL);
+  if (cached) return cached;
+
+  const d = new Date();
+  d.setFullYear(d.getFullYear() - 3); // Last 3 years
+  const startDate = d.toISOString().split('T')[0];
+
+  try {
+    const res = await fetchWithTimeout(`${BASE}?dataset=TaiwanStockDividend&data_id=${symbol}&start_date=${startDate}`);
+    const json = await res.json();
+    if (!json.data || json.data.length === 0) return [];
+
+    const grouped: Record<string, number> = {};
+
+    json.data.forEach((item: any) => {
+      const date = item.ex_dividend_date || item.date;
+      if (!date) return;
+
+      let amount = (item.CashEarningsDistribution || 0) + (item.CashStatutorySurplus || 0);
+
+      // Handle 0052 split for dividends before 2025-11-26
+      if (symbol === '0052' && date < '2025-11-26') {
+        amount = Number((amount / 7.0).toFixed(4));
+      }
+
+      if (amount > 0) {
+        grouped[date] = (grouped[date] || 0) + amount;
+      }
+    });
+
+    const result: DividendPoint[] = Object.entries(grouped)
+      .map(([date, amount]) => ({
+        date,
+        amount: Number(amount.toFixed(4))
+      }))
+      .sort((a, b) => b.date.localeCompare(a.date)); // Newest first
+
+    setCache(cacheKey, result);
+    return result;
+  } catch (err) {
+    console.error('Failed to fetch dividend history', err);
+    return [];
+  }
+};
+
+// ────────────────────── Institutional Investors ──────────────────────
+
+export const fetchInstitutionalInvestorsData = async (symbol: string): Promise<any[]> => {
+  const cacheKey = `chips_${symbol}`;
+  const cached = getCache(cacheKey, CACHE_TTL);
+  if (cached) return cached;
+
+  const d = new Date();
+  d.setDate(d.getDate() - 15); // Last 15 days to filter for 10 trading days
+  const startDate = d.toISOString().split('T')[0];
+
+  try {
+    const res = await fetchWithTimeout(`${BASE}?dataset=TaiwanStockInstitutionalInvestorsBuySell&data_id=${symbol}&start_date=${startDate}`);
+    const json = await res.json();
+    if (!json.data || json.data.length === 0) return [];
+
+    // Group by date
+    const grouped: Record<string, { foreign: number; investment: number; dealer: number }> = {};
+
+    json.data.forEach((item: any) => {
+      const date = item.date;
+      if (!grouped[date]) {
+        grouped[date] = { foreign: 0, investment: 0, dealer: 0 };
+      }
+
+      const diffShares = (item.buy || 0) - (item.sell || 0);
+      const diffLots = Math.round(diffShares / 1000); // shares to lots
+
+      const name = item.name || '';
+      if (name.includes('外資') || name.includes('外陸資') || name.toLowerCase().includes('foreign')) {
+        grouped[date].foreign += diffLots;
+      } else if (name.includes('投信') || name.toLowerCase().includes('trust') || name.toLowerCase().includes('investment')) {
+        grouped[date].investment += diffLots;
+      } else if (name.includes('自營商') || name.toLowerCase().includes('dealer')) {
+        grouped[date].dealer += diffLots;
+      }
+    });
+
+    const result = Object.entries(grouped)
+      .map(([date, val]) => ({
+        date,
+        foreign: val.foreign,
+        investment: val.investment,
+        dealer: val.dealer,
+      }))
+      .sort((a, b) => b.date.localeCompare(a.date)) // Newest first
+      .slice(0, 10); // Keep last 10 trading days
+
+    setCache(cacheKey, result);
+    return result;
+  } catch (err) {
+    console.error('Failed to fetch institutional investors data', err);
+    return [];
+  }
+};
+
+

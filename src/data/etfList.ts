@@ -1,7 +1,7 @@
 export interface ETFInfo {
   symbol: string;
   name: string;
-  category: '市值型' | '高息型' | 'ESG型' | '科技型' | '主動型';
+  category: '市值型' | '高息型' | 'ESG型' | '科技型' | '主動型' | '個股';
   expenseRatio: number; // 管理費 %
   issuer: string;
   launchDate: string;
@@ -47,4 +47,5 @@ export const CATEGORY_COLORS: Record<string, string> = {
   'ESG型': '#34d399',
   '科技型': '#a78bfa',
   '主動型': '#f472b6',
+  '個股': '#c084fc',
 };

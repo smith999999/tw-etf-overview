@@ -3,6 +3,7 @@ import './index.css';
 import { ETF_LIST, CATEGORY_COLORS, type ETFInfo } from './data/etfList';
 import { fetchAllETFData, fetchTopHoldings, type ETFFullData, type Holding } from './data/api';
 import { TrendingUp, Search, ChevronDown, BarChart3, Wallet, Percent, Zap, ArrowUpDown } from 'lucide-react';
+import { ETFDetail } from './components/ETFDetail';
 
 type SortKey = 'symbol' | 'price' | 'nav' | 'premium' | 'expense' | 'r3m' | 'r6m' | 'r1y' | 'r3y' | 'yield';
 type SortDir = 'asc' | 'desc';
@@ -19,6 +20,35 @@ function App() {
   const [sortKey, setSortKey] = useState<SortKey>('symbol');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
   const [mobileReturnPeriod, setMobileReturnPeriod] = useState<SortKey>('r1y');
+  const [currentRoute, setCurrentRoute] = useState<{ path: 'home' | 'detail'; symbol?: string; isStock?: boolean; name?: string }>({ path: 'home' });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash.startsWith('#/etf/')) {
+        const symbol = hash.substring('#/etf/'.length);
+        setCurrentRoute({ path: 'detail', symbol, isStock: false });
+      } else if (hash.startsWith('#/stock/')) {
+        const raw = hash.substring('#/stock/'.length);
+        const parts = raw.split('?');
+        const symbol = parts[0];
+        let name = '';
+        if (parts[1] && parts[1].startsWith('name=')) {
+          name = decodeURIComponent(parts[1].substring('name='.length));
+        }
+        setCurrentRoute({ path: 'detail', symbol, isStock: true, name });
+      } else {
+        setCurrentRoute({ path: 'home' });
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange(); // Run on mount
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
 
   const periodOptions: { key: SortKey; label: string }[] = [
     { key: 'r3m', label: '3M' },
@@ -142,8 +172,29 @@ function App() {
 
   return (
     <div className="app">
-      {/* Loading Progress Bar */}
-      {loading && (
+      {currentRoute.path === 'detail' ? (
+        <div style={{ padding: '8px 0' }}>
+          <ETFDetail
+            symbol={currentRoute.symbol!}
+            isStock={currentRoute.isStock}
+            stockName={currentRoute.name}
+            onBack={() => { window.location.hash = ''; }}
+          />
+          {/* Footer */}
+          <footer className="footer" style={{ marginTop: '40px' }}>
+            <div className="footer-text">
+              資料來源：FinMind 台灣股票資料 API<br />
+              管理費為經理費+保管費（含規費），數據僅供參考
+            </div>
+            <div className="footer-disclaimer">
+              ⚠️ 免責聲明：本頁面僅供資訊參考，不構成投資建議。投資前請自行評估風險。主動型 ETF 持股資訊可能延遲揭露。
+            </div>
+          </footer>
+        </div>
+      ) : (
+        <>
+          {/* Loading Progress Bar */}
+          {loading && (
         <div style={{
           position: 'fixed', top: 0, left: 0, right: 0, height: '3px',
           background: 'rgba(96, 165, 250, 0.2)', zIndex: 9999
@@ -338,7 +389,13 @@ function App() {
                         <td>
                           <div className="etf-name-cell">
                             <div>
-                              <div className="etf-symbol">{etf.symbol}</div>
+                              <a
+                                href={`#/etf/${etf.symbol}`}
+                                className="etf-symbol-link"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                {etf.symbol}
+                              </a>
                               <div className="etf-name">{etf.name}</div>
                               <div className="show-mobile-only etf-mobile-meta">
                                 {etf.expenseRatio.toFixed(2)}% • {etf.category}
@@ -424,8 +481,7 @@ function App() {
                                   <span className="meta-value">{etf.category}</span>
                                 </div>
                               </div>
-
-                              {/* Top 10 Holdings */}
+              {/* Top 10 Holdings */}
                               <div className="expanded-section">
                                 <h4>📋 前 10 大持股</h4>
                                 <div className="section-subtitle">
@@ -443,25 +499,27 @@ function App() {
                                       <li key={h.symbol}>
                                           <div className="holding-info">
                                             <span className="holding-rank">{i + 1}</span>
-                                            <span className="holding-name">{h.name}</span>
-                                            {(() => {
-                                              if (h.sharesChange !== undefined) {
-                                                if (h.sharesChange > 0) {
-                                                  return <span className="weight-action-badge plus">加碼</span>;
-                                                } else if (h.sharesChange < 0) {
-                                                  return <span className="weight-action-badge minus">減碼</span>;
-                                                }
-                                                return null;
-                                              }
-                                              if (h.weightChange !== undefined && h.weightChange !== 0) {
-                                                return (
-                                                  <span className={`weight-action-badge ${h.weightChange > 0 ? 'plus' : 'minus'}`}>
-                                                    {h.weightChange > 0 ? '加碼' : '減碼'}
-                                                  </span>
-                                                );
-                                              }
-                                              return null;
-                                            })()}
+                                            <a
+                                              href={`#/stock/${h.symbol}?name=${encodeURIComponent(h.name)}`}
+                                              className="stock-symbol-link"
+                                              onClick={(e) => e.stopPropagation()}
+                                              style={{ marginRight: 6 }}
+                                            >
+                                              {h.name}
+                                            </a>
+                                            {h.isNew ? (
+                                              <span className="weight-action-badge new">新上榜</span>
+                                            ) : h.sharesChange !== undefined ? (
+                                              h.sharesChange > 0 ? (
+                                                <span className="weight-action-badge plus">加碼</span>
+                                              ) : h.sharesChange < 0 ? (
+                                                <span className="weight-action-badge minus">減碼</span>
+                                              ) : null
+                                            ) : h.weightChange !== undefined && h.weightChange !== 0 ? (
+                                              <span className={`weight-action-badge ${h.weightChange > 0 ? 'plus' : 'minus'}`}>
+                                                {h.weightChange > 0 ? '加碼' : '減碼'}
+                                              </span>
+                                            ) : null}
                                             <span className="holding-symbol">{h.symbol}</span>
                                           </div>
                                           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -474,8 +532,10 @@ function App() {
                                             <div className="weight-display-group">
                                               <span className="holding-weight">{h.weight.toFixed(2)}%</span>
                                               {h.sharesChange !== undefined && (
-                                                <span className={`weight-change-mini ${h.sharesChange > 0 ? 'positive' : h.sharesChange < 0 ? 'negative' : 'neutral'}`}>
-                                                  {h.sharesChange === 0 ? (
+                                                <span className={`weight-change-mini ${h.isNew ? 'new-badge' : h.sharesChange > 0 ? 'positive' : h.sharesChange < 0 ? 'negative' : 'neutral'}`}>
+                                                  {h.isNew ? (
+                                                    '新上榜'
+                                                  ) : h.sharesChange === 0 ? (
                                                     '0張 (0%)'
                                                   ) : (
                                                     <>
@@ -525,6 +585,8 @@ function App() {
           ⚠️ 免責聲明：本頁面僅供資訊參考，不構成投資建議。投資前請自行評估風險。主動型 ETF 持股資訊可能延遲揭露。
         </div>
       </footer>
+        </>
+      )}
     </div>
   );
 }

@@ -74,7 +74,7 @@ def scrape_holdings(symbol_with_suffix):
                     })
             # Sort by weight descending just to be sure
             holdings = sorted(holdings, key=lambda x: x['weight'], reverse=True)
-            return holdings[:10] # Top 10
+            return holdings
     except Exception as e:
         print(f"  抓取失敗: {e}")
     return []
@@ -141,26 +141,29 @@ def main():
                     pw = prev_weights.get(h["symbol"])
                     if pw is not None:
                         h["weightChange"] = round(h["weight"] - pw, 2)
-                    else:
-                        h["weightChange"] = h["weight"]
                         
-                    # Shares change
-                    ps = prev_shares_map.get(h["symbol"], 0)
-                    if ps > 0 and h["shares"] > 0:
-                        h["sharesChange"] = h["shares"] - ps
-                        h["sharesChangePercent"] = round((h["shares"] - ps) / ps * 100, 2)
-                    elif h["shares"] > 0:
-                        h["sharesChange"] = h["shares"]
-                        h["sharesChangePercent"] = 100.0
+                        # Shares change
+                        ps = prev_shares_map.get(h["symbol"], 0)
+                        if ps > 0 and h["shares"] > 0:
+                            h["sharesChange"] = h["shares"] - ps
+                            h["sharesChangePercent"] = round((h["shares"] - ps) / ps * 100, 2)
+                        else:
+                            h["sharesChange"] = 0
+                            h["sharesChangePercent"] = 0.0
+                        h["isNew"] = False
                     else:
-                        h["sharesChange"] = 0
-                        h["sharesChangePercent"] = 0.0
+                        # 新進入前十大持股
+                        h["weightChange"] = None
+                        h["sharesChange"] = None
+                        h["sharesChangePercent"] = None
+                        h["isNew"] = True
             else:
-                # Symbol not in previous date (newly added ETF like 00403A)
+                # 該 ETF 上一次無紀錄 (新上市或首次爬取)
                 for h in holdings:
-                    h["weightChange"] = h["weight"]
-                    h["sharesChange"] = h["shares"]
-                    h["sharesChangePercent"] = 100.0
+                    h["weightChange"] = None
+                    h["sharesChange"] = None
+                    h["sharesChangePercent"] = None
+                    h["isNew"] = False
         
         # --- Calculate Weekly Top Changes (existing logic) ---
         # Find the closest date around 7 days ago
