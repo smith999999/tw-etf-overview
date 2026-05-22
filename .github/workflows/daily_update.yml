@@ -38,13 +38,16 @@ jobs:
       - name: Run Holdings Scraper
         run: python scraper/update_holdings.py
 
+      - name: Run K-Line History Scraper
+        run: python scraper/update_history.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add public/live_nav.json public/live_holdings.json
+          git add public/live_nav.json public/live_holdings.json public/ohlc/
           # 如果資料有更新則 commit
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update ETF NAV and Holdings [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update ETF NAV, Holdings and K-Line history [skip ci]" && git push)
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

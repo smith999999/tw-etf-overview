@@ -246,13 +246,13 @@ body {
   overflow-x: auto;
 }
 
-table {
+.table-scroll table {
   width: 100%;
   border-collapse: collapse;
   min-width: 1100px;
 }
 
-thead th {
+.table-scroll thead th {
   padding: 14px 12px;
   text-align: right;
   font-size: 0.72rem;
@@ -271,40 +271,40 @@ thead th {
   z-index: 2;
 }
 
-thead th:first-child {
+.table-scroll thead th:first-child {
   text-align: left;
   padding-left: 20px;
 }
 
-thead th:hover {
+.table-scroll thead th:hover {
   color: var(--accent-blue);
 }
 
-thead th.sorted {
+.table-scroll thead th.sorted {
   color: var(--accent-blue);
 }
 
-thead th .sort-arrow {
+.table-scroll thead th .sort-arrow {
   margin-left: 4px;
   opacity: 0.5;
 }
 
-tbody tr {
+.table-scroll tbody tr {
   transition: background 0.15s;
   cursor: pointer;
 }
 
-tbody tr:hover {
+.table-scroll tbody tr:hover {
   background: var(--bg-card-hover);
   box-shadow: inset 4px 0 0 var(--accent-blue);
 }
 
-tbody tr.expanded {
+.table-scroll tbody tr.expanded {
   background: var(--bg-expanded);
   box-shadow: inset 4px 0 0 var(--accent-blue);
 }
 
-tbody td {
+.table-scroll tbody td {
   padding: 14px 12px;
   font-size: 0.85rem;
   text-align: right;
@@ -314,7 +314,7 @@ tbody td {
   font-weight: 400;
 }
 
-tbody td:first-child {
+.table-scroll tbody td:first-child {
   text-align: left;
   padding-left: 20px;
   font-family: 'Inter', sans-serif;
@@ -1138,3 +1138,77 @@ tbody td:first-child {
   text-shadow: 0 0 8px rgba(192, 132, 252, 0.4);
 }
 
+/* ────────── Missing Utility Classes for ETFDetail ────────── */
+
+/* Overflow */
+.overflow-x-auto { overflow-x: auto; }
+
+/* Gradient text */
+.bg-clip-text { -webkit-background-clip: text; background-clip: text; }
+.text-transparent { color: transparent; }
+.bg-gradient-to-r.from-slate-100.to-slate-300 {
+  background-image: linear-gradient(to right, #f1f5f9, #cbd5e1);
+}
+
+/* Solid background colors */
+.bg-blue-500 { background-color: #3b82f6; }
+.bg-blue-500\/15 { background-color: rgba(59, 130, 246, 0.15); }
+.bg-emerald-500 { background-color: #10b981; }
+.bg-orange-500 { background-color: #f97316; }
+.bg-purple-500 { background-color: #a855f7; }
+.bg-sky-500 { background-color: #0ea5e9; }
+.bg-slate-800 { background-color: #1e293b; }
+
+/* Layout extras */
+.items-end { align-items: flex-end; }
+.w-\[1px\] { width: 1px; }
+
+/* Spacing extras */
+.gap-1\.5 { gap: 0.375rem; }
+.p-1 { padding: 0.25rem; }
+.p-8 { padding: 2rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.mt-0\.5 { margin-top: 0.125rem; }
+
+/* Typography extras */
+.text-\[10px\] { font-size: 10px; }
+.md\:text-3xl { font-size: 1.875rem; }
+
+/* Hover extras */
+.hover\:underline:hover { text-decoration: underline; }
+
+/* Responsive: sm breakpoint */
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Responsive: lg additions for grid-cols-3 in ETFDetail */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ────────── Institutional Investors Table Premium Styling ────────── */
+.institutional-table {
+  min-width: 500px !important;
+  width: 100% !important;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.institutional-table thead th {
+  padding: 10px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+  background: transparent;
+}
+
+.institutional-table tbody td {
+  padding: 12px 8px;
+  font-size: 0.825rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+}

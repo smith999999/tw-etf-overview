@@ -310,14 +310,18 @@ const fetchReturns = async (symbol: string): Promise<ReturnData> => {
   const data = json.data;
 
   // 針對 0052 在 2025-11-26 進行的 1 拆 7 股票分割進行價格還原
+  // 以及 0050 在 2025-06-18 之前的 1 拆 4 還原
   const processedData = data.map((item: any) => {
     if (symbol === '0052' && item.date < '2025-11-26') {
       return { ...item, close: item.close / 7.0 };
     }
+    if (symbol === '0050' && item.date < '2025-06-18') {
+      return { ...item, close: item.close / 4.0 };
+    }
     return item;
   });
 
-  // 同時，將 2025-11-26 之前的配息也除以 7.0
+  // 同時，將配息也做對應的還原
   const processedDividends = dividends.map((div: any) => {
     const divDate = div.ex_dividend_date || div.date;
     if (symbol === '0052' && divDate && divDate < '2025-11-26') {
@@ -325,6 +329,13 @@ const fetchReturns = async (symbol: string): Promise<ReturnData> => {
         ...div,
         CashEarningsDistribution: (div.CashEarningsDistribution || 0) / 7.0,
         CashStatutorySurplus: (div.CashStatutorySurplus || 0) / 7.0
+      };
+    }
+    if (symbol === '0050' && divDate && divDate < '2025-06-18') {
+      return {
+        ...div,
+        CashEarningsDistribution: (div.CashEarningsDistribution || 0) / 4.0,
+        CashStatutorySurplus: (div.CashStatutorySurplus || 0) / 4.0
       };
     }
     return div;
@@ -650,6 +661,23 @@ export const fetchOHLCData = async (symbol: string, period: string): Promise<OHL
 
   const startDate = d.toISOString().split('T')[0];
 
+  // 1. 優先嘗試讀取本地預先下載的歷史日 K 資料 (CORS-free, 毫秒級載入, 無限額度)
+  try {
+    const baseUrl = import.meta.env?.BASE_URL || '/';
+    const staticRes = await fetch(`${baseUrl}ohlc/${symbol}.json?t=${Date.now()}`);
+    if (staticRes.ok) {
+      const staticJson = await staticRes.json() as OHLCPoint[];
+      if (staticJson && staticJson.length > 0) {
+        const filtered = staticJson.filter((item) => item.time >= startDate);
+        setCache(cacheKey, filtered);
+        return filtered;
+      }
+    }
+  } catch (staticErr) {
+    console.warn(`Failed to fetch static ohlc for ${symbol}, falling back to FinMind`, staticErr);
+  }
+
+  // 2. 本地無資料或讀取失敗時，自動 Fallback 到原本的 FinMind API 流程
   try {
     const res = await fetchWithTimeout(`${BASE}?dataset=TaiwanStockPrice&data_id=${symbol}&start_date=${startDate}`);
     const json = await res.json();
@@ -671,6 +699,15 @@ export const fetchOHLCData = async (symbol: string, period: string): Promise<OHL
         volume = Math.round(volume * 7);
       }
 
+      // Handle 0050 split/data anomaly (1 to 4) before 2025-06-18
+      if (symbol === '0050' && item.date < '2025-06-18') {
+        open = Number((open / 4.0).toFixed(2));
+        high = Number((high / 4.0).toFixed(2));
+        low = Number((low / 4.0).toFixed(2));
+        close = Number((close / 4.0).toFixed(2));
+        volume = Math.round(volume * 4);
+      }
+
       return {
         time: item.date,
         open,
@@ -684,7 +721,7 @@ export const fetchOHLCData = async (symbol: string, period: string): Promise<OHL
     setCache(cacheKey, rawData);
     return rawData;
   } catch (err) {
-    console.error('Failed to fetch OHLC data', err);
+    console.error('Failed to fetch OHLC data from FinMind fallback', err);
     return [];
   }
 };
@@ -721,6 +758,11 @@ export const fetchDividendHistory = async (symbol: string): Promise<DividendPoin
       // Handle 0052 split for dividends before 2025-11-26
       if (symbol === '0052' && date < '2025-11-26') {
         amount = Number((amount / 7.0).toFixed(4));
+      }
+
+      // Handle 0050 split/data anomaly for dividends before 2025-06-18
+      if (symbol === '0050' && date < '2025-06-18') {
+        amount = Number((amount / 4.0).toFixed(4));
       }
 
       if (amount > 0) {

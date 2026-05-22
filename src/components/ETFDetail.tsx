@@ -184,7 +184,7 @@ export const ETFDetail: React.FC<ETFDetailProps> = ({ symbol, isStock = false, s
       {/* 2. Main Content Grid (K-line & KPI Cards) */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* K-line Chart Area */}
-        <div className="lg:col-span-2 space-y-4">
+        <div className="lg:col-span-2 space-y-4" style={{ minWidth: 0 }}>
           <div className="bg-slate-900/20 border border-slate-800/40 rounded-3xl p-6 backdrop-blur-md space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-bold text-slate-200 flex items-center gap-2">
@@ -224,13 +224,13 @@ export const ETFDetail: React.FC<ETFDetailProps> = ({ symbol, isStock = false, s
 
           {/* Institutional Investors Panel */}
           {chips && chips.length > 0 && (
-            <div className="bg-slate-900/20 border border-slate-800/40 rounded-3xl p-6 backdrop-blur-md">
+            <div className="bg-slate-900/20 border border-slate-800/40 rounded-3xl p-6 backdrop-blur-md" style={{ overflow: 'hidden' }}>
               <h3 className="text-lg font-bold text-slate-200 flex items-center gap-2 mb-4">
                 <span className="w-1.5 h-4 bg-purple-500 rounded-full" />
                 三大法人近期買賣超 (張)
               </h3>
               <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left">
+                <table className="institutional-table w-full text-sm text-left">
                   <thead>
                     <tr className="text-xs text-slate-400 border-b border-slate-800/60 pb-2">
                       <th className="py-2">日期</th>
