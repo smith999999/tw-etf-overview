@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-09T11:24:42.220962",
+  "updateTime": "2026-07-10T11:23:21.517460",
   "data": {
     "0050": {
       "nav": 105.26,
@@ -12,8 +12,8 @@
       }
     },
     "006208": {
-      "nav": 247.32,
-      "price": 246.15,
+      "nav": 244.43,
+      "price": 245.7,
       "returns": {
         "threeMonth": 33.57,
         "sixMonth": 54.38,
@@ -52,8 +52,8 @@
       }
     },
     "00878": {
-      "nav": 33.39,
-      "price": 33.2,
+      "nav": 33.26,
+      "price": 33.19,
       "returns": {
         "threeMonth": 48.46,
         "sixMonth": 56.57,
@@ -62,8 +62,8 @@
       }
     },
     "00919": {
-      "nav": 30.11,
-      "price": 29.94,
+      "nav": 29.92,
+      "price": 29.97,
       "returns": {
         "threeMonth": 35.52,
         "sixMonth": 39.6,
@@ -85,15 +85,15 @@
       "nav": 12.56,
       "price": 12.53,
       "returns": {
-        "threeMonth": 29.06,
-        "sixMonth": 37.03,
-        "oneYear": 45.88,
+        "threeMonth": 29.57,
+        "sixMonth": 37.58,
+        "oneYear": 46.47,
         "threeYear": null
       }
     },
     "00939": {
-      "nav": 21.65,
-      "price": 21.53,
+      "nav": 21.52,
+      "price": 21.46,
       "returns": {
         "threeMonth": 36.66,
         "sixMonth": 46.79,
@@ -102,7 +102,7 @@
       }
     },
     "00713": {
-      "nav": 60.9,
+      "nav": 60.7,
       "price": 60.55,
       "returns": {
         "threeMonth": 17.46,
@@ -152,7 +152,7 @@
       }
     },
     "00947": {
-      "nav": 36.48,
+      "nav": 37.07,
       "price": 37.3,
       "returns": {
         "threeMonth": 54.7,
@@ -172,8 +172,8 @@
       }
     },
     "00991A": {
-      "nav": 19.07,
-      "price": 19.1,
+      "nav": 19.41,
+      "price": 19.51,
       "returns": {
         "threeMonth": 44.84,
         "sixMonth": 87.24,
@@ -202,8 +202,8 @@
       }
     },
     "00982A": {
-      "nav": 23.88,
-      "price": 23.83,
+      "nav": 24.0,
+      "price": 24.02,
       "returns": {
         "threeMonth": 40.79,
         "sixMonth": 71.93,
@@ -212,8 +212,8 @@
       }
     },
     "00985A": {
-      "nav": 21.63,
-      "price": 21.52,
+      "nav": 21.74,
+      "price": 21.69,
       "returns": {
         "threeMonth": 29.11,
         "sixMonth": 54.38,
@@ -232,7 +232,7 @@
       }
     },
     "00984A": {
-      "nav": 16.26,
+      "nav": 16.24,
       "price": 16.3,
       "returns": {
         "threeMonth": 25.87,
