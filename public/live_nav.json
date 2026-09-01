@@ -1,243 +1,243 @@
 {
-  "updateTime": "2026-08-31T16:16:15.340668",
+  "updateTime": "2026-09-01T13:36:00.782837",
   "data": {
     "0050": {
-      "nav": 106.64,
-      "price": 106.25,
+      "nav": 108.82,
+      "price": 108.45,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 3.42,
+        "sixMonth": 35.79,
+        "oneYear": 112.79,
+        "threeYear": 269.17
       }
     },
     "006208": {
-      "nav": 244.32,
-      "price": 242.9,
+      "nav": 249.3,
+      "price": 248.35,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 3.82,
+        "sixMonth": 35.89,
+        "oneYear": 113.33,
+        "threeYear": 269.47
       }
     },
     "0051": {
-      "nav": 144.92,
-      "price": 144.75,
+      "nav": 146.93,
+      "price": 147.45,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 1.69,
+        "sixMonth": 30.54,
+        "oneYear": 83.59,
+        "threeYear": 131.07
       }
     },
     "0052": {
-      "nav": 62.08,
-      "price": 61.85,
+      "nav": 63.39,
+      "price": 63.05,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 1.61,
+        "sixMonth": 34.86,
+        "oneYear": 121.39,
+        "threeYear": 290.38
       }
     },
     "0056": {
-      "nav": 54.77,
-      "price": 54.6,
+      "nav": 55.16,
+      "price": 54.85,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 8.62,
+        "sixMonth": 44.68,
+        "oneYear": 74.42,
+        "threeYear": 113.81
       }
     },
     "00878": {
-      "nav": 33.4,
-      "price": 33.18,
+      "nav": 34.0,
+      "price": 33.76,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 8.79,
+        "sixMonth": 52.47,
+        "oneYear": 83.27,
+        "threeYear": 109.73
       }
     },
     "00919": {
-      "nav": 31.97,
-      "price": 31.96,
+      "nav": 32.45,
+      "price": 32.31,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 11.33,
+        "sixMonth": 41.84,
+        "oneYear": 71.15,
+        "threeYear": 121.26
       }
     },
     "00929": {
-      "nav": 29.16,
-      "price": 29.15,
+      "nav": 29.57,
+      "price": 29.46,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": -0.9,
+        "sixMonth": 56.28,
+        "oneYear": 81.45,
+        "threeYear": 119.5
       }
     },
     "00940": {
-      "nav": 12.86,
-      "price": 12.78,
+      "nav": 13.02,
+      "price": 12.93,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": 6.67,
+        "sixMonth": 33.46,
+        "oneYear": 47.34,
         "threeYear": null
       }
     },
     "00939": {
-      "nav": 23.24,
-      "price": 23.17,
+      "nav": 23.41,
+      "price": 23.26,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": 15.83,
+        "sixMonth": 47.14,
+        "oneYear": 80.62,
         "threeYear": null
       }
     },
     "00713": {
-      "nav": 62.22,
-      "price": 61.9,
+      "nav": 62.76,
+      "price": 62.35,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 9.37,
+        "sixMonth": 20.02,
+        "oneYear": 29.8,
+        "threeYear": 65.9
       }
     },
     "00850": {
-      "nav": 91.47,
-      "price": 91.0,
+      "nav": 93.52,
+      "price": 93.2,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 3.69,
+        "sixMonth": 43.95,
+        "oneYear": 108.56,
+        "threeYear": 226.87
       }
     },
     "00881": {
-      "nav": 49.86,
-      "price": 49.58,
+      "nav": 51.18,
+      "price": 51.05,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
-        "threeYear": NaN
+        "threeMonth": 0.35,
+        "sixMonth": 46.53,
+        "oneYear": 127.8,
+        "threeYear": 305.25
       }
     },
     "00946": {
-      "nav": 15.62,
-      "price": 15.55,
+      "nav": 15.82,
+      "price": 15.74,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": 3.93,
+        "sixMonth": 57.89,
+        "oneYear": 64.59,
         "threeYear": null
       }
     },
     "00944": {
-      "nav": 21.01,
-      "price": 20.88,
+      "nav": 21.38,
+      "price": 21.25,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": 4.48,
+        "sixMonth": 40.66,
+        "oneYear": 54.84,
         "threeYear": null
       }
     },
     "00947": {
-      "nav": 37.79,
-      "price": 37.9,
+      "nav": 38.21,
+      "price": 38.11,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": -4.14,
+        "sixMonth": 56.26,
+        "oneYear": 177.16,
         "threeYear": null
       }
     },
     "00981A": {
-      "nav": 29.59,
-      "price": 29.4,
+      "nav": 30.51,
+      "price": 30.37,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": -2.24,
+        "sixMonth": 57.44,
+        "oneYear": 141.64,
         "threeYear": null
       }
     },
     "00991A": {
-      "nav": 18.02,
-      "price": 17.95,
+      "nav": 18.31,
+      "price": 18.24,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
+        "threeMonth": -4.1,
+        "sixMonth": 50.18,
         "oneYear": null,
         "threeYear": null
       }
     },
     "00992A": {
-      "nav": 18.54,
-      "price": 18.43,
+      "nav": 18.94,
+      "price": 18.87,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
+        "threeMonth": 4.42,
+        "sixMonth": 50.67,
         "oneYear": null,
         "threeYear": null
       }
     },
     "00987A": {
-      "nav": 16.62,
-      "price": 16.62,
+      "nav": 16.93,
+      "price": 16.88,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
+        "threeMonth": -7.05,
+        "sixMonth": 44.4,
         "oneYear": null,
         "threeYear": null
       }
     },
     "00982A": {
-      "nav": 22.52,
-      "price": 22.39,
+      "nav": 23.42,
+      "price": 23.34,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": -1.46,
+        "sixMonth": 50.59,
+        "oneYear": 104.73,
         "threeYear": null
       }
     },
     "00985A": {
-      "nav": 23.1,
-      "price": 22.98,
+      "nav": 23.56,
+      "price": 23.5,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": 4.82,
+        "sixMonth": 43.38,
+        "oneYear": 118.81,
         "threeYear": null
       }
     },
     "00980A": {
-      "nav": 24.86,
-      "price": 24.75,
+      "nav": 25.26,
+      "price": 25.14,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": 3.54,
+        "sixMonth": 50.58,
+        "oneYear": 115.56,
         "threeYear": null
       }
     },
     "00984A": {
-      "nav": 15.76,
-      "price": 15.68,
+      "nav": 15.93,
+      "price": 15.9,
       "returns": {
-        "threeMonth": NaN,
-        "sixMonth": NaN,
-        "oneYear": NaN,
+        "threeMonth": -1.12,
+        "sixMonth": 30.74,
+        "oneYear": 68.87,
         "threeYear": null
       }
     },
@@ -245,7 +245,7 @@
       "nav": 9.63,
       "price": 9.66,
       "returns": {
-        "threeMonth": NaN,
+        "threeMonth": -3.42,
         "sixMonth": null,
         "oneYear": null,
         "threeYear": null
