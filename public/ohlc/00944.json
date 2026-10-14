@@ -4768,11 +4768,19 @@
     "volume": 139545
   },
   {
-    "time": "2026-10-13",
-    "open": NaN,
-    "high": NaN,
-    "low": NaN,
-    "close": NaN,
-    "volume": 80507
+    "time": "2026-10-12",
+    "open": 22.31,
+    "high": 22.6,
+    "low": 22.31,
+    "close": 22.59,
+    "volume": 119000
+  },
+  {
+    "time": "2026-10-14",
+    "open": 22.55,
+    "high": 22.77,
+    "low": 22.54,
+    "close": 22.76,
+    "volume": 172117
   }
 ]
