@@ -1,114 +1,114 @@
 {
-  "updateTime": "2026-11-09T19:04:50.011635",
+  "updateTime": "2026-11-10T16:32:40.990960",
   "data": {
     "0050": [
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 58.57,
-        "shares": 630850,
-        "weightChange": -0.28,
-        "sharesChange": 13319,
-        "sharesChangePercent": 2.16,
+        "weight": 58.3,
+        "shares": 634701,
+        "weightChange": -0.27,
+        "sharesChange": 3851,
+        "sharesChangePercent": 0.61,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 5.87,
-        "shares": 37954,
-        "weightChange": 0.25,
-        "sharesChange": 805,
-        "sharesChangePercent": 2.17,
+        "weight": 5.88,
+        "shares": 38182,
+        "weightChange": 0.01,
+        "sharesChange": 228,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2317",
         "name": "鴻海",
-        "weight": 3.13,
-        "shares": 314956,
-        "weightChange": 0.04,
-        "sharesChange": 6676,
-        "sharesChangePercent": 2.17,
+        "weight": 3.08,
+        "shares": 316856,
+        "weightChange": -0.05,
+        "sharesChange": 1900,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2308",
         "name": "台達電",
-        "weight": 2.4,
-        "shares": 49795,
-        "weightChange": 0.1,
-        "sharesChange": 1055,
-        "sharesChangePercent": 2.16,
+        "weight": 2.57,
+        "shares": 50096,
+        "weightChange": 0.17,
+        "sharesChange": 301,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "weight": 1.99,
-        "shares": 85587,
-        "weightChange": 0.02,
-        "sharesChange": 1813,
-        "sharesChangePercent": 2.16,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2891",
-        "name": "中信金",
-        "weight": 1.44,
-        "shares": 456458,
-        "weightChange": -0.02,
-        "sharesChange": 9599,
-        "sharesChangePercent": 2.15,
+        "weight": 2.09,
+        "shares": 86103,
+        "weightChange": 0.1,
+        "sharesChange": 516,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "1303",
         "name": "南亞",
-        "weight": 1.39,
-        "shares": 127106,
-        "weightChange": 0.06,
-        "sharesChange": 2693,
-        "sharesChangePercent": 2.16,
+        "weight": 1.49,
+        "shares": 127871,
+        "weightChange": 0.1,
+        "sharesChange": 765,
+        "sharesChangePercent": 0.6,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2891",
+        "name": "中信金",
+        "weight": 1.36,
+        "shares": 459210,
+        "weightChange": -0.08,
+        "sharesChange": 2752,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 1.37,
-        "shares": 215206,
-        "weightChange": -0.02,
-        "sharesChange": 4560,
-        "sharesChangePercent": 2.16,
+        "weight": 1.33,
+        "shares": 216503,
+        "weightChange": -0.04,
+        "sharesChange": 1297,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 1.27,
-        "shares": 7491,
-        "weightChange": 0.02,
-        "sharesChange": 158,
-        "sharesChangePercent": 2.15,
+        "weight": 1.32,
+        "shares": 7536,
+        "weightChange": 0.05,
+        "sharesChange": 45,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2303",
         "name": "聯電",
-        "weight": 1.21,
-        "shares": 300853,
-        "weightChange": 0.0,
-        "sharesChange": 6377,
-        "sharesChangePercent": 2.17,
+        "weight": 1.22,
+        "shares": 302668,
+        "weightChange": 0.01,
+        "sharesChange": 1815,
+        "sharesChangePercent": 0.6,
         "isNew": false,
         "todayChange": NaN
       }
@@ -117,42 +117,42 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 58.56,
-        "shares": 112594,
+        "weight": 58.28,
+        "shares": 112675,
         "weightChange": -0.28,
-        "sharesChange": 178,
-        "sharesChangePercent": 0.16,
+        "sharesChange": 81,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 5.86,
-        "shares": 6759,
-        "weightChange": 0.24,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 5.87,
+        "shares": 6774,
+        "weightChange": 0.01,
+        "sharesChange": 15,
+        "sharesChangePercent": 0.22,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2317",
         "name": "鴻海",
-        "weight": 3.12,
-        "shares": 56148,
-        "weightChange": 0.03,
-        "sharesChange": 85,
-        "sharesChangePercent": 0.15,
+        "weight": 3.07,
+        "shares": 56189,
+        "weightChange": -0.05,
+        "sharesChange": 41,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2308",
         "name": "台達電",
-        "weight": 2.39,
+        "weight": 2.56,
         "shares": 8865,
-        "weightChange": 0.1,
+        "weightChange": 0.17,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -161,66 +161,66 @@
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "weight": 1.99,
-        "shares": 15256,
-        "weightChange": 0.02,
-        "sharesChange": 23,
-        "sharesChangePercent": 0.15,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2891",
-        "name": "中信金",
-        "weight": 1.44,
-        "shares": 81350,
-        "weightChange": -0.02,
-        "sharesChange": 123,
-        "sharesChangePercent": 0.15,
+        "weight": 2.09,
+        "shares": 15267,
+        "weightChange": 0.1,
+        "sharesChange": 11,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "1303",
         "name": "南亞",
-        "weight": 1.38,
-        "shares": 22616,
-        "weightChange": 0.05,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 1.48,
+        "shares": 22667,
+        "weightChange": 0.1,
+        "sharesChange": 51,
+        "sharesChangePercent": 0.23,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2891",
+        "name": "中信金",
+        "weight": 1.36,
+        "shares": 81409,
+        "weightChange": -0.08,
+        "sharesChange": 59,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 1.37,
-        "shares": 38353,
-        "weightChange": -0.02,
-        "sharesChange": 58,
-        "sharesChangePercent": 0.15,
+        "weight": 1.33,
+        "shares": 38380,
+        "weightChange": -0.04,
+        "sharesChange": 27,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 1.27,
-        "shares": 1336,
-        "weightChange": 0.02,
-        "sharesChange": 2,
-        "sharesChangePercent": 0.15,
+        "weight": 1.32,
+        "shares": 1337,
+        "weightChange": 0.05,
+        "sharesChange": 1,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2303",
         "name": "聯電",
-        "weight": 1.21,
-        "shares": 53636,
-        "weightChange": 0.0,
-        "sharesChange": 81,
-        "sharesChangePercent": 0.15,
+        "weight": 1.22,
+        "shares": 53675,
+        "weightChange": 0.01,
+        "sharesChange": 39,
+        "sharesChangePercent": 0.07,
         "isNew": false,
         "todayChange": NaN
       }
@@ -229,9 +229,9 @@
       {
         "symbol": "臺股期貨 202611(FITXN*1.TF)",
         "name": "臺股期貨 202611(FITXN*1.TF)",
-        "weight": 4.05,
+        "weight": 4.1,
         "shares": 0,
-        "weightChange": -0.09,
+        "weightChange": 0.05,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -240,53 +240,64 @@
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 3.43,
+        "weight": 3.38,
         "shares": 151,
-        "weightChange": 0.02,
-        "sharesChange": 4,
-        "sharesChangePercent": 2.72,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3481",
-        "name": "群創",
-        "weight": 2.75,
-        "shares": 2269,
-        "weightChange": 0.14,
-        "sharesChange": 46,
-        "sharesChangePercent": 2.07,
+        "weightChange": -0.05,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "1301",
         "name": "台塑",
-        "weight": 2.69,
+        "weight": 2.68,
         "shares": 1277,
-        "weightChange": 0.13,
-        "sharesChange": 26,
-        "sharesChangePercent": 2.08,
+        "weightChange": -0.01,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "3034",
-        "name": "聯詠",
-        "weight": 2.62,
-        "shares": 176,
-        "weightChange": -0.17,
-        "sharesChange": 4,
-        "sharesChangePercent": 2.33,
+        "symbol": "3481",
+        "name": "群創",
+        "weight": 2.67,
+        "shares": 2269,
+        "weightChange": -0.08,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3661",
         "name": "世芯-KY",
-        "weight": 2.42,
+        "weight": 2.62,
         "shares": 25,
-        "weightChange": 0.11,
+        "weightChange": 0.2,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3034",
+        "name": "聯詠",
+        "weight": 2.53,
+        "shares": 176,
+        "weightChange": -0.09,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3189",
+        "name": "景碩",
+        "weight": 2.28,
+        "shares": 101,
+        "weightChange": 0.14,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -295,45 +306,34 @@
       {
         "symbol": "1326",
         "name": "台化",
-        "weight": 2.18,
+        "weight": 2.23,
         "shares": 1036,
-        "weightChange": 0.11,
-        "sharesChange": 21,
-        "sharesChangePercent": 2.07,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3189",
-        "name": "景碩",
-        "weight": 2.14,
-        "shares": 101,
-        "weightChange": -0.04,
-        "sharesChange": 2,
-        "sharesChangePercent": 2.02,
+        "weightChange": 0.05,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2801",
         "name": "彰銀",
-        "weight": 2.06,
+        "weight": 1.99,
         "shares": 2398,
-        "weightChange": -0.08,
-        "sharesChange": 49,
-        "sharesChangePercent": 2.09,
+        "weightChange": -0.07,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "6770",
         "name": "力積電",
-        "weight": 1.97,
+        "weight": 1.98,
         "shares": 1112,
-        "weightChange": null,
-        "sharesChange": null,
-        "sharesChangePercent": null,
-        "isNew": true,
+        "weightChange": 0.01,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
         "todayChange": NaN
       }
     ],
@@ -341,53 +341,53 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 66.22,
-        "shares": 44920,
-        "weightChange": -0.48,
-        "sharesChange": 9,
-        "sharesChangePercent": 0.02,
+        "weight": 65.89,
+        "shares": 44967,
+        "weightChange": -0.33,
+        "sharesChange": 47,
+        "sharesChangePercent": 0.1,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 6.66,
-        "shares": 2711,
-        "weightChange": 0.27,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 6.67,
+        "shares": 2715,
+        "weightChange": 0.01,
+        "sharesChange": 4,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2317",
         "name": "鴻海",
-        "weight": 3.55,
-        "shares": 22499,
-        "weightChange": 0.04,
-        "sharesChange": 4,
-        "sharesChangePercent": 0.02,
+        "weight": 3.49,
+        "shares": 22523,
+        "weightChange": -0.06,
+        "sharesChange": 24,
+        "sharesChangePercent": 0.11,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "weight": 2.26,
-        "shares": 6113,
-        "weightChange": 0.02,
-        "sharesChange": 1,
-        "sharesChangePercent": 0.02,
+        "weight": 2.37,
+        "shares": 6120,
+        "weightChange": 0.11,
+        "sharesChange": 7,
+        "sharesChangePercent": 0.11,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 1.44,
+        "weight": 1.5,
         "shares": 536,
-        "weightChange": 0.02,
+        "weightChange": 0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -396,31 +396,31 @@
       {
         "symbol": "2303",
         "name": "聯電",
-        "weight": 1.37,
-        "shares": 21493,
-        "weightChange": -0.01,
-        "sharesChange": 4,
-        "sharesChangePercent": 0.02,
+        "weight": 1.39,
+        "shares": 21516,
+        "weightChange": 0.02,
+        "sharesChange": 23,
+        "sharesChangePercent": 0.11,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3037",
         "name": "欣興",
-        "weight": 1.21,
-        "shares": 2430,
-        "weightChange": -0.02,
-        "sharesChange": 1,
-        "sharesChangePercent": 0.04,
+        "weight": 1.29,
+        "shares": 2433,
+        "weightChange": 0.08,
+        "sharesChange": 3,
+        "sharesChangePercent": 0.12,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3017",
         "name": "奇鋐",
-        "weight": 0.99,
+        "weight": 1.05,
         "shares": 589,
-        "weightChange": 0.04,
+        "weightChange": 0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -429,22 +429,22 @@
       {
         "symbol": "2382",
         "name": "廣達",
-        "weight": 0.95,
-        "shares": 4870,
-        "weightChange": -0.03,
-        "sharesChange": 1,
-        "sharesChangePercent": 0.02,
+        "weight": 0.93,
+        "shares": 4875,
+        "weightChange": -0.02,
+        "sharesChange": 5,
+        "sharesChangePercent": 0.1,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2327",
         "name": "國巨*",
-        "weight": 0.79,
-        "shares": 2900,
-        "weightChange": 0.04,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 0.78,
+        "shares": 2904,
+        "weightChange": -0.01,
+        "sharesChange": 4,
+        "sharesChangePercent": 0.14,
         "isNew": false,
         "todayChange": NaN
       }
@@ -453,110 +453,110 @@
       {
         "symbol": "1303",
         "name": "南亞",
-        "weight": 9.15,
-        "shares": 270527,
-        "weightChange": 0.55,
-        "sharesChange": 1439,
-        "sharesChangePercent": 0.53,
+        "weight": 9.88,
+        "shares": 270935,
+        "weightChange": 0.73,
+        "sharesChange": 408,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2880",
         "name": "華南金",
-        "weight": 4.75,
-        "shares": 744752,
-        "weightChange": -0.09,
-        "sharesChange": 3953,
-        "sharesChangePercent": 0.53,
+        "weight": 4.64,
+        "shares": 745875,
+        "weightChange": -0.11,
+        "sharesChange": 1123,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2891",
         "name": "中信金",
-        "weight": 4.5,
-        "shares": 460824,
-        "weightChange": 0.01,
-        "sharesChange": 2480,
-        "sharesChangePercent": 0.54,
+        "weight": 4.29,
+        "shares": 461528,
+        "weightChange": -0.21,
+        "sharesChange": 704,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2890",
         "name": "永豐金",
-        "weight": 4.36,
-        "shares": 804157,
-        "weightChange": -0.11,
-        "sharesChange": 1334,
-        "sharesChangePercent": 0.17,
+        "weight": 4.28,
+        "shares": 805336,
+        "weightChange": -0.08,
+        "sharesChange": 1179,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 4.02,
-        "shares": 36346,
-        "weightChange": -0.14,
-        "sharesChange": 45,
-        "sharesChangePercent": 0.12,
+        "weight": 4.06,
+        "shares": 36402,
+        "weightChange": 0.04,
+        "sharesChange": 56,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2886",
         "name": "兆豐金",
-        "weight": 3.9,
-        "shares": 573656,
-        "weightChange": -0.17,
-        "sharesChange": 3081,
-        "sharesChangePercent": 0.54,
+        "weight": 3.84,
+        "shares": 574530,
+        "weightChange": -0.06,
+        "sharesChange": 874,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3231",
         "name": "緯創",
-        "weight": 3.56,
-        "shares": 164425,
-        "weightChange": 0.07,
-        "sharesChange": 879,
-        "sharesChangePercent": 0.54,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2382",
-        "name": "廣達",
-        "weight": 3.4,
-        "shares": 89242,
-        "weightChange": -0.05,
-        "sharesChange": 341,
-        "sharesChangePercent": 0.38,
+        "weight": 3.55,
+        "shares": 164674,
+        "weightChange": -0.01,
+        "sharesChange": 249,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2408",
         "name": "南亞科",
-        "weight": 3.35,
-        "shares": 70275,
-        "weightChange": 0.14,
-        "sharesChange": 233,
-        "sharesChangePercent": 0.33,
+        "weight": 3.4,
+        "shares": 70383,
+        "weightChange": 0.05,
+        "sharesChange": 108,
+        "sharesChangePercent": 0.15,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2382",
+        "name": "廣達",
+        "weight": 3.37,
+        "shares": 89377,
+        "weightChange": -0.03,
+        "sharesChange": 135,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2603",
         "name": "長榮",
-        "weight": 3.26,
-        "shares": 103184,
-        "weightChange": -0.12,
-        "sharesChange": 407,
-        "sharesChangePercent": 0.4,
+        "weight": 3.33,
+        "shares": 103342,
+        "weightChange": 0.07,
+        "sharesChange": 158,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       }
@@ -565,11 +565,11 @@
       {
         "symbol": "2891",
         "name": "中信金",
-        "weight": 11.41,
-        "shares": 968404,
-        "weightChange": 0.09,
-        "sharesChange": 5150,
-        "sharesChangePercent": 0.53,
+        "weight": 11.02,
+        "shares": 970354,
+        "weightChange": -0.39,
+        "sharesChange": 1950,
+        "sharesChangePercent": 0.2,
         "isNew": false,
         "todayChange": NaN
       },
@@ -577,41 +577,41 @@
         "symbol": "2382",
         "name": "廣達",
         "weight": 8.61,
-        "shares": 187087,
-        "weightChange": -0.06,
-        "sharesChange": 720,
-        "sharesChangePercent": 0.39,
+        "shares": 187267,
+        "weightChange": 0.0,
+        "sharesChange": 180,
+        "sharesChangePercent": 0.1,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2882",
         "name": "國泰金",
-        "weight": 6.84,
-        "shares": 397158,
-        "weightChange": 0.14,
-        "sharesChange": 2130,
-        "sharesChangePercent": 0.54,
+        "weight": 6.74,
+        "shares": 397858,
+        "weightChange": -0.1,
+        "sharesChange": 700,
+        "sharesChangePercent": 0.18,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 5.46,
-        "shares": 40905,
-        "weightChange": -0.14,
-        "sharesChange": 180,
-        "sharesChangePercent": 0.44,
+        "weight": 5.58,
+        "shares": 40950,
+        "weightChange": 0.12,
+        "sharesChange": 45,
+        "sharesChangePercent": 0.11,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2603",
         "name": "長榮",
-        "weight": 4.38,
+        "weight": 4.53,
         "shares": 115023,
-        "weightChange": -0.16,
+        "weightChange": 0.15,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -620,56 +620,56 @@
       {
         "symbol": "2887",
         "name": "台新新光金",
-        "weight": 3.96,
-        "shares": 638911,
-        "weightChange": 0.06,
-        "sharesChange": 5450,
-        "sharesChangePercent": 0.86,
+        "weight": 3.88,
+        "shares": 639061,
+        "weightChange": -0.08,
+        "sharesChange": 150,
+        "sharesChangePercent": 0.02,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2880",
         "name": "華南金",
-        "weight": 3.56,
-        "shares": 462449,
-        "weightChange": -0.05,
-        "sharesChange": 2280,
-        "sharesChangePercent": 0.5,
+        "weight": 3.52,
+        "shares": 463019,
+        "weightChange": -0.04,
+        "sharesChange": 570,
+        "sharesChangePercent": 0.12,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 3.37,
-        "shares": 141365,
-        "weightChange": 0.05,
-        "sharesChange": 1260,
-        "sharesChangePercent": 0.9,
+        "weight": 3.34,
+        "shares": 141680,
+        "weightChange": -0.03,
+        "sharesChange": 315,
+        "sharesChangePercent": 0.22,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 3.29,
-        "shares": 28527,
-        "weightChange": 0.07,
-        "sharesChange": 120,
-        "sharesChangePercent": 0.42,
+        "weight": 3.28,
+        "shares": 28557,
+        "weightChange": -0.01,
+        "sharesChange": 30,
+        "sharesChangePercent": 0.11,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 3.09,
-        "shares": 5347,
-        "weightChange": null,
-        "sharesChange": null,
-        "sharesChangePercent": null,
-        "isNew": true,
+        "weight": 3.16,
+        "shares": 5355,
+        "weightChange": 0.07,
+        "sharesChange": 8,
+        "sharesChangePercent": 0.15,
+        "isNew": false,
         "todayChange": NaN
       }
     ],
@@ -677,42 +677,42 @@
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 15.66,
-        "shares": 612630,
-        "weightChange": 0.19,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 15.62,
+        "shares": 613520,
+        "weightChange": -0.04,
+        "sharesChange": 890,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2882",
         "name": "國泰金",
-        "weight": 12.97,
-        "shares": 701520,
-        "weightChange": 0.28,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 12.86,
+        "shares": 702580,
+        "weightChange": -0.11,
+        "sharesChange": 1060,
+        "sharesChangePercent": 0.15,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2891",
         "name": "中信金",
-        "weight": 11.86,
-        "shares": 938577,
-        "weightChange": 0.1,
-        "sharesChange": 180,
-        "sharesChangePercent": 0.02,
+        "weight": 11.53,
+        "shares": 940267,
+        "weightChange": -0.33,
+        "sharesChange": 1690,
+        "sharesChangePercent": 0.18,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2382",
         "name": "廣達",
-        "weight": 9.66,
+        "weight": 9.72,
         "shares": 195630,
-        "weightChange": -0.04,
+        "weightChange": 0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -721,9 +721,9 @@
       {
         "symbol": "2887",
         "name": "台新新光金",
-        "weight": 8.48,
+        "weight": 8.37,
         "shares": 1274460,
-        "weightChange": 0.12,
+        "weightChange": -0.11,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -732,9 +732,9 @@
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 5.55,
+        "weight": 5.7,
         "shares": 38750,
-        "weightChange": -0.13,
+        "weightChange": 0.15,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -743,22 +743,22 @@
       {
         "symbol": "2883",
         "name": "凱基金",
-        "weight": 5.04,
-        "shares": 876050,
-        "weightChange": 0.01,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 5.17,
+        "shares": 882800,
+        "weightChange": 0.13,
+        "sharesChange": 6750,
+        "sharesChangePercent": 0.77,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2603",
         "name": "長榮",
-        "weight": 4.39,
+        "weight": 4.57,
         "shares": 107443,
-        "weightChange": -0.12,
-        "sharesChange": 300,
-        "sharesChangePercent": 0.28,
+        "weightChange": 0.18,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
@@ -767,7 +767,7 @@
         "name": "瑞昱",
         "weight": 3.0,
         "shares": 24210,
-        "weightChange": 0.07,
+        "weightChange": 0.0,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -776,9 +776,9 @@
       {
         "symbol": "3034",
         "name": "聯詠",
-        "weight": 2.95,
+        "weight": 2.89,
         "shares": 36385,
-        "weightChange": -0.13,
+        "weightChange": -0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -789,9 +789,9 @@
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 4.07,
+        "weight": 4.14,
         "shares": 7141,
-        "weightChange": -0.14,
+        "weightChange": 0.07,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -800,31 +800,31 @@
       {
         "symbol": "3034",
         "name": "聯詠",
-        "weight": 4.01,
+        "weight": 3.89,
         "shares": 12437,
-        "weightChange": -0.18,
-        "sharesChange": 114,
-        "sharesChangePercent": 0.93,
+        "weightChange": -0.12,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3045",
         "name": "台灣大",
-        "weight": 3.81,
+        "weight": 3.68,
         "shares": 43893,
-        "weightChange": -0.18,
-        "sharesChange": 205,
-        "sharesChangePercent": 0.47,
+        "weightChange": -0.13,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 3.53,
+        "weight": 3.5,
         "shares": 7166,
-        "weightChange": 0.05,
+        "weightChange": -0.03,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -833,11 +833,11 @@
       {
         "symbol": "2412",
         "name": "中華電",
-        "weight": 3.41,
+        "weight": 3.38,
         "shares": 32291,
-        "weightChange": -0.2,
-        "sharesChange": 160,
-        "sharesChangePercent": 0.5,
+        "weightChange": -0.03,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
@@ -846,54 +846,54 @@
         "name": "可成",
         "weight": 3.17,
         "shares": 25796,
-        "weightChange": -0.02,
-        "sharesChange": 445,
-        "sharesChangePercent": 1.76,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2347",
-        "name": "聯強",
-        "weight": 3.14,
-        "shares": 58436,
-        "weightChange": -0.16,
-        "sharesChange": 1547,
-        "sharesChangePercent": 2.72,
+        "weightChange": 0.0,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "115/11台股期貨(FITXN*1.TF)",
         "name": "115/11台股期貨(FITXN*1.TF)",
-        "weight": 3.03,
+        "weight": 3.08,
         "shares": 0,
-        "weightChange": 0.04,
+        "weightChange": 0.05,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": null
       },
       {
-        "symbol": "4904",
-        "name": "遠傳",
-        "weight": 3.01,
-        "shares": 42870,
-        "weightChange": -0.27,
-        "sharesChange": 228,
-        "sharesChangePercent": 0.53,
+        "symbol": "2347",
+        "name": "聯強",
+        "weight": 3.03,
+        "shares": 58436,
+        "weightChange": -0.11,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "2382",
-        "name": "廣達",
-        "weight": 2.75,
-        "shares": 13965,
+        "symbol": "4904",
+        "name": "遠傳",
+        "weight": 2.97,
+        "shares": 42870,
         "weightChange": -0.04,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3231",
+        "name": "緯創",
+        "weight": 2.75,
+        "shares": 24519,
+        "weightChange": null,
+        "sharesChange": null,
+        "sharesChangePercent": null,
+        "isNew": true,
         "todayChange": NaN
       }
     ],
@@ -901,42 +901,42 @@
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 4.94,
-        "shares": 3462,
-        "weightChange": -0.1,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 4.99,
+        "shares": 3416,
+        "weightChange": 0.05,
+        "sharesChange": -46,
+        "sharesChangePercent": -1.33,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2618",
         "name": "長榮航",
-        "weight": 3.72,
-        "shares": 51124,
-        "weightChange": -0.07,
-        "sharesChange": -137,
-        "sharesChangePercent": -0.27,
+        "weight": 3.89,
+        "shares": 50971,
+        "weightChange": 0.17,
+        "sharesChange": -153,
+        "sharesChangePercent": -0.3,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 3.7,
-        "shares": 14536,
-        "weightChange": 0.05,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.64,
+        "shares": 14391,
+        "weightChange": -0.06,
+        "sharesChange": -145,
+        "sharesChangePercent": -1.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3034",
         "name": "聯詠",
-        "weight": 3.49,
+        "weight": 3.41,
         "shares": 4329,
-        "weightChange": -0.15,
+        "weightChange": -0.08,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -945,20 +945,20 @@
       {
         "symbol": "2891",
         "name": "中信金",
-        "weight": 3.29,
-        "shares": 26092,
-        "weightChange": 0.04,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.16,
+        "shares": 25959,
+        "weightChange": -0.13,
+        "sharesChange": -133,
+        "sharesChangePercent": -0.51,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2892",
         "name": "第一金",
-        "weight": 3.15,
+        "weight": 3.14,
         "shares": 46317,
-        "weightChange": -0.07,
+        "weightChange": -0.01,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -967,45 +967,45 @@
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 3.14,
-        "shares": 2547,
-        "weightChange": 0.08,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3045",
-        "name": "台灣大",
-        "weight": 2.74,
-        "shares": 12601,
-        "weightChange": -0.1,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2890",
-        "name": "永豐金",
-        "weight": 2.73,
-        "shares": 39106,
-        "weightChange": -0.07,
-        "sharesChange": -480,
-        "sharesChangePercent": -1.21,
+        "weight": 3.11,
+        "shares": 2528,
+        "weightChange": -0.03,
+        "sharesChange": -19,
+        "sharesChangePercent": -0.75,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2610",
         "name": "華航",
-        "weight": 2.65,
-        "shares": 73419,
+        "weight": 2.75,
+        "shares": 73041,
+        "weightChange": 0.1,
+        "sharesChange": -378,
+        "sharesChangePercent": -0.51,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2615",
+        "name": "萬海",
+        "weight": 2.72,
+        "shares": 14759,
         "weightChange": null,
         "sharesChange": null,
         "sharesChangePercent": null,
         "isNew": true,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2890",
+        "name": "永豐金",
+        "weight": 2.69,
+        "shares": 38745,
+        "weightChange": -0.04,
+        "sharesChange": -361,
+        "sharesChangePercent": -0.92,
+        "isNew": false,
         "todayChange": NaN
       }
     ],
@@ -1013,9 +1013,9 @@
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 7.9,
+        "weight": 7.87,
         "shares": 14069,
-        "weightChange": 0.15,
+        "weightChange": -0.03,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1024,9 +1024,9 @@
       {
         "symbol": "2887",
         "name": "台新新光金",
-        "weight": 6.71,
+        "weight": 6.62,
         "shares": 45880,
-        "weightChange": 0.14,
+        "weightChange": -0.09,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1035,9 +1035,9 @@
       {
         "symbol": "2882",
         "name": "國泰金",
-        "weight": 6.48,
+        "weight": 6.42,
         "shares": 15967,
-        "weightChange": 0.18,
+        "weightChange": -0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1046,9 +1046,9 @@
       {
         "symbol": "2884",
         "name": "玉山金",
-        "weight": 5.91,
+        "weight": 5.87,
         "shares": 34165,
-        "weightChange": -0.07,
+        "weightChange": -0.04,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1057,9 +1057,9 @@
       {
         "symbol": "2891",
         "name": "中信金",
-        "weight": 5.82,
+        "weight": 5.65,
         "shares": 20958,
-        "weightChange": 0.09,
+        "weightChange": -0.17,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1068,9 +1068,9 @@
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 5.5,
+        "weight": 5.65,
         "shares": 1747,
-        "weightChange": -0.09,
+        "weightChange": 0.15,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1079,9 +1079,9 @@
       {
         "symbol": "2886",
         "name": "兆豐金",
-        "weight": 5.33,
+        "weight": 5.35,
         "shares": 27590,
-        "weightChange": -0.16,
+        "weightChange": 0.02,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1090,9 +1090,9 @@
       {
         "symbol": "2885",
         "name": "元大金",
-        "weight": 5.29,
+        "weight": 5.27,
         "shares": 20853,
-        "weightChange": 0.1,
+        "weightChange": -0.02,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1101,9 +1101,9 @@
       {
         "symbol": "2880",
         "name": "華南金",
-        "weight": 5.11,
+        "weight": 5.08,
         "shares": 28172,
-        "weightChange": -0.02,
+        "weightChange": -0.03,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1112,9 +1112,9 @@
       {
         "symbol": "2883",
         "name": "凱基金",
-        "weight": 4.56,
+        "weight": 4.64,
         "shares": 36075,
-        "weightChange": 0.04,
+        "weightChange": 0.08,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1125,7 +1125,7 @@
       {
         "symbol": "3045",
         "name": "台灣大",
-        "weight": 10.2,
+        "weight": 10.02,
         "shares": 82544,
         "weightChange": -0.18,
         "sharesChange": 0,
@@ -1136,9 +1136,9 @@
       {
         "symbol": "1216",
         "name": "統一",
-        "weight": 8.6,
+        "weight": 8.51,
         "shares": 118888,
-        "weightChange": -0.03,
+        "weightChange": -0.09,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1147,9 +1147,9 @@
       {
         "symbol": "2892",
         "name": "第一金",
-        "weight": 7.35,
+        "weight": 7.41,
         "shares": 190330,
-        "weightChange": -0.02,
+        "weightChange": 0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1160,7 +1160,7 @@
         "name": "統一超",
         "weight": 6.27,
         "shares": 31415,
-        "weightChange": 0.02,
+        "weightChange": 0.0,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1169,9 +1169,9 @@
       {
         "symbol": "2884",
         "name": "玉山金",
-        "weight": 5.74,
+        "weight": 5.72,
         "shares": 128550,
-        "weightChange": 0.03,
+        "weightChange": -0.02,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1182,7 +1182,7 @@
         "name": "遠傳",
         "weight": 5.06,
         "shares": 50641,
-        "weightChange": -0.3,
+        "weightChange": 0.0,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1191,31 +1191,31 @@
       {
         "symbol": "2880",
         "name": "華南金",
-        "weight": 4.85,
-        "shares": 103686,
-        "weightChange": 0.05,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 4.84,
+        "shares": 103558,
+        "weightChange": -0.01,
+        "sharesChange": -128,
+        "sharesChangePercent": -0.12,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "5876",
         "name": "上海商銀",
-        "weight": 3.57,
-        "shares": 73577,
-        "weightChange": 0.02,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.55,
+        "shares": 73519,
+        "weightChange": -0.02,
+        "sharesChange": -58,
+        "sharesChangePercent": -0.08,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "1402",
         "name": "遠東新",
-        "weight": 3.51,
+        "weight": 3.52,
         "shares": 136601,
-        "weightChange": -0.07,
+        "weightChange": 0.01,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1237,9 +1237,9 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 29.84,
+        "weight": 29.69,
         "shares": 4600,
-        "weightChange": -0.16,
+        "weightChange": -0.15,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1248,9 +1248,9 @@
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 8.33,
+        "weight": 8.34,
         "shares": 771,
-        "weightChange": 0.35,
+        "weightChange": 0.01,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1259,9 +1259,9 @@
       {
         "symbol": "2317",
         "name": "鴻海",
-        "weight": 4.3,
+        "weight": 4.22,
         "shares": 6193,
-        "weightChange": 0.05,
+        "weightChange": -0.08,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1270,9 +1270,9 @@
       {
         "symbol": "2308",
         "name": "台達電",
-        "weight": 3.28,
+        "weight": 3.51,
         "shares": 975,
-        "weightChange": 0.14,
+        "weightChange": 0.23,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1281,9 +1281,9 @@
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "weight": 2.76,
+        "weight": 2.9,
         "shares": 1698,
-        "weightChange": 0.03,
+        "weightChange": 0.14,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1294,18 +1294,29 @@
         "name": "臺股期貨 202611(FITXN*1.TF)",
         "weight": 2.53,
         "shares": 0,
-        "weightChange": -0.01,
+        "weightChange": 0.0,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": null
       },
       {
+        "symbol": "1303",
+        "name": "南亞",
+        "weight": 2.01,
+        "shares": 2456,
+        "weightChange": 0.14,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
         "symbol": "2891",
         "name": "中信金",
-        "weight": 2.0,
+        "weight": 1.89,
         "shares": 9099,
-        "weightChange": -0.04,
+        "weightChange": -0.11,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1314,20 +1325,9 @@
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 1.88,
+        "weight": 1.83,
         "shares": 4223,
-        "weightChange": -0.03,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "1303",
-        "name": "南亞",
-        "weight": 1.87,
-        "shares": 2456,
-        "weightChange": 0.07,
+        "weightChange": -0.05,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1336,9 +1336,9 @@
       {
         "symbol": "2303",
         "name": "聯電",
-        "weight": 1.79,
+        "weight": 1.81,
         "shares": 6365,
-        "weightChange": 0.0,
+        "weightChange": 0.02,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1349,42 +1349,53 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 44.87,
-        "shares": 26592,
-        "weightChange": -0.42,
-        "sharesChange": 166,
-        "sharesChangePercent": 0.63,
+        "weight": 44.24,
+        "shares": 26599,
+        "weightChange": -0.63,
+        "sharesChange": 7,
+        "sharesChangePercent": 0.03,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 9.91,
-        "shares": 3525,
-        "weightChange": 0.32,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 9.88,
+        "shares": 3544,
+        "weightChange": -0.03,
+        "sharesChange": 19,
+        "sharesChangePercent": 0.54,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2317",
         "name": "鴻海",
-        "weight": 5.2,
+        "weight": 5.06,
         "shares": 28796,
-        "weightChange": 0.04,
-        "sharesChange": 160,
-        "sharesChangePercent": 0.56,
+        "weightChange": -0.14,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2308",
         "name": "台達電",
-        "weight": 4.26,
+        "weight": 4.51,
         "shares": 4864,
-        "weightChange": 0.14,
+        "weightChange": 0.25,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "weight": 2.7,
+        "shares": 851,
+        "weightChange": 0.09,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1393,66 +1404,55 @@
       {
         "symbol": "2382",
         "name": "廣達",
-        "weight": 2.65,
+        "weight": 2.57,
         "shares": 11837,
-        "weightChange": -0.09,
-        "sharesChange": 65,
-        "sharesChangePercent": 0.55,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2383",
-        "name": "台光電",
-        "weight": 2.61,
-        "shares": 851,
-        "weightChange": 0.02,
-        "sharesChange": 5,
-        "sharesChangePercent": 0.59,
+        "weightChange": -0.08,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3017",
         "name": "奇鋐",
-        "weight": 2.33,
-        "shares": 1216,
-        "weightChange": 0.08,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 2.47,
+        "shares": 1217,
+        "weightChange": 0.14,
+        "sharesChange": 1,
+        "sharesChangePercent": 0.08,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2345",
         "name": "智邦",
-        "weight": 2.15,
-        "shares": 2026,
-        "weightChange": 0.07,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 2.28,
+        "shares": 2031,
+        "weightChange": 0.13,
+        "sharesChange": 5,
+        "sharesChangePercent": 0.25,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3037",
         "name": "欣興",
-        "weight": 2.05,
+        "weight": 2.16,
         "shares": 3578,
-        "weightChange": -0.03,
-        "sharesChange": 20,
-        "sharesChangePercent": 0.56,
+        "weightChange": 0.11,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2303",
         "name": "聯電",
-        "weight": 1.98,
+        "weight": 1.99,
         "shares": 27177,
-        "weightChange": -0.02,
-        "sharesChange": 151,
-        "sharesChangePercent": 0.56,
+        "weightChange": 0.01,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       }
@@ -1461,99 +1461,99 @@
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 11.27,
+        "weight": 11.32,
         "shares": 873,
-        "weightChange": 0.32,
-        "sharesChange": -5,
-        "sharesChangePercent": -0.57,
+        "weightChange": 0.05,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2357",
         "name": "華碩",
-        "weight": 10.91,
+        "weight": 11.23,
         "shares": 730,
-        "weightChange": -0.21,
-        "sharesChange": -5,
-        "sharesChangePercent": -0.68,
+        "weightChange": 0.32,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3034",
         "name": "聯詠",
-        "weight": 8.44,
+        "weight": 8.3,
         "shares": 999,
-        "weightChange": -0.33,
-        "sharesChange": -6,
-        "sharesChangePercent": -0.6,
+        "weightChange": -0.14,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2382",
         "name": "廣達",
-        "weight": 7.92,
+        "weight": 7.98,
         "shares": 1537,
-        "weightChange": 0.01,
-        "sharesChange": -9,
-        "sharesChangePercent": -0.58,
+        "weightChange": 0.06,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "4938",
         "name": "和碩",
-        "weight": 7.29,
+        "weight": 7.36,
         "shares": 4398,
-        "weightChange": 0.05,
-        "sharesChange": -27,
-        "sharesChangePercent": -0.61,
+        "weightChange": 0.07,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "6409",
         "name": "旭隼",
-        "weight": 6.94,
+        "weight": 6.6,
         "shares": 482,
-        "weightChange": 0.18,
-        "sharesChange": -3,
-        "sharesChangePercent": -0.62,
+        "weightChange": -0.34,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "8112",
         "name": "至上",
-        "weight": 5.27,
+        "weight": 5.37,
         "shares": 4002,
-        "weightChange": 0.09,
-        "sharesChange": -24,
-        "sharesChangePercent": -0.6,
+        "weightChange": 0.1,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2474",
         "name": "可成",
-        "weight": 5.04,
+        "weight": 5.12,
         "shares": 1568,
-        "weightChange": -0.06,
-        "sharesChange": -10,
-        "sharesChangePercent": -0.63,
+        "weightChange": 0.08,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2347",
         "name": "聯強",
-        "weight": 3.27,
+        "weight": 3.19,
         "shares": 2320,
-        "weightChange": -0.2,
-        "sharesChange": -14,
-        "sharesChangePercent": -0.6,
+        "weightChange": -0.08,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
@@ -1562,9 +1562,9 @@
         "name": "群光",
         "weight": 2.68,
         "shares": 1756,
-        "weightChange": -0.1,
-        "sharesChange": -11,
-        "sharesChangePercent": -0.62,
+        "weightChange": 0.0,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       }
@@ -1573,9 +1573,9 @@
       {
         "symbol": "2881",
         "name": "富邦金",
-        "weight": 3.45,
+        "weight": 3.41,
         "shares": 235,
-        "weightChange": 0.04,
+        "weightChange": -0.04,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1584,9 +1584,9 @@
       {
         "symbol": "2327",
         "name": "國巨*",
-        "weight": 3.34,
+        "weight": 3.36,
         "shares": 85,
-        "weightChange": 0.22,
+        "weightChange": 0.02,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1595,9 +1595,9 @@
       {
         "symbol": "2882",
         "name": "國泰金",
-        "weight": 3.33,
+        "weight": 3.27,
         "shares": 314,
-        "weightChange": 0.06,
+        "weightChange": -0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1606,9 +1606,9 @@
       {
         "symbol": "2887",
         "name": "台新新光金",
-        "weight": 3.33,
+        "weight": 3.26,
         "shares": 871,
-        "weightChange": 0.04,
+        "weightChange": -0.07,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1617,9 +1617,9 @@
       {
         "symbol": "2885",
         "name": "元大金",
-        "weight": 3.13,
+        "weight": 3.09,
         "shares": 471,
-        "weightChange": 0.03,
+        "weightChange": -0.04,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1628,20 +1628,20 @@
       {
         "symbol": "2892",
         "name": "第一金",
-        "weight": 3.07,
+        "weight": 3.05,
         "shares": 783,
-        "weightChange": -0.08,
+        "weightChange": -0.02,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "2891",
-        "name": "中信金",
-        "weight": 3.06,
-        "shares": 422,
-        "weightChange": 0.02,
+        "symbol": "2303",
+        "name": "聯電",
+        "weight": 3.05,
+        "shares": 320,
+        "weightChange": 0.09,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1661,23 +1661,23 @@
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 2.98,
+        "weight": 2.97,
         "shares": 42,
-        "weightChange": null,
-        "sharesChange": null,
-        "sharesChangePercent": null,
-        "isNew": true,
+        "weightChange": -0.01,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "2303",
-        "name": "聯電",
-        "weight": 2.96,
-        "shares": 320,
-        "weightChange": null,
-        "sharesChange": null,
-        "sharesChangePercent": null,
-        "isNew": true,
+        "symbol": "2891",
+        "name": "中信金",
+        "weight": 2.95,
+        "shares": 422,
+        "weightChange": -0.11,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
         "todayChange": NaN
       }
     ],
@@ -1685,11 +1685,11 @@
       {
         "symbol": "3443",
         "name": "創意",
-        "weight": 12.76,
+        "weight": 13.18,
         "shares": 224,
-        "weightChange": 0.5,
-        "sharesChange": 15,
-        "sharesChangePercent": 7.18,
+        "weightChange": 0.42,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
@@ -1699,17 +1699,17 @@
         "weight": 9.89,
         "shares": 3147,
         "weightChange": 0.0,
-        "sharesChange": 101,
-        "sharesChangePercent": 3.32,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 9.78,
+        "weight": 9.71,
         "shares": 309,
-        "weightChange": -0.13,
+        "weightChange": -0.07,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1718,9 +1718,9 @@
       {
         "symbol": "2344",
         "name": "華邦電",
-        "weight": 8.82,
+        "weight": 8.68,
         "shares": 7838,
-        "weightChange": -0.11,
+        "weightChange": -0.14,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1729,9 +1729,9 @@
       {
         "symbol": "2308",
         "name": "台達電",
-        "weight": 6.6,
+        "weight": 7.01,
         "shares": 670,
-        "weightChange": -0.08,
+        "weightChange": 0.41,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1740,9 +1740,9 @@
       {
         "symbol": "8299",
         "name": "群聯",
-        "weight": 6.27,
+        "weight": 6.15,
         "shares": 447,
-        "weightChange": -0.07,
+        "weightChange": -0.12,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1751,9 +1751,9 @@
       {
         "symbol": "3661",
         "name": "世芯-KY",
-        "weight": 5.15,
+        "weight": 5.47,
         "shares": 195,
-        "weightChange": -0.07,
+        "weightChange": 0.32,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1762,20 +1762,20 @@
       {
         "symbol": "2379",
         "name": "瑞昱",
-        "weight": 4.82,
+        "weight": 4.67,
         "shares": 763,
-        "weightChange": -0.12,
-        "sharesChange": 25,
-        "sharesChangePercent": 3.39,
+        "weightChange": -0.15,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "5274",
         "name": "信驊",
-        "weight": 4.42,
+        "weight": 4.36,
         "shares": 44,
-        "weightChange": -0.37,
+        "weightChange": -0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1784,12 +1784,12 @@
       {
         "symbol": "台指202611(FITXN*1.TF)",
         "name": "台指202611(FITXN*1.TF)",
-        "weight": 3.81,
+        "weight": 3.78,
         "shares": 0,
-        "weightChange": null,
-        "sharesChange": null,
-        "sharesChangePercent": null,
-        "isNew": true,
+        "weightChange": -0.03,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
         "todayChange": null
       }
     ],
@@ -1797,31 +1797,20 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 15.58,
+        "weight": 14.98,
         "shares": 17724,
-        "weightChange": 0.41,
-        "sharesChange": 1144,
-        "sharesChangePercent": 6.9,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2454",
-        "name": "聯發科",
-        "weight": 8.37,
-        "shares": 5712,
-        "weightChange": 0.07,
+        "weightChange": -0.6,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "2383",
-        "name": "台光電",
-        "weight": 6.93,
-        "shares": 4328,
-        "weightChange": -0.16,
+        "symbol": "2454",
+        "name": "聯發科",
+        "weight": 8.09,
+        "shares": 5712,
+        "weightChange": -0.28,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1830,8 +1819,19 @@
       {
         "symbol": "3017",
         "name": "奇鋐",
-        "weight": 6.65,
-        "shares": 6655,
+        "weight": 7.08,
+        "shares": 6855,
+        "weightChange": 0.43,
+        "sharesChange": 200,
+        "sharesChangePercent": 3.01,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "weight": 6.99,
+        "shares": 4328,
         "weightChange": 0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
@@ -1841,9 +1841,9 @@
       {
         "symbol": "3037",
         "name": "欣興",
-        "weight": 5.88,
+        "weight": 6.05,
         "shares": 19739,
-        "weightChange": -0.27,
+        "weightChange": 0.17,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1852,42 +1852,9 @@
       {
         "symbol": "3653",
         "name": "健策",
-        "weight": 5.66,
+        "weight": 5.47,
         "shares": 2552,
-        "weightChange": -0.01,
-        "sharesChange": 20,
-        "sharesChangePercent": 0.79,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2327",
-        "name": "國巨*",
-        "weight": 3.8,
-        "shares": 23519,
-        "weightChange": 0.03,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3711",
-        "name": "日月光投控",
-        "weight": 3.73,
-        "shares": 16905,
-        "weightChange": -0.09,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "6223",
-        "name": "旺矽",
-        "weight": 3.65,
-        "shares": 2504,
-        "weightChange": -0.05,
+        "weightChange": -0.19,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1896,9 +1863,42 @@
       {
         "symbol": "2345",
         "name": "智邦",
-        "weight": 3.5,
-        "shares": 6331,
-        "weightChange": 0.03,
+        "weight": 4.01,
+        "shares": 7013,
+        "weightChange": 0.51,
+        "sharesChange": 682,
+        "sharesChangePercent": 10.77,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3711",
+        "name": "日月光投控",
+        "weight": 3.92,
+        "shares": 17522,
+        "weightChange": 0.19,
+        "sharesChange": 617,
+        "sharesChangePercent": 3.65,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "6223",
+        "name": "旺矽",
+        "weight": 3.77,
+        "shares": 2504,
+        "weightChange": 0.12,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨*",
+        "weight": 3.62,
+        "shares": 23519,
+        "weightChange": -0.18,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1909,9 +1909,9 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 15.83,
+        "weight": 15.21,
         "shares": 4200,
-        "weightChange": -0.19,
+        "weightChange": -0.62,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1920,9 +1920,53 @@
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 9.27,
-        "shares": 1350,
-        "weightChange": -0.16,
+        "weight": 9.44,
+        "shares": 1365,
+        "weightChange": 0.17,
+        "sharesChange": 15,
+        "sharesChangePercent": 1.11,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3037",
+        "name": "欣興",
+        "weight": 7.22,
+        "shares": 5500,
+        "weightChange": 0.26,
+        "sharesChange": 50,
+        "sharesChangePercent": 0.92,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "weight": 7.16,
+        "shares": 1180,
+        "weightChange": -0.13,
+        "sharesChange": 20,
+        "sharesChangePercent": 1.72,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3017",
+        "name": "奇鋐",
+        "weight": 7.07,
+        "shares": 1600,
+        "weightChange": 0.3,
+        "sharesChange": 20,
+        "sharesChangePercent": 1.27,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2059",
+        "name": "川湖",
+        "weight": 6.92,
+        "shares": 510,
+        "weightChange": 0.03,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -1931,86 +1975,42 @@
       {
         "symbol": "2408",
         "name": "南亞科",
-        "weight": 7.3,
-        "shares": 11700,
-        "weightChange": 0.13,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2454",
-        "name": "聯發科",
-        "weight": 7.29,
-        "shares": 1160,
-        "weightChange": 0.51,
-        "sharesChange": 10,
-        "sharesChangePercent": 0.87,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3037",
-        "name": "欣興",
-        "weight": 6.96,
-        "shares": 5450,
-        "weightChange": -0.41,
-        "sharesChange": 40,
-        "sharesChangePercent": 0.74,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2059",
-        "name": "川湖",
-        "weight": 6.89,
-        "shares": 510,
-        "weightChange": 0.15,
-        "sharesChange": 15,
-        "sharesChangePercent": 3.03,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "weight": 6.77,
-        "shares": 1580,
-        "weightChange": 0.22,
-        "sharesChange": 80,
-        "sharesChangePercent": 5.33,
+        "weight": 5.77,
+        "shares": 9500,
+        "weightChange": -1.53,
+        "sharesChange": -2200,
+        "sharesChangePercent": -18.8,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "8046",
         "name": "南電",
-        "weight": 5.67,
+        "weight": 5.73,
         "shares": 3600,
-        "weightChange": -0.21,
-        "sharesChange": 50,
-        "sharesChangePercent": 1.41,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3189",
-        "name": "景碩",
-        "weight": 5.47,
-        "shares": 4700,
-        "weightChange": -0.39,
-        "sharesChange": 50,
-        "sharesChangePercent": 1.08,
+        "weightChange": 0.06,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "1303",
         "name": "南亞",
-        "weight": 5.1,
-        "shares": 11500,
-        "weightChange": 0.22,
+        "weight": 5.72,
+        "shares": 12500,
+        "weightChange": 0.62,
+        "sharesChange": 1000,
+        "sharesChangePercent": 8.7,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3189",
+        "name": "景碩",
+        "weight": 5.55,
+        "shares": 4700,
+        "weightChange": 0.08,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2021,7 +2021,7 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 6.8,
+        "weight": 6.39,
         "shares": 1246,
         "weightChange": -0.41,
         "sharesChange": 0,
@@ -2032,31 +2032,31 @@
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 6.06,
+        "weight": 5.98,
         "shares": 610,
-        "weightChange": 0.27,
-        "sharesChange": 50,
-        "sharesChangePercent": 8.93,
+        "weightChange": -0.08,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3665",
         "name": "貿聯-KY",
-        "weight": 6.0,
+        "weight": 5.94,
         "shares": 1731,
-        "weightChange": 0.33,
-        "sharesChange": 150,
-        "sharesChangePercent": 9.49,
+        "weightChange": -0.06,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3017",
         "name": "奇鋐",
-        "weight": 5.71,
+        "weight": 5.77,
         "shares": 921,
-        "weightChange": -0.05,
+        "weightChange": 0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2065,9 +2065,9 @@
       {
         "symbol": "3037",
         "name": "欣興",
-        "weight": 5.61,
+        "weight": 5.64,
         "shares": 3032,
-        "weightChange": -0.36,
+        "weightChange": 0.03,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2076,9 +2076,9 @@
       {
         "symbol": "8996",
         "name": "高力",
-        "weight": 5.45,
+        "weight": 5.5,
         "shares": 1743,
-        "weightChange": -0.12,
+        "weightChange": 0.05,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2087,9 +2087,9 @@
       {
         "symbol": "2345",
         "name": "智邦",
-        "weight": 4.65,
+        "weight": 4.7,
         "shares": 1355,
-        "weightChange": -0.05,
+        "weightChange": 0.05,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2098,9 +2098,9 @@
       {
         "symbol": "2059",
         "name": "川湖",
-        "weight": 4.26,
+        "weight": 4.19,
         "shares": 218,
-        "weightChange": -0.21,
+        "weightChange": -0.07,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2109,23 +2109,23 @@
       {
         "symbol": "3443",
         "name": "創意",
-        "weight": 4.13,
+        "weight": 4.06,
         "shares": 252,
+        "weightChange": -0.07,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3008",
+        "name": "大立光",
+        "weight": 3.67,
+        "shares": 323,
         "weightChange": null,
         "sharesChange": null,
         "sharesChangePercent": null,
         "isNew": true,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "1815",
-        "name": "富喬",
-        "weight": 3.98,
-        "shares": 12620,
-        "weightChange": -0.04,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
         "todayChange": NaN
       }
     ],
@@ -2133,9 +2133,9 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 10.84,
+        "weight": 9.71,
         "shares": 90,
-        "weightChange": 0.0,
+        "weightChange": -1.13,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2144,9 +2144,9 @@
       {
         "symbol": "3017",
         "name": "奇鋐",
-        "weight": 7.12,
+        "weight": 6.85,
         "shares": 52,
-        "weightChange": -0.05,
+        "weightChange": -0.27,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2155,9 +2155,9 @@
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 6.36,
+        "weight": 5.98,
         "shares": 29,
-        "weightChange": -0.03,
+        "weightChange": -0.38,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2166,20 +2166,20 @@
       {
         "symbol": "3443",
         "name": "創意",
-        "weight": 6.14,
+        "weight": 5.75,
         "shares": 17,
-        "weightChange": 1.66,
-        "sharesChange": 4,
-        "sharesChangePercent": 30.77,
+        "weightChange": -0.39,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3653",
         "name": "健策",
-        "weight": 5.47,
+        "weight": 4.92,
         "shares": 18,
-        "weightChange": -0.15,
+        "weightChange": -0.55,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2188,9 +2188,9 @@
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 5.42,
+        "weight": 4.88,
         "shares": 27,
-        "weightChange": 0.4,
+        "weightChange": -0.54,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2199,9 +2199,9 @@
       {
         "symbol": "3037",
         "name": "欣興",
-        "weight": 4.73,
+        "weight": 4.53,
         "shares": 116,
-        "weightChange": -0.26,
+        "weightChange": -0.2,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2210,9 +2210,9 @@
       {
         "symbol": "6274",
         "name": "台燿",
-        "weight": 3.89,
+        "weight": 3.48,
         "shares": 75,
-        "weightChange": -0.16,
+        "weightChange": -0.41,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2221,9 +2221,9 @@
       {
         "symbol": "6805",
         "name": "富世達",
-        "weight": 3.6,
+        "weight": 3.38,
         "shares": 36,
-        "weightChange": -0.03,
+        "weightChange": -0.22,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2232,12 +2232,12 @@
       {
         "symbol": "6510",
         "name": "精測",
-        "weight": 3.42,
+        "weight": 3.29,
         "shares": 25,
-        "weightChange": null,
-        "sharesChange": null,
-        "sharesChangePercent": null,
-        "isNew": true,
+        "weightChange": -0.13,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
         "todayChange": NaN
       }
     ],
@@ -2245,9 +2245,9 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 8.53,
+        "weight": 8.27,
         "shares": 1609,
-        "weightChange": -0.27,
+        "weightChange": -0.26,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2256,31 +2256,20 @@
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 8.45,
+        "weight": 8.24,
         "shares": 957,
-        "weightChange": 0.7,
-        "sharesChange": 65,
-        "sharesChangePercent": 7.29,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3105",
-        "name": "穩懋",
-        "weight": 7.47,
-        "shares": 7059,
-        "weightChange": 0.13,
+        "weightChange": -0.21,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "6139",
-        "name": "亞翔",
-        "weight": 5.42,
-        "shares": 3888,
-        "weightChange": 0.09,
+        "symbol": "3105",
+        "name": "穩懋",
+        "weight": 7.69,
+        "shares": 7059,
+        "weightChange": 0.22,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2289,20 +2278,31 @@
       {
         "symbol": "6531",
         "name": "愛普*",
-        "weight": 4.48,
-        "shares": 2829,
-        "weightChange": 0.9,
-        "sharesChange": 529,
-        "sharesChangePercent": 23.0,
+        "weight": 6.05,
+        "shares": 3687,
+        "weightChange": 1.57,
+        "sharesChange": 858,
+        "sharesChangePercent": 30.33,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "6139",
+        "name": "亞翔",
+        "weight": 5.32,
+        "shares": 3922,
+        "weightChange": -0.1,
+        "sharesChange": 34,
+        "sharesChangePercent": 0.87,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3491",
         "name": "昇達科",
-        "weight": 3.33,
+        "weight": 3.46,
         "shares": 1180,
-        "weightChange": 0.05,
+        "weightChange": 0.13,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2311,33 +2311,33 @@
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 3.14,
-        "shares": 325,
-        "weightChange": 0.0,
-        "sharesChange": 4,
-        "sharesChangePercent": 1.25,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3008",
-        "name": "大立光",
-        "weight": 3.06,
-        "shares": 262,
-        "weightChange": 0.05,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.22,
+        "shares": 328,
+        "weightChange": 0.08,
+        "sharesChange": 3,
+        "sharesChangePercent": 0.92,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "4958",
         "name": "臻鼎-KY",
-        "weight": 2.98,
+        "weight": 3.06,
         "shares": 3158,
-        "weightChange": -0.04,
+        "weightChange": 0.08,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3008",
+        "name": "大立光",
+        "weight": 3.01,
+        "shares": 264,
+        "weightChange": -0.05,
+        "sharesChange": 2,
+        "sharesChangePercent": 0.76,
         "isNew": false,
         "todayChange": NaN
       },
@@ -2345,10 +2345,10 @@
         "symbol": "2360",
         "name": "致茂",
         "weight": 2.97,
-        "shares": 1001,
-        "weightChange": -0.08,
-        "sharesChange": 13,
-        "sharesChangePercent": 1.32,
+        "shares": 1010,
+        "weightChange": 0.0,
+        "sharesChange": 9,
+        "sharesChangePercent": 0.9,
         "isNew": false,
         "todayChange": NaN
       }
@@ -2357,107 +2357,107 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 14.72,
+        "weight": 14.57,
         "shares": 1726,
-        "weightChange": 0.34,
-        "sharesChange": 46,
-        "sharesChangePercent": 2.74,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "6446",
-        "name": "藥華藥",
-        "weight": 4.13,
-        "shares": 790,
-        "weightChange": 0.5,
-        "sharesChange": 77,
-        "sharesChangePercent": 10.8,
+        "weightChange": -0.15,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3653",
         "name": "健策",
-        "weight": 3.55,
-        "shares": 165,
-        "weightChange": 0.49,
-        "sharesChange": 19,
-        "sharesChangePercent": 13.01,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "6669",
-        "name": "緯穎",
-        "weight": 3.3,
-        "shares": 526,
-        "weightChange": 0.41,
-        "sharesChange": 63,
-        "sharesChangePercent": 13.61,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3036",
-        "name": "文曄",
-        "weight": 3.24,
-        "shares": 4684,
-        "weightChange": 0.16,
-        "sharesChange": 547,
-        "sharesChangePercent": 13.22,
+        "weight": 3.59,
+        "shares": 168,
+        "weightChange": 0.04,
+        "sharesChange": 3,
+        "sharesChangePercent": 1.82,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 3.08,
-        "shares": 198,
+        "weight": 3.53,
+        "shares": 219,
         "weightChange": 0.45,
-        "sharesChange": 26,
-        "sharesChangePercent": 15.12,
+        "sharesChange": 21,
+        "sharesChangePercent": 10.61,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3036",
+        "name": "文曄",
+        "weight": 3.29,
+        "shares": 4684,
+        "weightChange": 0.05,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "6669",
+        "name": "緯穎",
+        "weight": 3.26,
+        "shares": 526,
+        "weightChange": -0.04,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2059",
         "name": "川湖",
-        "weight": 2.63,
-        "shares": 86,
-        "weightChange": 0.42,
-        "sharesChange": 13,
-        "sharesChangePercent": 17.81,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2308",
-        "name": "台達電",
-        "weight": 2.59,
-        "shares": 585,
-        "weightChange": 0.12,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.01,
+        "shares": 95,
+        "weightChange": 0.38,
+        "sharesChange": 9,
+        "sharesChangePercent": 10.47,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "7769",
         "name": "鴻勁",
-        "weight": 2.59,
-        "shares": 168,
-        "weightChange": 0.12,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 2.81,
+        "shares": 180,
+        "weightChange": 0.22,
+        "sharesChange": 12,
+        "sharesChangePercent": 7.14,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2308",
+        "name": "台達電",
+        "weight": 2.8,
+        "shares": 595,
+        "weightChange": 0.21,
+        "sharesChange": 10,
+        "sharesChangePercent": 1.71,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2027",
         "name": "大成鋼",
-        "weight": 2.52,
+        "weight": 2.47,
         "shares": 13722,
+        "weightChange": -0.05,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2345",
+        "name": "智邦",
+        "weight": 2.42,
+        "shares": 424,
         "weightChange": null,
         "sharesChange": null,
         "sharesChangePercent": null,
@@ -2469,9 +2469,9 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 10.0,
+        "weight": 9.82,
         "shares": 753,
-        "weightChange": -0.35,
+        "weightChange": -0.18,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2480,20 +2480,20 @@
       {
         "symbol": "2454",
         "name": "聯發科",
-        "weight": 5.51,
-        "shares": 249,
-        "weightChange": 0.07,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 5.79,
+        "shares": 265,
+        "weightChange": 0.28,
+        "sharesChange": 16,
+        "sharesChangePercent": 6.43,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "台灣證交所加權股價指數(FITXN*1.TF)",
         "name": "台灣證交所加權股價指數(FITXN*1.TF)",
-        "weight": 4.93,
+        "weight": 4.87,
         "shares": 0,
-        "weightChange": 1.87,
+        "weightChange": -0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2502,64 +2502,64 @@
       {
         "symbol": "2059",
         "name": "川湖",
-        "weight": 3.76,
-        "shares": 79,
-        "weightChange": -0.09,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 4.1,
+        "shares": 84,
+        "weightChange": 0.34,
+        "sharesChange": 5,
+        "sharesChangePercent": 6.33,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "2383",
         "name": "台光電",
-        "weight": 3.48,
-        "shares": 144,
-        "weightChange": -0.06,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2317",
-        "name": "鴻海",
-        "weight": 3.48,
-        "shares": 2453,
-        "weightChange": -0.07,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.81,
+        "shares": 153,
+        "weightChange": 0.33,
+        "sharesChange": 9,
+        "sharesChangePercent": 6.25,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "1303",
         "name": "南亞",
-        "weight": 3.31,
-        "shares": 2117,
-        "weightChange": 0.04,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.71,
+        "shares": 2251,
+        "weightChange": 0.4,
+        "sharesChange": 134,
+        "sharesChangePercent": 6.33,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2317",
+        "name": "鴻海",
+        "weight": 3.59,
+        "shares": 2608,
+        "weightChange": 0.11,
+        "sharesChange": 155,
+        "sharesChangePercent": 6.32,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3653",
         "name": "健策",
-        "weight": 3.01,
-        "shares": 90,
-        "weightChange": -0.02,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
+        "weight": 3.17,
+        "shares": 96,
+        "weightChange": 0.16,
+        "sharesChange": 6,
+        "sharesChangePercent": 6.67,
         "isNew": false,
         "todayChange": NaN
       },
       {
         "symbol": "3037",
         "name": "欣興",
-        "weight": 2.81,
+        "weight": 2.95,
         "shares": 625,
-        "weightChange": -0.12,
+        "weightChange": 0.14,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2568,9 +2568,9 @@
       {
         "symbol": "2308",
         "name": "台達電",
-        "weight": 2.79,
+        "weight": 2.94,
         "shares": 404,
-        "weightChange": 0.04,
+        "weightChange": 0.15,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2579,66 +2579,22 @@
     ],
     "00984A": [
       {
+        "symbol": "3017",
+        "name": "奇鋐",
+        "weight": 3.67,
+        "shares": 125,
+        "weightChange": 0.25,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
         "symbol": "6505",
         "name": "台塑化",
-        "weight": 3.69,
+        "weight": 3.63,
         "shares": 3842,
-        "weightChange": -0.01,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "weight": 3.42,
-        "shares": 125,
-        "weightChange": 0.17,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2881",
-        "name": "富邦金",
-        "weight": 3.24,
-        "shares": 1958,
-        "weightChange": -0.02,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2882",
-        "name": "國泰金",
-        "weight": 3.18,
-        "shares": 2657,
-        "weightChange": 0.01,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2887",
-        "name": "台新新光金",
-        "weight": 2.97,
-        "shares": 6904,
-        "weightChange": -0.02,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2885",
-        "name": "元大金",
-        "weight": 2.92,
-        "shares": 3902,
-        "weightChange": -0.02,
+        "weightChange": -0.06,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2647,110 +2603,9 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "weight": 2.74,
+        "weight": 2.75,
         "shares": 114,
-        "weightChange": 0.0,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2603",
-        "name": "長榮",
-        "weight": 2.5,
-        "shares": 945,
-        "weightChange": -0.12,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "1326",
-        "name": "台化",
-        "weight": 2.43,
-        "shares": 3277,
-        "weightChange": 0.12,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2395",
-        "name": "研華",
-        "weight": 2.18,
-        "shares": 347,
-        "weightChange": 0.03,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      }
-    ],
-    "00403A": [
-      {
-        "symbol": "2330",
-        "name": "台積電",
-        "weight": 16.0,
-        "shares": 8250,
-        "weightChange": -0.08,
-        "sharesChange": 150,
-        "sharesChangePercent": 1.85,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2454",
-        "name": "聯發科",
-        "weight": 5.56,
-        "shares": 1720,
-        "weightChange": 0.14,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "weight": 5.22,
-        "shares": 2370,
-        "weightChange": 0.13,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3653",
-        "name": "健策",
-        "weight": 5.04,
-        "shares": 1030,
-        "weightChange": 0.03,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "3037",
-        "name": "欣興",
-        "weight": 4.73,
-        "shares": 7200,
-        "weightChange": -0.14,
-        "sharesChange": 0,
-        "sharesChangePercent": 0.0,
-        "isNew": false,
-        "todayChange": NaN
-      },
-      {
-        "symbol": "2383",
-        "name": "台光電",
-        "weight": 4.24,
-        "shares": 1200,
-        "weightChange": -0.02,
+        "weightChange": 0.01,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2759,19 +2614,142 @@
       {
         "symbol": "3443",
         "name": "創意",
-        "weight": 4.13,
-        "shares": 710,
-        "weightChange": 0.03,
+        "weight": 2.65,
+        "shares": 35,
+        "weightChange": null,
+        "sharesChange": null,
+        "sharesChangePercent": null,
+        "isNew": true,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2059",
+        "name": "川湖",
+        "weight": 2.62,
+        "shares": 29,
+        "weightChange": null,
+        "sharesChange": null,
+        "sharesChangePercent": null,
+        "isNew": true,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2603",
+        "name": "長榮",
+        "weight": 2.6,
+        "shares": 965,
+        "weightChange": 0.1,
+        "sharesChange": 20,
+        "sharesChangePercent": 2.12,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "1326",
+        "name": "台化",
+        "weight": 2.47,
+        "shares": 3277,
+        "weightChange": 0.04,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
         "todayChange": NaN
       },
       {
-        "symbol": "2327",
-        "name": "國巨*",
-        "weight": 3.14,
-        "shares": 8800,
+        "symbol": "2408",
+        "name": "南亞科",
+        "weight": 2.42,
+        "shares": 600,
+        "weightChange": null,
+        "sharesChange": null,
+        "sharesChangePercent": null,
+        "isNew": true,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "1303",
+        "name": "南亞",
+        "weight": 2.41,
+        "shares": 789,
+        "weightChange": null,
+        "sharesChange": null,
+        "sharesChangePercent": null,
+        "isNew": true,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2395",
+        "name": "研華",
+        "weight": 2.18,
+        "shares": 349,
+        "weightChange": 0.0,
+        "sharesChange": 2,
+        "sharesChangePercent": 0.58,
+        "isNew": false,
+        "todayChange": NaN
+      }
+    ],
+    "00403A": [
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "weight": 15.55,
+        "shares": 8250,
+        "weightChange": -0.45,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "weight": 5.69,
+        "shares": 1800,
+        "weightChange": 0.13,
+        "sharesChange": 80,
+        "sharesChangePercent": 4.65,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3017",
+        "name": "奇鋐",
+        "weight": 5.64,
+        "shares": 2450,
+        "weightChange": 0.42,
+        "sharesChange": 80,
+        "sharesChangePercent": 3.38,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3037",
+        "name": "欣興",
+        "weight": 4.92,
+        "shares": 7200,
+        "weightChange": 0.19,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "3653",
+        "name": "健策",
+        "weight": 4.92,
+        "shares": 1030,
+        "weightChange": -0.12,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "weight": 4.32,
+        "shares": 1200,
         "weightChange": 0.08,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
@@ -2779,11 +2757,11 @@
         "todayChange": NaN
       },
       {
-        "symbol": "6223",
-        "name": "旺矽",
-        "weight": 2.99,
-        "shares": 930,
-        "weightChange": 0.01,
+        "symbol": "3443",
+        "name": "創意",
+        "weight": 4.2,
+        "shares": 710,
+        "weightChange": 0.07,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2792,9 +2770,31 @@
       {
         "symbol": "1303",
         "name": "南亞",
-        "weight": 2.92,
-        "shares": 12800,
-        "weightChange": 0.07,
+        "weight": 3.24,
+        "shares": 13600,
+        "weightChange": 0.32,
+        "sharesChange": 800,
+        "sharesChangePercent": 6.25,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "6223",
+        "name": "旺矽",
+        "weight": 3.13,
+        "shares": 930,
+        "weightChange": 0.14,
+        "sharesChange": 0,
+        "sharesChangePercent": 0.0,
+        "isNew": false,
+        "todayChange": NaN
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨*",
+        "weight": 3.02,
+        "shares": 8800,
+        "weightChange": -0.12,
         "sharesChange": 0,
         "sharesChangePercent": 0.0,
         "isNew": false,
@@ -2807,61 +2807,61 @@
       {
         "symbol": "2330",
         "name": "台積電",
-        "change": 0.48
+        "change": 0.49
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "change": 0.27
+        "change": 0.16
       },
       {
         "symbol": "2308",
         "name": "台達電",
-        "change": -0.14
+        "change": 0.11
       },
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "change": -0.13
+        "change": -0.09
       },
       {
-        "symbol": "2891",
-        "name": "中信金",
-        "change": 0.08
+        "symbol": "1303",
+        "name": "南亞",
+        "change": 0.07
       }
     ],
     "006208": [
       {
         "symbol": "2330",
         "name": "台積電",
-        "change": 0.49
+        "change": 0.48
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "change": 0.27
+        "change": 0.16
       },
       {
         "symbol": "2308",
         "name": "台達電",
-        "change": -0.14
+        "change": 0.1
       },
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "change": -0.12
+        "change": -0.08
       },
       {
-        "symbol": "2891",
-        "name": "中信金",
-        "change": 0.08
+        "symbol": "2303",
+        "name": "聯電",
+        "change": -0.07
       }
     ],
     "0051": [
       {
-        "symbol": "3189",
-        "name": "景碩",
-        "change": -0.27
+        "symbol": "3661",
+        "name": "世芯-KY",
+        "change": 0.25
       },
       {
         "symbol": "3034",
@@ -2869,19 +2869,19 @@
         "change": -0.21
       },
       {
-        "symbol": "1301",
-        "name": "台塑",
-        "change": 0.15
+        "symbol": "3189",
+        "name": "景碩",
+        "change": -0.16
       },
       {
         "symbol": "1326",
         "name": "台化",
-        "change": 0.13
+        "change": 0.14
       },
       {
-        "symbol": "2379",
-        "name": "瑞昱",
-        "change": 0.12
+        "symbol": "1301",
+        "name": "台塑",
+        "change": 0.11
       }
     ],
     "0052": [
@@ -2893,261 +2893,152 @@
       {
         "symbol": "2454",
         "name": "聯發科",
-        "change": 0.32
+        "change": 0.2
       },
       {
         "symbol": "3037",
         "name": "欣興",
-        "change": -0.18
+        "change": -0.1
       },
       {
         "symbol": "3711",
         "name": "日月光投控",
-        "change": -0.13
+        "change": -0.09
       },
       {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "change": -0.11
+        "symbol": "2383",
+        "name": "台光電",
+        "change": -0.07
       }
     ],
-    "0056": [],
+    "0056": [
+      {
+        "symbol": "1303",
+        "name": "南亞",
+        "change": 0.59
+      },
+      {
+        "symbol": "2603",
+        "name": "長榮",
+        "change": -0.11
+      },
+      {
+        "symbol": "2880",
+        "name": "華南金",
+        "change": 0.1
+      },
+      {
+        "symbol": "2891",
+        "name": "中信金",
+        "change": 0.1
+      },
+      {
+        "symbol": "2890",
+        "name": "永豐金",
+        "change": 0.1
+      }
+    ],
     "00878": [
       {
         "symbol": "2454",
         "name": "聯發科",
-        "change": 3.09
+        "change": 3.16
       },
       {
         "symbol": "2303",
         "name": "聯電",
-        "change": -3.06
+        "change": -3.15
       },
       {
         "symbol": "2891",
         "name": "中信金",
-        "change": 0.62
+        "change": 0.29
       },
       {
         "symbol": "2603",
         "name": "長榮",
-        "change": -0.33
+        "change": -0.21
       },
       {
-        "symbol": "2382",
-        "name": "廣達",
-        "change": -0.19
+        "symbol": "2357",
+        "name": "華碩",
+        "change": 0.14
       }
     ],
     "00919": [
-      {
-        "symbol": "2891",
-        "name": "中信金",
-        "change": 0.55
-      },
-      {
-        "symbol": "3034",
-        "name": "聯詠",
-        "change": -0.34
-      },
-      {
-        "symbol": "2881",
-        "name": "富邦金",
-        "change": 0.33
-      },
-      {
-        "symbol": "2382",
-        "name": "廣達",
-        "change": -0.24
-      },
-      {
-        "symbol": "2603",
-        "name": "長榮",
-        "change": -0.17
-      }
-    ],
-    "00929": [
       {
         "symbol": "3034",
         "name": "聯詠",
         "change": -0.3
       },
       {
+        "symbol": "2891",
+        "name": "中信金",
+        "change": 0.25
+      },
+      {
+        "symbol": "2883",
+        "name": "凱基金",
+        "change": 0.15
+      },
+      {
+        "symbol": "2357",
+        "name": "華碩",
+        "change": 0.11
+      },
+      {
+        "symbol": "2603",
+        "name": "長榮",
+        "change": -0.08
+      }
+    ],
+    "00929": [
+      {
+        "symbol": "3231",
+        "name": "緯創",
+        "change": 2.75
+      },
+      {
+        "symbol": "2382",
+        "name": "廣達",
+        "change": -2.73
+      },
+      {
         "symbol": "2347",
         "name": "聯強",
-        "change": -0.19
+        "change": -0.29
       },
       {
-        "symbol": "2412",
-        "name": "中華電",
-        "change": 0.18
+        "symbol": "3034",
+        "name": "聯詠",
+        "change": -0.28
       },
       {
-        "symbol": "3045",
-        "name": "台灣大",
+        "symbol": "2357",
+        "name": "華碩",
         "change": 0.14
-      },
-      {
-        "symbol": "2474",
-        "name": "可成",
-        "change": 0.09
       }
     ],
     "00940": [
       {
-        "symbol": "2615",
-        "name": "萬海",
-        "change": -2.71
-      },
-      {
         "symbol": "2610",
         "name": "華航",
-        "change": 2.65
-      },
-      {
-        "symbol": "3034",
-        "name": "聯詠",
-        "change": -0.34
-      },
-      {
-        "symbol": "2891",
-        "name": "中信金",
-        "change": 0.21
-      },
-      {
-        "symbol": "2618",
-        "name": "長榮航",
-        "change": 0.15
-      }
-    ],
-    "00939": [
-      {
-        "symbol": "2891",
-        "name": "中信金",
-        "change": 0.26
-      },
-      {
-        "symbol": "2880",
-        "name": "華南金",
-        "change": 0.17
-      },
-      {
-        "symbol": "2881",
-        "name": "富邦金",
-        "change": 0.16
-      },
-      {
-        "symbol": "2885",
-        "name": "元大金",
-        "change": 0.14
-      },
-      {
-        "symbol": "2884",
-        "name": "玉山金",
-        "change": 0.13
-      }
-    ],
-    "00713": [
-      {
-        "symbol": "1216",
-        "name": "統一",
-        "change": -0.21
-      },
-      {
-        "symbol": "2884",
-        "name": "玉山金",
-        "change": 0.2
-      },
-      {
-        "symbol": "2880",
-        "name": "華南金",
-        "change": 0.2
+        "change": 2.75
       },
       {
         "symbol": "3045",
         "name": "台灣大",
-        "change": 0.17
+        "change": -2.73
       },
       {
-        "symbol": "4904",
-        "name": "遠傳",
-        "change": -0.14
-      }
-    ],
-    "00850": [
-      {
-        "symbol": "2454",
-        "name": "聯發科",
-        "change": 0.38
+        "symbol": "2618",
+        "name": "長榮航",
+        "change": 0.29
       },
-      {
-        "symbol": "2308",
-        "name": "台達電",
-        "change": -0.21
-      },
-      {
-        "symbol": "3711",
-        "name": "日月光投控",
-        "change": -0.19
-      },
-      {
-        "symbol": "2891",
-        "name": "中信金",
-        "change": 0.13
-      },
-      {
-        "symbol": "1303",
-        "name": "南亞",
-        "change": 0.12
-      }
-    ],
-    "00881": [
-      {
-        "symbol": "2330",
-        "name": "台積電",
-        "change": 0.97
-      },
-      {
-        "symbol": "2454",
-        "name": "聯發科",
-        "change": 0.57
-      },
-      {
-        "symbol": "3037",
-        "name": "欣興",
-        "change": -0.28
-      },
-      {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "change": -0.26
-      },
-      {
-        "symbol": "2308",
-        "name": "台達電",
-        "change": -0.22
-      }
-    ],
-    "00946": [
       {
         "symbol": "3034",
         "name": "聯詠",
-        "change": -0.77
-      },
-      {
-        "symbol": "2379",
-        "name": "瑞昱",
-        "change": 0.32
-      },
-      {
-        "symbol": "2347",
-        "name": "聯強",
-        "change": -0.25
-      },
-      {
-        "symbol": "2474",
-        "name": "可成",
-        "change": 0.16
+        "change": -0.29
       },
       {
         "symbol": "2357",
@@ -3155,275 +3046,436 @@
         "change": 0.12
       }
     ],
-    "00944": [
+    "00939": [
+      {
+        "symbol": "2357",
+        "name": "華碩",
+        "change": 0.15
+      },
       {
         "symbol": "2891",
         "name": "中信金",
-        "change": 3.06
+        "change": 0.14
       },
       {
-        "symbol": "2603",
-        "name": "長榮",
-        "change": -2.96
+        "symbol": "2883",
+        "name": "凱基金",
+        "change": 0.13
       },
       {
-        "symbol": "2327",
-        "name": "國巨*",
-        "change": -0.2
+        "symbol": "2880",
+        "name": "華南金",
+        "change": 0.12
       },
       {
         "symbol": "2885",
         "name": "元大金",
-        "change": 0.13
+        "change": 0.1
+      }
+    ],
+    "00713": [
+      {
+        "symbol": "1216",
+        "name": "統一",
+        "change": -0.31
       },
       {
-        "symbol": "2881",
-        "name": "富邦金",
-        "change": 0.12
+        "symbol": "4904",
+        "name": "遠傳",
+        "change": -0.24
+      },
+      {
+        "symbol": "3045",
+        "name": "台灣大",
+        "change": -0.2
+      },
+      {
+        "symbol": "2880",
+        "name": "華南金",
+        "change": 0.17
+      },
+      {
+        "symbol": "2884",
+        "name": "玉山金",
+        "change": 0.13
+      }
+    ],
+    "00850": [
+      {
+        "symbol": "1303",
+        "name": "南亞",
+        "change": 2.01
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "change": -1.81
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "change": 0.26
+      },
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "change": 0.2
+      },
+      {
+        "symbol": "2308",
+        "name": "台達電",
+        "change": 0.14
+      }
+    ],
+    "00881": [
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "change": 0.61
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "change": 0.35
+      },
+      {
+        "symbol": "2308",
+        "name": "台達電",
+        "change": 0.17
+      },
+      {
+        "symbol": "3037",
+        "name": "欣興",
+        "change": -0.15
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "change": -0.12
+      }
+    ],
+    "00946": [
+      {
+        "symbol": "3034",
+        "name": "聯詠",
+        "change": -0.6
+      },
+      {
+        "symbol": "2357",
+        "name": "華碩",
+        "change": 0.52
+      },
+      {
+        "symbol": "2379",
+        "name": "瑞昱",
+        "change": 0.41
+      },
+      {
+        "symbol": "2347",
+        "name": "聯強",
+        "change": -0.31
+      },
+      {
+        "symbol": "6409",
+        "name": "旭隼",
+        "change": -0.26
+      }
+    ],
+    "00944": [
+      {
+        "symbol": "2603",
+        "name": "長榮",
+        "change": -2.99
+      },
+      {
+        "symbol": "2891",
+        "name": "中信金",
+        "change": 2.95
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨*",
+        "change": -0.16
+      },
+      {
+        "symbol": "2885",
+        "name": "元大金",
+        "change": 0.09
+      },
+      {
+        "symbol": "4938",
+        "name": "和碩",
+        "change": -0.08
       }
     ],
     "00947": [
       {
         "symbol": "台指202611(FITXN*1.TF)",
         "name": "台指202611(FITXN*1.TF)",
-        "change": 3.81
+        "change": 3.78
       },
       {
         "symbol": "3034",
         "name": "聯詠",
-        "change": -3.6
+        "change": -3.46
       },
       {
         "symbol": "5274",
         "name": "信驊",
-        "change": -1.03
+        "change": -0.93
       },
       {
         "symbol": "3443",
         "name": "創意",
-        "change": 0.85
+        "change": 0.58
       },
       {
-        "symbol": "2454",
-        "name": "聯發科",
-        "change": 0.5
+        "symbol": "2344",
+        "name": "華邦電",
+        "change": -0.39
       }
     ],
     "00981A": [
       {
-        "symbol": "8046",
-        "name": "南電",
-        "change": -3.78
-      },
-      {
-        "symbol": "2308",
-        "name": "台達電",
-        "change": -3.78
-      },
-      {
-        "symbol": "3711",
-        "name": "日月光投控",
-        "change": 3.73
-      },
-      {
         "symbol": "2345",
         "name": "智邦",
-        "change": 3.5
+        "change": 4.01
+      },
+      {
+        "symbol": "8046",
+        "name": "南電",
+        "change": -3.76
       },
       {
         "symbol": "2330",
         "name": "台積電",
-        "change": 2.53
-      }
-    ],
-    "00991A": [
+        "change": 1.62
+      },
       {
-        "symbol": "2454",
-        "name": "聯發科",
-        "change": 1.06
+        "symbol": "3653",
+        "name": "健策",
+        "change": -0.8
       },
       {
         "symbol": "3037",
         "name": "欣興",
-        "change": -0.8
+        "change": -0.73
+      }
+    ],
+    "00991A": [
+      {
+        "symbol": "2408",
+        "name": "南亞科",
+        "change": -1.67
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "change": 0.77
+      },
+      {
+        "symbol": "1303",
+        "name": "南亞",
+        "change": 0.66
       },
       {
         "symbol": "3189",
         "name": "景碩",
-        "change": -0.59
+        "change": -0.54
       },
       {
-        "symbol": "2330",
-        "name": "台積電",
-        "change": 0.5
-      },
-      {
-        "symbol": "8046",
-        "name": "南電",
-        "change": -0.37
+        "symbol": "3037",
+        "name": "欣興",
+        "change": -0.43
       }
     ],
     "00992A": [
       {
         "symbol": "3443",
         "name": "創意",
-        "change": 4.13
+        "change": 4.06
       },
       {
-        "symbol": "3008",
-        "name": "大立光",
-        "change": -3.83
-      },
-      {
-        "symbol": "3665",
-        "name": "貿聯-KY",
-        "change": 0.93
-      },
-      {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "change": -0.78
+        "symbol": "1815",
+        "name": "富喬",
+        "change": -4.04
       },
       {
         "symbol": "2383",
         "name": "台光電",
-        "change": 0.73
-      }
-    ],
-    "00987A": [
-      {
-        "symbol": "3665",
-        "name": "貿聯-KY",
-        "change": -3.51
+        "change": 0.53
       },
       {
-        "symbol": "6510",
-        "name": "精測",
-        "change": 3.42
-      },
-      {
-        "symbol": "3443",
-        "name": "創意",
-        "change": 1.67
+        "symbol": "8996",
+        "name": "高力",
+        "change": -0.4
       },
       {
         "symbol": "3017",
         "name": "奇鋐",
-        "change": -0.61
-      },
-      {
-        "symbol": "3037",
-        "name": "欣興",
-        "change": -0.57
+        "change": -0.38
       }
     ],
-    "00982A": [],
-    "00985A": [
+    "00987A": [
       {
-        "symbol": "2027",
-        "name": "大成鋼",
-        "change": 2.52
-      },
-      {
-        "symbol": "2345",
-        "name": "智邦",
-        "change": -2.31
-      },
-      {
-        "symbol": "6446",
-        "name": "藥華藥",
-        "change": 0.95
-      },
-      {
-        "symbol": "2330",
-        "name": "台積電",
-        "change": 0.67
+        "symbol": "3443",
+        "name": "創意",
+        "change": 1.07
       },
       {
         "symbol": "3653",
         "name": "健策",
-        "change": 0.34
+        "change": -0.95
+      },
+      {
+        "symbol": "6274",
+        "name": "台燿",
+        "change": -0.75
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "change": -0.7
+      },
+      {
+        "symbol": "3037",
+        "name": "欣興",
+        "change": -0.68
+      }
+    ],
+    "00982A": [
+      {
+        "symbol": "6531",
+        "name": "愛普*",
+        "change": 2.27
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "change": 0.67
+      },
+      {
+        "symbol": "3105",
+        "name": "穩懋",
+        "change": -0.39
+      },
+      {
+        "symbol": "2360",
+        "name": "致茂",
+        "change": -0.3
+      },
+      {
+        "symbol": "3491",
+        "name": "昇達科",
+        "change": 0.16
+      }
+    ],
+    "00985A": [
+      {
+        "symbol": "6446",
+        "name": "藥華藥",
+        "change": -3.26
+      },
+      {
+        "symbol": "2027",
+        "name": "大成鋼",
+        "change": 2.47
+      },
+      {
+        "symbol": "2345",
+        "name": "智邦",
+        "change": 2.42
+      },
+      {
+        "symbol": "4904",
+        "name": "遠傳",
+        "change": -2.32
+      },
+      {
+        "symbol": "2059",
+        "name": "川湖",
+        "change": 0.71
       }
     ],
     "00980A": [
       {
         "symbol": "台灣證交所加權股價指數(FITXN*1.TF)",
         "name": "台灣證交所加權股價指數(FITXN*1.TF)",
-        "change": 1.89
+        "change": 1.86
       },
       {
-        "symbol": "2059",
-        "name": "川湖",
-        "change": -0.51
+        "symbol": "2454",
+        "name": "聯發科",
+        "change": 0.43
+      },
+      {
+        "symbol": "1303",
+        "name": "南亞",
+        "change": 0.32
       },
       {
         "symbol": "3037",
         "name": "欣興",
-        "change": -0.49
+        "change": -0.27
       },
       {
-        "symbol": "2383",
-        "name": "台光電",
-        "change": -0.22
-      },
-      {
-        "symbol": "2308",
-        "name": "台達電",
-        "change": -0.21
+        "symbol": "3653",
+        "name": "健策",
+        "change": -0.2
       }
     ],
     "00984A": [
       {
-        "symbol": "3017",
-        "name": "奇鋐",
-        "change": -0.35
-      },
-      {
         "symbol": "2881",
         "name": "富邦金",
-        "change": 0.16
-      },
-      {
-        "symbol": "2885",
-        "name": "元大金",
-        "change": 0.16
-      },
-      {
-        "symbol": "1326",
-        "name": "台化",
-        "change": 0.16
+        "change": -3.1
       },
       {
         "symbol": "2882",
         "name": "國泰金",
-        "change": 0.11
+        "change": -3.02
+      },
+      {
+        "symbol": "2887",
+        "name": "台新新光金",
+        "change": -2.84
+      },
+      {
+        "symbol": "2885",
+        "name": "元大金",
+        "change": -2.76
+      },
+      {
+        "symbol": "3443",
+        "name": "創意",
+        "change": 2.65
       }
     ],
     "00403A": [
+      {
+        "symbol": "1303",
+        "name": "南亞",
+        "change": 3.24
+      },
       {
         "symbol": "3189",
         "name": "景碩",
         "change": -3.07
       },
       {
-        "symbol": "1303",
-        "name": "南亞",
-        "change": 2.92
-      },
-      {
-        "symbol": "2330",
-        "name": "台積電",
-        "change": 0.9
-      },
-      {
-        "symbol": "3037",
-        "name": "欣興",
-        "change": -0.75
+        "symbol": "3653",
+        "name": "健策",
+        "change": -0.66
       },
       {
         "symbol": "2454",
         "name": "聯發科",
-        "change": 0.66
+        "change": 0.64
+      },
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "change": 0.56
       }
     ]
   },
@@ -358749,6 +358801,2808 @@
           "weight": 2.92,
           "shares": 12800,
           "weightChange": 0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ]
+    },
+    "2026-11-10": {
+      "0050": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 58.3,
+          "shares": 634701,
+          "weightChange": -0.27,
+          "sharesChange": 3851,
+          "sharesChangePercent": 0.61,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 5.88,
+          "shares": 38182,
+          "weightChange": 0.01,
+          "sharesChange": 228,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "weight": 3.08,
+          "shares": 316856,
+          "weightChange": -0.05,
+          "sharesChange": 1900,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 2.57,
+          "shares": 50096,
+          "weightChange": 0.17,
+          "sharesChange": 301,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3711",
+          "name": "日月光投控",
+          "weight": 2.09,
+          "shares": 86103,
+          "weightChange": 0.1,
+          "sharesChange": 516,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 1.49,
+          "shares": 127871,
+          "weightChange": 0.1,
+          "sharesChange": 765,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 1.36,
+          "shares": 459210,
+          "weightChange": -0.08,
+          "sharesChange": 2752,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 1.33,
+          "shares": 216503,
+          "weightChange": -0.04,
+          "sharesChange": 1297,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 1.32,
+          "shares": 7536,
+          "weightChange": 0.05,
+          "sharesChange": 45,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2303",
+          "name": "聯電",
+          "weight": 1.22,
+          "shares": 302668,
+          "weightChange": 0.01,
+          "sharesChange": 1815,
+          "sharesChangePercent": 0.6,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "006208": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 58.28,
+          "shares": 112675,
+          "weightChange": -0.28,
+          "sharesChange": 81,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 5.87,
+          "shares": 6774,
+          "weightChange": 0.01,
+          "sharesChange": 15,
+          "sharesChangePercent": 0.22,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "weight": 3.07,
+          "shares": 56189,
+          "weightChange": -0.05,
+          "sharesChange": 41,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 2.56,
+          "shares": 8865,
+          "weightChange": 0.17,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3711",
+          "name": "日月光投控",
+          "weight": 2.09,
+          "shares": 15267,
+          "weightChange": 0.1,
+          "sharesChange": 11,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 1.48,
+          "shares": 22667,
+          "weightChange": 0.1,
+          "sharesChange": 51,
+          "sharesChangePercent": 0.23,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 1.36,
+          "shares": 81409,
+          "weightChange": -0.08,
+          "sharesChange": 59,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 1.33,
+          "shares": 38380,
+          "weightChange": -0.04,
+          "sharesChange": 27,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 1.32,
+          "shares": 1337,
+          "weightChange": 0.05,
+          "sharesChange": 1,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2303",
+          "name": "聯電",
+          "weight": 1.22,
+          "shares": 53675,
+          "weightChange": 0.01,
+          "sharesChange": 39,
+          "sharesChangePercent": 0.07,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "0051": [
+        {
+          "symbol": "臺股期貨 202611(FITXN*1.TF)",
+          "name": "臺股期貨 202611(FITXN*1.TF)",
+          "weight": 4.1,
+          "shares": 0,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": null
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 3.38,
+          "shares": 151,
+          "weightChange": -0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1301",
+          "name": "台塑",
+          "weight": 2.68,
+          "shares": 1277,
+          "weightChange": -0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3481",
+          "name": "群創",
+          "weight": 2.67,
+          "shares": 2269,
+          "weightChange": -0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3661",
+          "name": "世芯-KY",
+          "weight": 2.62,
+          "shares": 25,
+          "weightChange": 0.2,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3034",
+          "name": "聯詠",
+          "weight": 2.53,
+          "shares": 176,
+          "weightChange": -0.09,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3189",
+          "name": "景碩",
+          "weight": 2.28,
+          "shares": 101,
+          "weightChange": 0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1326",
+          "name": "台化",
+          "weight": 2.23,
+          "shares": 1036,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2801",
+          "name": "彰銀",
+          "weight": 1.99,
+          "shares": 2398,
+          "weightChange": -0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6770",
+          "name": "力積電",
+          "weight": 1.98,
+          "shares": 1112,
+          "weightChange": 0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "0052": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 65.89,
+          "shares": 44967,
+          "weightChange": -0.33,
+          "sharesChange": 47,
+          "sharesChangePercent": 0.1,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 6.67,
+          "shares": 2715,
+          "weightChange": 0.01,
+          "sharesChange": 4,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "weight": 3.49,
+          "shares": 22523,
+          "weightChange": -0.06,
+          "sharesChange": 24,
+          "sharesChangePercent": 0.11,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3711",
+          "name": "日月光投控",
+          "weight": 2.37,
+          "shares": 6120,
+          "weightChange": 0.11,
+          "sharesChange": 7,
+          "sharesChangePercent": 0.11,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 1.5,
+          "shares": 536,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2303",
+          "name": "聯電",
+          "weight": 1.39,
+          "shares": 21516,
+          "weightChange": 0.02,
+          "sharesChange": 23,
+          "sharesChangePercent": 0.11,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 1.29,
+          "shares": 2433,
+          "weightChange": 0.08,
+          "sharesChange": 3,
+          "sharesChangePercent": 0.12,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 1.05,
+          "shares": 589,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "weight": 0.93,
+          "shares": 4875,
+          "weightChange": -0.02,
+          "sharesChange": 5,
+          "sharesChangePercent": 0.1,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2327",
+          "name": "國巨*",
+          "weight": 0.78,
+          "shares": 2904,
+          "weightChange": -0.01,
+          "sharesChange": 4,
+          "sharesChangePercent": 0.14,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "0056": [
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 9.88,
+          "shares": 270935,
+          "weightChange": 0.73,
+          "sharesChange": 408,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2880",
+          "name": "華南金",
+          "weight": 4.64,
+          "shares": 745875,
+          "weightChange": -0.11,
+          "sharesChange": 1123,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 4.29,
+          "shares": 461528,
+          "weightChange": -0.21,
+          "sharesChange": 704,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2890",
+          "name": "永豐金",
+          "weight": 4.28,
+          "shares": 805336,
+          "weightChange": -0.08,
+          "sharesChange": 1179,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 4.06,
+          "shares": 36402,
+          "weightChange": 0.04,
+          "sharesChange": 56,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2886",
+          "name": "兆豐金",
+          "weight": 3.84,
+          "shares": 574530,
+          "weightChange": -0.06,
+          "sharesChange": 874,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3231",
+          "name": "緯創",
+          "weight": 3.55,
+          "shares": 164674,
+          "weightChange": -0.01,
+          "sharesChange": 249,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2408",
+          "name": "南亞科",
+          "weight": 3.4,
+          "shares": 70383,
+          "weightChange": 0.05,
+          "sharesChange": 108,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "weight": 3.37,
+          "shares": 89377,
+          "weightChange": -0.03,
+          "sharesChange": 135,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2603",
+          "name": "長榮",
+          "weight": 3.33,
+          "shares": 103342,
+          "weightChange": 0.07,
+          "sharesChange": 158,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00878": [
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 11.02,
+          "shares": 970354,
+          "weightChange": -0.39,
+          "sharesChange": 1950,
+          "sharesChangePercent": 0.2,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "weight": 8.61,
+          "shares": 187267,
+          "weightChange": 0.0,
+          "sharesChange": 180,
+          "sharesChangePercent": 0.1,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2882",
+          "name": "國泰金",
+          "weight": 6.74,
+          "shares": 397858,
+          "weightChange": -0.1,
+          "sharesChange": 700,
+          "sharesChangePercent": 0.18,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 5.58,
+          "shares": 40950,
+          "weightChange": 0.12,
+          "sharesChange": 45,
+          "sharesChangePercent": 0.11,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2603",
+          "name": "長榮",
+          "weight": 4.53,
+          "shares": 115023,
+          "weightChange": 0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2887",
+          "name": "台新新光金",
+          "weight": 3.88,
+          "shares": 639061,
+          "weightChange": -0.08,
+          "sharesChange": 150,
+          "sharesChangePercent": 0.02,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2880",
+          "name": "華南金",
+          "weight": 3.52,
+          "shares": 463019,
+          "weightChange": -0.04,
+          "sharesChange": 570,
+          "sharesChangePercent": 0.12,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 3.34,
+          "shares": 141680,
+          "weightChange": -0.03,
+          "sharesChange": 315,
+          "sharesChangePercent": 0.22,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 3.28,
+          "shares": 28557,
+          "weightChange": -0.01,
+          "sharesChange": 30,
+          "sharesChangePercent": 0.11,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 3.16,
+          "shares": 5355,
+          "weightChange": 0.07,
+          "sharesChange": 8,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00919": [
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 15.62,
+          "shares": 613520,
+          "weightChange": -0.04,
+          "sharesChange": 890,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2882",
+          "name": "國泰金",
+          "weight": 12.86,
+          "shares": 702580,
+          "weightChange": -0.11,
+          "sharesChange": 1060,
+          "sharesChangePercent": 0.15,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 11.53,
+          "shares": 940267,
+          "weightChange": -0.33,
+          "sharesChange": 1690,
+          "sharesChangePercent": 0.18,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "weight": 9.72,
+          "shares": 195630,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2887",
+          "name": "台新新光金",
+          "weight": 8.37,
+          "shares": 1274460,
+          "weightChange": -0.11,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 5.7,
+          "shares": 38750,
+          "weightChange": 0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2883",
+          "name": "凱基金",
+          "weight": 5.17,
+          "shares": 882800,
+          "weightChange": 0.13,
+          "sharesChange": 6750,
+          "sharesChangePercent": 0.77,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2603",
+          "name": "長榮",
+          "weight": 4.57,
+          "shares": 107443,
+          "weightChange": 0.18,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 3.0,
+          "shares": 24210,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3034",
+          "name": "聯詠",
+          "weight": 2.89,
+          "shares": 36385,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00929": [
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 4.14,
+          "shares": 7141,
+          "weightChange": 0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3034",
+          "name": "聯詠",
+          "weight": 3.89,
+          "shares": 12437,
+          "weightChange": -0.12,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3045",
+          "name": "台灣大",
+          "weight": 3.68,
+          "shares": 43893,
+          "weightChange": -0.13,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 3.5,
+          "shares": 7166,
+          "weightChange": -0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2412",
+          "name": "中華電",
+          "weight": 3.38,
+          "shares": 32291,
+          "weightChange": -0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2474",
+          "name": "可成",
+          "weight": 3.17,
+          "shares": 25796,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "115/11台股期貨(FITXN*1.TF)",
+          "name": "115/11台股期貨(FITXN*1.TF)",
+          "weight": 3.08,
+          "shares": 0,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": null
+        },
+        {
+          "symbol": "2347",
+          "name": "聯強",
+          "weight": 3.03,
+          "shares": 58436,
+          "weightChange": -0.11,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "4904",
+          "name": "遠傳",
+          "weight": 2.97,
+          "shares": 42870,
+          "weightChange": -0.04,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3231",
+          "name": "緯創",
+          "weight": 2.75,
+          "shares": 24519,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        }
+      ],
+      "00940": [
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 4.99,
+          "shares": 3416,
+          "weightChange": 0.05,
+          "sharesChange": -46,
+          "sharesChangePercent": -1.33,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2618",
+          "name": "長榮航",
+          "weight": 3.89,
+          "shares": 50971,
+          "weightChange": 0.17,
+          "sharesChange": -153,
+          "sharesChangePercent": -0.3,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 3.64,
+          "shares": 14391,
+          "weightChange": -0.06,
+          "sharesChange": -145,
+          "sharesChangePercent": -1.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3034",
+          "name": "聯詠",
+          "weight": 3.41,
+          "shares": 4329,
+          "weightChange": -0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 3.16,
+          "shares": 25959,
+          "weightChange": -0.13,
+          "sharesChange": -133,
+          "sharesChangePercent": -0.51,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2892",
+          "name": "第一金",
+          "weight": 3.14,
+          "shares": 46317,
+          "weightChange": -0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 3.11,
+          "shares": 2528,
+          "weightChange": -0.03,
+          "sharesChange": -19,
+          "sharesChangePercent": -0.75,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2610",
+          "name": "華航",
+          "weight": 2.75,
+          "shares": 73041,
+          "weightChange": 0.1,
+          "sharesChange": -378,
+          "sharesChangePercent": -0.51,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2615",
+          "name": "萬海",
+          "weight": 2.72,
+          "shares": 14759,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2890",
+          "name": "永豐金",
+          "weight": 2.69,
+          "shares": 38745,
+          "weightChange": -0.04,
+          "sharesChange": -361,
+          "sharesChangePercent": -0.92,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00939": [
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 7.87,
+          "shares": 14069,
+          "weightChange": -0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2887",
+          "name": "台新新光金",
+          "weight": 6.62,
+          "shares": 45880,
+          "weightChange": -0.09,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2882",
+          "name": "國泰金",
+          "weight": 6.42,
+          "shares": 15967,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2884",
+          "name": "玉山金",
+          "weight": 5.87,
+          "shares": 34165,
+          "weightChange": -0.04,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 5.65,
+          "shares": 20958,
+          "weightChange": -0.17,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 5.65,
+          "shares": 1747,
+          "weightChange": 0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2886",
+          "name": "兆豐金",
+          "weight": 5.35,
+          "shares": 27590,
+          "weightChange": 0.02,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2885",
+          "name": "元大金",
+          "weight": 5.27,
+          "shares": 20853,
+          "weightChange": -0.02,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2880",
+          "name": "華南金",
+          "weight": 5.08,
+          "shares": 28172,
+          "weightChange": -0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2883",
+          "name": "凱基金",
+          "weight": 4.64,
+          "shares": 36075,
+          "weightChange": 0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00713": [
+        {
+          "symbol": "3045",
+          "name": "台灣大",
+          "weight": 10.02,
+          "shares": 82544,
+          "weightChange": -0.18,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1216",
+          "name": "統一",
+          "weight": 8.51,
+          "shares": 118888,
+          "weightChange": -0.09,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2892",
+          "name": "第一金",
+          "weight": 7.41,
+          "shares": 190330,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2912",
+          "name": "統一超",
+          "weight": 6.27,
+          "shares": 31415,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2884",
+          "name": "玉山金",
+          "weight": 5.72,
+          "shares": 128550,
+          "weightChange": -0.02,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "4904",
+          "name": "遠傳",
+          "weight": 5.06,
+          "shares": 50641,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2880",
+          "name": "華南金",
+          "weight": 4.84,
+          "shares": 103558,
+          "weightChange": -0.01,
+          "sharesChange": -128,
+          "sharesChangePercent": -0.12,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "5876",
+          "name": "上海商銀",
+          "weight": 3.55,
+          "shares": 73519,
+          "weightChange": -0.02,
+          "sharesChange": -58,
+          "sharesChangePercent": -0.08,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1402",
+          "name": "遠東新",
+          "weight": 3.52,
+          "shares": 136601,
+          "weightChange": 0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2633",
+          "name": "台灣高鐵",
+          "weight": 2.1,
+          "shares": 86866,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00850": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 29.69,
+          "shares": 4600,
+          "weightChange": -0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 8.34,
+          "shares": 771,
+          "weightChange": 0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "weight": 4.22,
+          "shares": 6193,
+          "weightChange": -0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 3.51,
+          "shares": 975,
+          "weightChange": 0.23,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3711",
+          "name": "日月光投控",
+          "weight": 2.9,
+          "shares": 1698,
+          "weightChange": 0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "臺股期貨 202611(FITXN*1.TF)",
+          "name": "臺股期貨 202611(FITXN*1.TF)",
+          "weight": 2.53,
+          "shares": 0,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": null
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 2.01,
+          "shares": 2456,
+          "weightChange": 0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 1.89,
+          "shares": 9099,
+          "weightChange": -0.11,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 1.83,
+          "shares": 4223,
+          "weightChange": -0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2303",
+          "name": "聯電",
+          "weight": 1.81,
+          "shares": 6365,
+          "weightChange": 0.02,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00881": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 44.24,
+          "shares": 26599,
+          "weightChange": -0.63,
+          "sharesChange": 7,
+          "sharesChangePercent": 0.03,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 9.88,
+          "shares": 3544,
+          "weightChange": -0.03,
+          "sharesChange": 19,
+          "sharesChangePercent": 0.54,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "weight": 5.06,
+          "shares": 28796,
+          "weightChange": -0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 4.51,
+          "shares": 4864,
+          "weightChange": 0.25,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 2.7,
+          "shares": 851,
+          "weightChange": 0.09,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "weight": 2.57,
+          "shares": 11837,
+          "weightChange": -0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 2.47,
+          "shares": 1217,
+          "weightChange": 0.14,
+          "sharesChange": 1,
+          "sharesChangePercent": 0.08,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2345",
+          "name": "智邦",
+          "weight": 2.28,
+          "shares": 2031,
+          "weightChange": 0.13,
+          "sharesChange": 5,
+          "sharesChangePercent": 0.25,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 2.16,
+          "shares": 3578,
+          "weightChange": 0.11,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2303",
+          "name": "聯電",
+          "weight": 1.99,
+          "shares": 27177,
+          "weightChange": 0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00946": [
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 11.32,
+          "shares": 873,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2357",
+          "name": "華碩",
+          "weight": 11.23,
+          "shares": 730,
+          "weightChange": 0.32,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3034",
+          "name": "聯詠",
+          "weight": 8.3,
+          "shares": 999,
+          "weightChange": -0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "weight": 7.98,
+          "shares": 1537,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "4938",
+          "name": "和碩",
+          "weight": 7.36,
+          "shares": 4398,
+          "weightChange": 0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6409",
+          "name": "旭隼",
+          "weight": 6.6,
+          "shares": 482,
+          "weightChange": -0.34,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "8112",
+          "name": "至上",
+          "weight": 5.37,
+          "shares": 4002,
+          "weightChange": 0.1,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2474",
+          "name": "可成",
+          "weight": 5.12,
+          "shares": 1568,
+          "weightChange": 0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2347",
+          "name": "聯強",
+          "weight": 3.19,
+          "shares": 2320,
+          "weightChange": -0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2385",
+          "name": "群光",
+          "weight": 2.68,
+          "shares": 1756,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00944": [
+        {
+          "symbol": "2881",
+          "name": "富邦金",
+          "weight": 3.41,
+          "shares": 235,
+          "weightChange": -0.04,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2327",
+          "name": "國巨*",
+          "weight": 3.36,
+          "shares": 85,
+          "weightChange": 0.02,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2882",
+          "name": "國泰金",
+          "weight": 3.27,
+          "shares": 314,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2887",
+          "name": "台新新光金",
+          "weight": 3.26,
+          "shares": 871,
+          "weightChange": -0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2885",
+          "name": "元大金",
+          "weight": 3.09,
+          "shares": 471,
+          "weightChange": -0.04,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2892",
+          "name": "第一金",
+          "weight": 3.05,
+          "shares": 783,
+          "weightChange": -0.02,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2303",
+          "name": "聯電",
+          "weight": 3.05,
+          "shares": 320,
+          "weightChange": 0.09,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "4938",
+          "name": "和碩",
+          "weight": 3.04,
+          "shares": 333,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 2.97,
+          "shares": 42,
+          "weightChange": -0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "weight": 2.95,
+          "shares": 422,
+          "weightChange": -0.11,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00947": [
+        {
+          "symbol": "3443",
+          "name": "創意",
+          "weight": 13.18,
+          "shares": 224,
+          "weightChange": 0.42,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2408",
+          "name": "南亞科",
+          "weight": 9.89,
+          "shares": 3147,
+          "weightChange": 0.0,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 9.71,
+          "shares": 309,
+          "weightChange": -0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2344",
+          "name": "華邦電",
+          "weight": 8.68,
+          "shares": 7838,
+          "weightChange": -0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 7.01,
+          "shares": 670,
+          "weightChange": 0.41,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "8299",
+          "name": "群聯",
+          "weight": 6.15,
+          "shares": 447,
+          "weightChange": -0.12,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3661",
+          "name": "世芯-KY",
+          "weight": 5.47,
+          "shares": 195,
+          "weightChange": 0.32,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2379",
+          "name": "瑞昱",
+          "weight": 4.67,
+          "shares": 763,
+          "weightChange": -0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "5274",
+          "name": "信驊",
+          "weight": 4.36,
+          "shares": 44,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "台指202611(FITXN*1.TF)",
+          "name": "台指202611(FITXN*1.TF)",
+          "weight": 3.78,
+          "shares": 0,
+          "weightChange": -0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": null
+        }
+      ],
+      "00981A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 14.98,
+          "shares": 17724,
+          "weightChange": -0.6,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 8.09,
+          "shares": 5712,
+          "weightChange": -0.28,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 7.08,
+          "shares": 6855,
+          "weightChange": 0.43,
+          "sharesChange": 200,
+          "sharesChangePercent": 3.01,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 6.99,
+          "shares": 4328,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 6.05,
+          "shares": 19739,
+          "weightChange": 0.17,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3653",
+          "name": "健策",
+          "weight": 5.47,
+          "shares": 2552,
+          "weightChange": -0.19,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2345",
+          "name": "智邦",
+          "weight": 4.01,
+          "shares": 7013,
+          "weightChange": 0.51,
+          "sharesChange": 682,
+          "sharesChangePercent": 10.77,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3711",
+          "name": "日月光投控",
+          "weight": 3.92,
+          "shares": 17522,
+          "weightChange": 0.19,
+          "sharesChange": 617,
+          "sharesChangePercent": 3.65,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6223",
+          "name": "旺矽",
+          "weight": 3.77,
+          "shares": 2504,
+          "weightChange": 0.12,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2327",
+          "name": "國巨*",
+          "weight": 3.62,
+          "shares": 23519,
+          "weightChange": -0.18,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00991A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 15.21,
+          "shares": 4200,
+          "weightChange": -0.62,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 9.44,
+          "shares": 1365,
+          "weightChange": 0.17,
+          "sharesChange": 15,
+          "sharesChangePercent": 1.11,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 7.22,
+          "shares": 5500,
+          "weightChange": 0.26,
+          "sharesChange": 50,
+          "sharesChangePercent": 0.92,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 7.16,
+          "shares": 1180,
+          "weightChange": -0.13,
+          "sharesChange": 20,
+          "sharesChangePercent": 1.72,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 7.07,
+          "shares": 1600,
+          "weightChange": 0.3,
+          "sharesChange": 20,
+          "sharesChangePercent": 1.27,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2059",
+          "name": "川湖",
+          "weight": 6.92,
+          "shares": 510,
+          "weightChange": 0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2408",
+          "name": "南亞科",
+          "weight": 5.77,
+          "shares": 9500,
+          "weightChange": -1.53,
+          "sharesChange": -2200,
+          "sharesChangePercent": -18.8,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "8046",
+          "name": "南電",
+          "weight": 5.73,
+          "shares": 3600,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 5.72,
+          "shares": 12500,
+          "weightChange": 0.62,
+          "sharesChange": 1000,
+          "sharesChangePercent": 8.7,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3189",
+          "name": "景碩",
+          "weight": 5.55,
+          "shares": 4700,
+          "weightChange": 0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00992A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 6.39,
+          "shares": 1246,
+          "weightChange": -0.41,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 5.98,
+          "shares": 610,
+          "weightChange": -0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3665",
+          "name": "貿聯-KY",
+          "weight": 5.94,
+          "shares": 1731,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 5.77,
+          "shares": 921,
+          "weightChange": 0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 5.64,
+          "shares": 3032,
+          "weightChange": 0.03,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "8996",
+          "name": "高力",
+          "weight": 5.5,
+          "shares": 1743,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2345",
+          "name": "智邦",
+          "weight": 4.7,
+          "shares": 1355,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2059",
+          "name": "川湖",
+          "weight": 4.19,
+          "shares": 218,
+          "weightChange": -0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3443",
+          "name": "創意",
+          "weight": 4.06,
+          "shares": 252,
+          "weightChange": -0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3008",
+          "name": "大立光",
+          "weight": 3.67,
+          "shares": 323,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        }
+      ],
+      "00987A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 9.71,
+          "shares": 90,
+          "weightChange": -1.13,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 6.85,
+          "shares": 52,
+          "weightChange": -0.27,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 5.98,
+          "shares": 29,
+          "weightChange": -0.38,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3443",
+          "name": "創意",
+          "weight": 5.75,
+          "shares": 17,
+          "weightChange": -0.39,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3653",
+          "name": "健策",
+          "weight": 4.92,
+          "shares": 18,
+          "weightChange": -0.55,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 4.88,
+          "shares": 27,
+          "weightChange": -0.54,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 4.53,
+          "shares": 116,
+          "weightChange": -0.2,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6274",
+          "name": "台燿",
+          "weight": 3.48,
+          "shares": 75,
+          "weightChange": -0.41,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6805",
+          "name": "富世達",
+          "weight": 3.38,
+          "shares": 36,
+          "weightChange": -0.22,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6510",
+          "name": "精測",
+          "weight": 3.29,
+          "shares": 25,
+          "weightChange": -0.13,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00982A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 8.27,
+          "shares": 1609,
+          "weightChange": -0.26,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 8.24,
+          "shares": 957,
+          "weightChange": -0.21,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3105",
+          "name": "穩懋",
+          "weight": 7.69,
+          "shares": 7059,
+          "weightChange": 0.22,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6531",
+          "name": "愛普*",
+          "weight": 6.05,
+          "shares": 3687,
+          "weightChange": 1.57,
+          "sharesChange": 858,
+          "sharesChangePercent": 30.33,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6139",
+          "name": "亞翔",
+          "weight": 5.32,
+          "shares": 3922,
+          "weightChange": -0.1,
+          "sharesChange": 34,
+          "sharesChangePercent": 0.87,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3491",
+          "name": "昇達科",
+          "weight": 3.46,
+          "shares": 1180,
+          "weightChange": 0.13,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 3.22,
+          "shares": 328,
+          "weightChange": 0.08,
+          "sharesChange": 3,
+          "sharesChangePercent": 0.92,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "4958",
+          "name": "臻鼎-KY",
+          "weight": 3.06,
+          "shares": 3158,
+          "weightChange": 0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3008",
+          "name": "大立光",
+          "weight": 3.01,
+          "shares": 264,
+          "weightChange": -0.05,
+          "sharesChange": 2,
+          "sharesChangePercent": 0.76,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2360",
+          "name": "致茂",
+          "weight": 2.97,
+          "shares": 1010,
+          "weightChange": 0.0,
+          "sharesChange": 9,
+          "sharesChangePercent": 0.9,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00985A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 14.57,
+          "shares": 1726,
+          "weightChange": -0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3653",
+          "name": "健策",
+          "weight": 3.59,
+          "shares": 168,
+          "weightChange": 0.04,
+          "sharesChange": 3,
+          "sharesChangePercent": 1.82,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 3.53,
+          "shares": 219,
+          "weightChange": 0.45,
+          "sharesChange": 21,
+          "sharesChangePercent": 10.61,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3036",
+          "name": "文曄",
+          "weight": 3.29,
+          "shares": 4684,
+          "weightChange": 0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6669",
+          "name": "緯穎",
+          "weight": 3.26,
+          "shares": 526,
+          "weightChange": -0.04,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2059",
+          "name": "川湖",
+          "weight": 3.01,
+          "shares": 95,
+          "weightChange": 0.38,
+          "sharesChange": 9,
+          "sharesChangePercent": 10.47,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "7769",
+          "name": "鴻勁",
+          "weight": 2.81,
+          "shares": 180,
+          "weightChange": 0.22,
+          "sharesChange": 12,
+          "sharesChangePercent": 7.14,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 2.8,
+          "shares": 595,
+          "weightChange": 0.21,
+          "sharesChange": 10,
+          "sharesChangePercent": 1.71,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2027",
+          "name": "大成鋼",
+          "weight": 2.47,
+          "shares": 13722,
+          "weightChange": -0.05,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2345",
+          "name": "智邦",
+          "weight": 2.42,
+          "shares": 424,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        }
+      ],
+      "00980A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 9.82,
+          "shares": 753,
+          "weightChange": -0.18,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 5.79,
+          "shares": 265,
+          "weightChange": 0.28,
+          "sharesChange": 16,
+          "sharesChangePercent": 6.43,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "台灣證交所加權股價指數(FITXN*1.TF)",
+          "name": "台灣證交所加權股價指數(FITXN*1.TF)",
+          "weight": 4.87,
+          "shares": 0,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": null
+        },
+        {
+          "symbol": "2059",
+          "name": "川湖",
+          "weight": 4.1,
+          "shares": 84,
+          "weightChange": 0.34,
+          "sharesChange": 5,
+          "sharesChangePercent": 6.33,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 3.81,
+          "shares": 153,
+          "weightChange": 0.33,
+          "sharesChange": 9,
+          "sharesChangePercent": 6.25,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 3.71,
+          "shares": 2251,
+          "weightChange": 0.4,
+          "sharesChange": 134,
+          "sharesChangePercent": 6.33,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "weight": 3.59,
+          "shares": 2608,
+          "weightChange": 0.11,
+          "sharesChange": 155,
+          "sharesChangePercent": 6.32,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3653",
+          "name": "健策",
+          "weight": 3.17,
+          "shares": 96,
+          "weightChange": 0.16,
+          "sharesChange": 6,
+          "sharesChangePercent": 6.67,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 2.95,
+          "shares": 625,
+          "weightChange": 0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "weight": 2.94,
+          "shares": 404,
+          "weightChange": 0.15,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00984A": [
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 3.67,
+          "shares": 125,
+          "weightChange": 0.25,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "weight": 3.63,
+          "shares": 3842,
+          "weightChange": -0.06,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 2.75,
+          "shares": 114,
+          "weightChange": 0.01,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3443",
+          "name": "創意",
+          "weight": 2.65,
+          "shares": 35,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2059",
+          "name": "川湖",
+          "weight": 2.62,
+          "shares": 29,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2603",
+          "name": "長榮",
+          "weight": 2.6,
+          "shares": 965,
+          "weightChange": 0.1,
+          "sharesChange": 20,
+          "sharesChangePercent": 2.12,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1326",
+          "name": "台化",
+          "weight": 2.47,
+          "shares": 3277,
+          "weightChange": 0.04,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2408",
+          "name": "南亞科",
+          "weight": 2.42,
+          "shares": 600,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 2.41,
+          "shares": 789,
+          "weightChange": null,
+          "sharesChange": null,
+          "sharesChangePercent": null,
+          "isNew": true,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2395",
+          "name": "研華",
+          "weight": 2.18,
+          "shares": 349,
+          "weightChange": 0.0,
+          "sharesChange": 2,
+          "sharesChangePercent": 0.58,
+          "isNew": false,
+          "todayChange": NaN
+        }
+      ],
+      "00403A": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "weight": 15.55,
+          "shares": 8250,
+          "weightChange": -0.45,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "weight": 5.69,
+          "shares": 1800,
+          "weightChange": 0.13,
+          "sharesChange": 80,
+          "sharesChangePercent": 4.65,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3017",
+          "name": "奇鋐",
+          "weight": 5.64,
+          "shares": 2450,
+          "weightChange": 0.42,
+          "sharesChange": 80,
+          "sharesChangePercent": 3.38,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "weight": 4.92,
+          "shares": 7200,
+          "weightChange": 0.19,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3653",
+          "name": "健策",
+          "weight": 4.92,
+          "shares": 1030,
+          "weightChange": -0.12,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "weight": 4.32,
+          "shares": 1200,
+          "weightChange": 0.08,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "3443",
+          "name": "創意",
+          "weight": 4.2,
+          "shares": 710,
+          "weightChange": 0.07,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "weight": 3.24,
+          "shares": 13600,
+          "weightChange": 0.32,
+          "sharesChange": 800,
+          "sharesChangePercent": 6.25,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "6223",
+          "name": "旺矽",
+          "weight": 3.13,
+          "shares": 930,
+          "weightChange": 0.14,
+          "sharesChange": 0,
+          "sharesChangePercent": 0.0,
+          "isNew": false,
+          "todayChange": NaN
+        },
+        {
+          "symbol": "2327",
+          "name": "國巨*",
+          "weight": 3.02,
+          "shares": 8800,
+          "weightChange": -0.12,
           "sharesChange": 0,
           "sharesChangePercent": 0.0,
           "isNew": false,
