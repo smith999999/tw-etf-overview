@@ -1,0 +1,178 @@
+[
+ {
+  "iso": "158",
+  "market": "台灣",
+  "index": "加權指數",
+  "value": 43675.12,
+  "dec": 2,
+  "change_pct": 1.35,
+  "lon": 121,
+  "lat": 23.7,
+  "note": ""
+ },
+ {
+  "iso": "392",
+  "market": "日本",
+  "index": "日經 225",
+  "value": 61142.35,
+  "dec": 2,
+  "change_pct": 0.53,
+  "lon": 138.5,
+  "lat": 36.2,
+  "note": ""
+ },
+ {
+  "iso": "410",
+  "market": "南韓",
+  "index": "KOSPI",
+  "value": 5298,
+  "dec": 0,
+  "change_pct": -0.85,
+  "lon": 127.8,
+  "lat": 36.4,
+  "note": "約略值"
+ },
+ {
+  "iso": "156",
+  "market": "中國",
+  "index": "上證綜合指數",
+  "value": 3634.35,
+  "dec": 2,
+  "change_pct": -0.59,
+  "lon": 104,
+  "lat": 34,
+  "note": ""
+ },
+ {
+  "iso": "344",
+  "market": "香港",
+  "index": "恆生指數",
+  "value": 23637.6,
+  "dec": 2,
+  "change_pct": -1.55,
+  "lon": 114.2,
+  "lat": 22.3,
+  "note": ""
+ },
+ {
+  "iso": "356",
+  "market": "印度",
+  "index": "Sensex",
+  "value": 81592.45,
+  "dec": 2,
+  "change_pct": -0.39,
+  "lon": 79,
+  "lat": 22,
+  "note": ""
+ },
+ {
+  "iso": "702",
+  "market": "新加坡",
+  "index": "海峽時報指數",
+  "value": null,
+  "dec": 2,
+  "change_pct": null,
+  "lon": 103.8,
+  "lat": 1.35,
+  "note": "本次未查到 11/13 收盤"
+ },
+ {
+  "iso": "036",
+  "market": "澳洲",
+  "index": "ASX 200",
+  "value": 9082.2,
+  "dec": 2,
+  "change_pct": -0.71,
+  "lon": 134,
+  "lat": -25,
+  "note": ""
+ },
+ {
+  "iso": "826",
+  "market": "英國",
+  "index": "富時 100",
+  "value": 10902.56,
+  "dec": 2,
+  "change_pct": 0.36,
+  "lon": -1.5,
+  "lat": 52.5,
+  "note": ""
+ },
+ {
+  "iso": "276",
+  "market": "德國",
+  "index": "DAX",
+  "value": 26749.95,
+  "dec": 2,
+  "change_pct": -0.08,
+  "lon": 10.4,
+  "lat": 51,
+  "note": ""
+ },
+ {
+  "iso": "250",
+  "market": "法國",
+  "index": "CAC 40",
+  "value": 8368.91,
+  "dec": 2,
+  "change_pct": 0.09,
+  "lon": 2.5,
+  "lat": 46.6,
+  "note": ""
+ },
+ {
+  "iso": "380",
+  "market": "義大利",
+  "index": "FTSE MIB",
+  "value": 51789.13,
+  "dec": 2,
+  "change_pct": -0.04,
+  "lon": 12.5,
+  "lat": 42.8,
+  "note": "約略值"
+ },
+ {
+  "iso": "724",
+  "market": "西班牙",
+  "index": "IBEX 35",
+  "value": 19988.5,
+  "dec": 2,
+  "change_pct": 0.12,
+  "lon": -3.7,
+  "lat": 40.2,
+  "note": "約略值"
+ },
+ {
+  "iso": "840",
+  "market": "美國",
+  "index": "標普 500",
+  "value": 7561.67,
+  "dec": 2,
+  "change_pct": -0.4,
+  "lon": -98,
+  "lat": 39,
+  "note": ""
+ },
+ {
+  "iso": "124",
+  "market": "加拿大",
+  "index": "S&P/TSX 綜合指數",
+  "value": 36105.9,
+  "dec": 2,
+  "change_pct": -0.09,
+  "lon": -105,
+  "lat": 57,
+  "note": ""
+ },
+ {
+  "iso": "076",
+  "market": "巴西",
+  "index": "Bovespa",
+  "value": null,
+  "dec": 0,
+  "change_pct": null,
+  "lon": -52,
+  "lat": -10,
+  "note": "本次未查到 11/13 收盤"
+ }
+]
