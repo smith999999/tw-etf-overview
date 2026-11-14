@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日投資分析儀表板</title>
+<meta name="description" content="每天台灣時間 07:00 更新的台股、美股、全球股市、債券匯率與商品行情整理與評等。">
+<style>
+:root{
+  --bg:#f6f5f1;--panel:#ffffff;--fg:#1c1b19;--muted:#6b6963;--line:#dedbd3;
+  --up:#c8372d;--down:#1f8a4c;--neutral:#a9a69e;--land:#e9e6de;
+  --shadow:0 6px 24px rgba(0,0,0,.14);--radius:10px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#161614;--panel:#21201d;--fg:#f1efe9;--muted:#a3a098;--line:#39372f;
+    --up:#ef6258;--down:#3fbf78;--neutral:#6e6b63;--land:#2b2a26;--shadow:0 6px 24px rgba(0,0,0,.5);}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.5}
+.inv{max-width:1080px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:28px}
+.num,.inv-tile-val,.inv-heat-chg,.inv-legend-n{font-family:Georgia,"Times New Roman","Noto Serif TC",serif;font-variant-numeric:tabular-nums}
+h1{font-family:Georgia,"Noto Serif TC",serif;font-weight:400;font-size:30px;margin:0}
+.inv-sub{color:var(--muted);font-size:13px;margin:4px 0 0}
+.inv-lead{font-size:19px;line-height:1.55;margin:14px 0 0}
+h2{font-size:19px;font-weight:600;margin:0 0 8px}
+h3{font-size:15px;font-weight:600;color:var(--muted);margin:14px 0 8px}
+.inv-note{color:var(--muted);font-size:13px;margin:0 0 8px}
+.inv-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.inv-hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.inv-view p{margin:0 0 8px;line-height:1.65}
+.inv-view p:last-child{margin-bottom:0}
+.inv-mix{position:relative;display:flex;align-items:center;gap:22px;flex-wrap:wrap;min-height:170px}
+.inv-mix-center{font-family:Georgia,"Noto Serif TC",serif;font-size:28px;fill:var(--fg)}
+.inv-mix-cap{font-size:12px;fill:var(--muted)}
+.inv-legend{display:flex;flex-direction:column;gap:6px}
+.inv-legend-row{display:flex;align-items:center;gap:8px}
+.inv-sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.inv-legend-n{font-size:20px;min-width:1.6em;text-align:right}
+.inv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.inv-tile{position:relative;background:var(--panel);border:1px solid var(--line);border-left-width:4px;border-radius:var(--radius);padding:10px 12px}
+.inv-b-up{border-left-color:var(--up)}.inv-b-down{border-left-color:var(--down)}
+.inv-tile-name,.inv-tile-note,.inv-tile-unit{font-size:12px;color:var(--muted)}
+.inv-tile-val{font-size:20px}
+.inv-tile-unit{margin-left:4px}
+.inv-spark{display:block;width:100%;height:32px;margin:4px 0}
+.inv-chg{font-variant-numeric:tabular-nums;font-size:13px;font-weight:600}
+.inv-up{color:var(--up)}.inv-down{color:var(--down)}.inv-flat{color:var(--muted)}
+.inv-chart{position:relative;min-height:120px}
+.inv-chart svg{display:block}
+.inv-chart text{font-size:12px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.inv-tip{position:absolute;z-index:5;pointer-events:none;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:8px;padding:6px 9px;font-size:12px;white-space:nowrap}
+.inv-seg{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.inv-seg button,.inv-chipbtn{font:inherit;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px 14px;cursor:pointer}
+.inv-seg button[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.inv-map svg{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);width:100%;height:auto;touch-action:manipulation}
+.inv-map path{stroke:var(--bg);stroke-width:.5}
+.inv-map path.has{cursor:pointer}
+.inv-map path.sel,.inv-map circle.sel{stroke:var(--fg);stroke-width:1.6}
+.inv-map circle{stroke:var(--panel);stroke-width:1;cursor:pointer}
+.inv-map .lbl{font-size:11px;fill:var(--fg);paint-order:stroke;stroke:var(--panel);stroke-width:3px;pointer-events:none}
+.inv-scale{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin:8px 0}
+.inv-scale i{display:block;flex:1;max-width:260px;height:10px;border-radius:5px;background:linear-gradient(to right,var(--down),var(--land),var(--up))}
+.inv-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.inv-chipbtn{padding:4px 10px;font-size:13px;display:inline-flex;gap:6px;align-items:baseline}
+.inv-chipbtn[aria-pressed=true]{outline:2px solid var(--fg);outline-offset:1px}
+.inv-heatgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px}
+.inv-heat{font:inherit;color:inherit;text-align:left;cursor:pointer;border:1px solid var(--line);border-radius:var(--radius);padding:8px 10px;display:flex;flex-direction:column;gap:2px;min-height:78px}
+.inv-heat[aria-pressed=true]{outline:2px solid var(--fg);outline-offset:1px}
+.inv-heat-name{font-weight:600;line-height:1.25}
+.inv-heat-chg{font-size:19px}
+.inv-heat-rate{font-size:12px}
+.inv-detail{margin-top:8px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+.inv-item-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.inv-item-name{font-weight:600}
+.inv-item-sym{color:var(--muted);font-size:12px;margin-left:6px}
+.inv-item-why{color:var(--muted);margin:4px 0 0;line-height:1.6}
+.inv-chip{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 10px;font-size:12px;font-weight:600;white-space:nowrap}
+.inv-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.inv-col{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--neutral);border-radius:var(--radius);padding:12px 14px}
+.inv-col-up{border-top-color:var(--up)}.inv-col-down{border-top-color:var(--down)}
+.inv-col h3{margin:0 0 8px;color:var(--fg)}
+.inv-ul{margin:0;padding-left:1.2em;line-height:1.65}
+.inv-ul li{margin-bottom:4px}
+.inv-ul a{color:inherit}
+.inv-time{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line)}
+.inv-time li{position:relative;padding:0 0 14px 8px}
+.inv-time li::before{content:"";position:absolute;left:-25px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--fg);border:2px solid var(--bg)}
+.inv-time-when{font-size:12px;color:var(--muted)}
+.inv-foot{color:var(--muted);font-size:12px;line-height:1.65;margin:0}
+.inv-err{background:var(--panel);border:1px solid var(--up);border-radius:var(--radius);padding:12px 14px}
+</style>
+</head>
+<body>
+<div class="inv">
+  <header>
+    <h1>每日投資分析</h1>
+    <p class="inv-sub">行情截至 <span id="asof">—</span>・內容更新於 <span id="updated">—</span>（台灣時間）・每天 07:00 自動更新</p>
+    <p class="inv-lead" id="headline">載入中…</p>
+  </header>
+
+  <section class="inv-hero">
+    <div class="inv-card">
+      <h2>今日整體判讀與評等分布</h2>
+      <div class="inv-mix" id="mix"></div>
+    </div>
+    <div class="inv-card inv-view">
+      <h2>三句話看市場</h2>
+      <p><b>台股　</b><span id="v-tw">—</span></p>
+      <p><b>美股　</b><span id="v-us">—</span></p>
+      <p><b>總經　</b><span id="v-macro">—</span></p>
+    </div>
+  </section>
+
+  <section id="world">
+    <h2>全球股市漲跌地圖</h2>
+    <p class="inv-note">顏色代表各市場代表性指數最近一個交易日的漲跌幅（紅漲綠跌，越深幅度越大；灰色為未追蹤或暫無資料）。點國家、圓點或下方的市場名稱看詳細數字。</p>
+    <div class="inv-seg" role="group" aria-label="地圖範圍">
+      <button type="button" data-region="world" aria-pressed="true">全球</button>
+      <button type="button" data-region="asia" aria-pressed="false">亞太</button>
+      <button type="button" data-region="europe" aria-pressed="false">歐洲</button>
+      <button type="button" data-region="americas" aria-pressed="false">美洲</button>
+    </div>
+    <div class="inv-chart inv-map" id="map"></div>
+    <div class="inv-scale"><span>跌</span><i></i><span>漲</span></div>
+    <div class="inv-detail" id="map-detail"></div>
+    <div class="inv-chips" id="map-chips"></div>
+  </section>
+
+  <section>
+    <h2>市場總覽</h2>
+    <p class="inv-note">紅色代表上漲、綠色代表下跌（台灣慣例）。百分比是最近一個交易日的單日漲跌幅；卡片裡的線是近期每日收盤走勢，會逐日累積變長。</p>
+    <h3>台股</h3><div class="inv-grid" data-tiles="台股"></div>
+    <h3>美股</h3><div class="inv-grid" data-tiles="美股"></div>
+    <h3>債券與匯率</h3><div class="inv-grid" data-tiles="債券與匯率"></div>
+    <h3>商品與加密貨幣</h3><div class="inv-grid" data-tiles="商品與加密貨幣"></div>
+  </section>
+
+  <section>
+    <h2>誰漲最多、誰跌最多</h2>
+    <div class="inv-chart" id="moves"></div>
+  </section>
+
+  <section>
+    <h2>台股三大法人買賣超</h2>
+    <p class="inv-note">單位：新台幣億元；往右是買超、往左是賣超。</p>
+    <div class="inv-chart" id="flows"></div>
+  </section>
+
+  <section>
+    <h2>標的評等</h2>
+    <p class="inv-note">色塊顏色越深代表當日漲跌越大；點任一色塊看評等理由。評等以 2 到 8 週的中期波段角度判斷，是依公開資訊整理的觀點，不是買賣指令。</p>
+    <h3>台股</h3><div data-watch="台股"></div>
+    <h3>美股</h3><div data-watch="美股"></div>
+    <h3>ETF 與債券</h3><div data-watch="ETF 與債券"></div>
+    <h3>匯率、商品與加密貨幣</h3><div data-watch="匯率、商品與加密貨幣"></div>
+  </section>
+
+  <section>
+    <h2>多空因素</h2>
+    <div class="inv-cols">
+      <div class="inv-col inv-col-up"><h3>利多</h3><ul class="inv-ul" data-points="利多"></ul></div>
+      <div class="inv-col inv-col-down"><h3>利空</h3><ul class="inv-ul" data-points="利空"></ul></div>
+      <div class="inv-col"><h3>留意</h3><ul class="inv-ul" data-points="留意"></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>接下來要看的事</h2>
+    <ul class="inv-time" id="events"></ul>
+  </section>
+
+  <section>
+    <h2>資料來源</h2>
+    <ul class="inv-ul" id="links"></ul>
+  </section>
+
+  <p class="inv-foot">本頁由 AI 每日彙整公開新聞與行情資料後產生，數字可能有延遲或誤差，評等僅為資訊整理與觀點，不構成投資建議。下單前請以券商或交易所的即時報價為準，並自行評估風險。地圖輪廓取自 Natural Earth。</p>
+</div>
+
+<script src="d3.min.js"></script>
+<script>
+const FILES = ['summary', 'markets', 'watchlist', 'flows', 'points', 'events', 'sources', 'history', 'global'];
+const D = {};
+let WORLD = null;
+const state = {region: 'world', mapSel: '158', watchSel: {}};
+
+const $ = (s) => document.querySelector(s);
+const isNum = (v) => v != null && v !== '' && !isNaN(+v);
+const num = (v, dec) => !isNum(v) ? '—' : d3.format(',.' + (dec == null ? 2 : +dec) + 'f')(+v);
+const pct = (v) => !isNum(v) ? '—' : d3.format('+.2f')(+v) + '%';
+const cls = (v) => !isNum(v) || +v === 0 ? 'inv-flat' : (+v > 0 ? 'inv-up' : 'inv-down');
+const ratingCls = (r) => r === '偏多' ? 'inv-up' : (r === '偏空' ? 'inv-down' : 'inv-flat');
+const ratingColor = (r) => r === '偏多' ? 'var(--up)' : (r === '偏空' ? 'var(--down)' : 'var(--neutral)');
+const mk = (tag, c, text) => { const e = document.createElement(tag); if (c) e.className = c; if (text != null) e.textContent = text; return e; };
+const heat = (v, base, cap, min) => {
+  if (!isNum(v) || +v === 0) return base;
+  const lo = min == null ? 14 : min;
+  const s = Math.round(lo + Math.min(Math.abs(+v) / cap, 1) * (88 - lo));
+  return 'color-mix(in srgb, ' + (+v > 0 ? 'var(--up)' : 'var(--down)') + ' ' + s + '%, ' + base + ')';
+};
+const placeTip = (tip, box, ev) => {
+  const b = box.getBoundingClientRect();
+  const px = ev.clientX - b.left + 12, py = ev.clientY - b.top + 12;
+  tip.style.left = Math.max(0, Math.min(px, b.width - tip.offsetWidth - 4)) + 'px';
+  tip.style.top = Math.max(0, Math.min(py, b.height - tip.offsetHeight - 4)) + 'px';
+};
+const addTip = (box) => { const t = mk('div', 'inv-tip'); t.hidden = true; box.appendChild(t); return t; };
+
+function drawBars(el, data, aria) {
+  const W = Math.max(260, el.clientWidth || 600), rowH = 26, top = 8, bottom = 8;
+  const H = top + bottom + rowH * data.length;
+  el.replaceChildren();
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img').attr('aria-label', aria);
+  const labels = svg.append('g').selectAll('text').data(data).join('text')
+    .attr('y', (d, i) => top + i * rowH + rowH / 2).attr('dy', '0.35em').text((d) => d.name);
+  let left = 0;
+  labels.each(function () { left = Math.max(left, this.getComputedTextLength()); });
+  left = Math.min(left + 10, W * 0.45);
+  const vals = svg.append('g').selectAll('text').data(data).join('text')
+    .attr('y', (d, i) => top + i * rowH + rowH / 2).attr('dy', '0.35em').text((d) => d.label);
+  let valW = 0;
+  vals.each(function () { valW = Math.max(valW, this.getComputedTextLength()); });
+  valW += 8;
+  const hasNeg = data.some((d) => d.v < 0), hasPos = data.some((d) => d.v > 0);
+  const maxAbs = d3.max(data, (d) => Math.abs(d.v)) || 1;
+  const x = d3.scaleLinear().domain([hasNeg ? -maxAbs : 0, hasPos ? maxAbs : 0]).range([left + (hasNeg ? valW : 0), W - (hasPos ? valW : 4)]);
+  labels.attr('x', left - 4).attr('text-anchor', 'end');
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', top).attr('y2', H - bottom).style('stroke', 'var(--line)');
+  const tip = addTip(el);
+  svg.append('g').selectAll('rect').data(data).join('rect')
+    .attr('x', (d) => Math.min(x(0), x(d.v))).attr('y', (d, i) => top + i * rowH + 4)
+    .attr('width', (d) => Math.max(1, Math.abs(x(d.v) - x(0)))).attr('height', rowH - 8).attr('rx', 2)
+    .style('fill', (d) => d.v >= 0 ? 'var(--up)' : 'var(--down)')
+    .on('pointermove', (ev, d) => { tip.hidden = false; tip.textContent = d.tip; placeTip(tip, el, ev); })
+    .on('pointerleave', () => { tip.hidden = true; });
+  vals.attr('x', (d) => d.v >= 0 ? x(d.v) + 4 : x(d.v) - 4).attr('text-anchor', (d) => d.v >= 0 ? 'start' : 'end');
+}
+
+function sparkline(pts, dec, tile) {
+  const w = 120, h = 32, n = pts.length;
+  const x = d3.scaleLinear().domain([0, n - 1]).range([3, w - 3]);
+  const ext = d3.extent(pts, (d) => +d.value);
+  const y = d3.scaleLinear().domain(ext[0] === ext[1] ? [ext[0] - 1, ext[1] + 1] : ext).range([h - 4, 4]);
+  const up = +pts[n - 1].value >= +pts[0].value;
+  const svg = d3.create('svg').attr('class', 'inv-spark').attr('viewBox', '0 0 ' + w + ' ' + h).attr('preserveAspectRatio', 'none')
+    .attr('role', 'img').attr('aria-label', '近期每日收盤走勢，從 ' + pts[0].date + ' 到 ' + pts[n - 1].date);
+  svg.append('path').attr('d', d3.line().x((d, i) => x(i)).y((d) => y(+d.value))(pts))
+    .attr('fill', 'none').attr('stroke-width', 2).attr('vector-effect', 'non-scaling-stroke').style('stroke', up ? 'var(--up)' : 'var(--down)');
+  const tip = addTip(tile);
+  svg.on('pointermove', (ev) => {
+    const r = svg.node().getBoundingClientRect();
+    const i = Math.max(0, Math.min(n - 1, Math.round((ev.clientX - r.left) / r.width * (n - 1))));
+    tip.hidden = false; tip.textContent = pts[i].date + '：' + num(pts[i].value, dec); placeTip(tip, tile, ev);
+  }).on('pointerleave', () => { tip.hidden = true; });
+  return svg.node();
+}
+
+function renderSummary() {
+  const s = (D.summary || [])[0] || {};
+  $('#asof').textContent = s.data_as_of || '—';
+  $('#updated').textContent = s.updated_at || '—';
+  $('#headline').textContent = s.headline || '—';
+  $('#v-tw').textContent = s.tw || '—';
+  $('#v-us').textContent = s.us || '—';
+  $('#v-macro').textContent = s.macro || '—';
+}
+
+function renderMix() {
+  const el = $('#mix');
+  const s = (D.summary || [])[0] || {};
+  const counts = ['偏多', '中性', '偏空'].map((r) => ({rating: r, count: (D.watchlist || []).filter((d) => d.rating === r).length}));
+  const total = d3.sum(counts, (d) => d.count);
+  const stance = s.stance || '—';
+  const size = 170, r = size / 2;
+  el.replaceChildren();
+  const svg = d3.select(el).append('svg').attr('width', size).attr('height', size).attr('viewBox', '0 0 ' + size + ' ' + size)
+    .attr('role', 'img').attr('aria-label', '整體判讀為' + stance + '；' + counts.map((d) => d.rating + ' ' + d.count + ' 檔').join('、'));
+  const g = svg.append('g').attr('transform', 'translate(' + r + ',' + r + ')');
+  const arc = d3.arc().innerRadius(r - 26).outerRadius(r - 2).padAngle(0.02).cornerRadius(2);
+  const tip = mk('div', 'inv-tip'); tip.hidden = true;
+  g.selectAll('path').data(d3.pie().sort(null).value((d) => d.count)(counts)).join('path')
+    .attr('d', arc).style('fill', (d) => ratingColor(d.data.rating))
+    .on('pointermove', (ev, d) => { tip.hidden = false; tip.textContent = d.data.rating + '：' + d.data.count + ' 檔（共 ' + total + ' 檔）'; placeTip(tip, el, ev); })
+    .on('pointerleave', () => { tip.hidden = true; });
+  g.append('text').attr('class', 'inv-mix-cap').attr('text-anchor', 'middle').attr('y', -22).text('整體判讀');
+  g.append('text').attr('class', 'inv-mix-center').attr('text-anchor', 'middle').attr('dy', '0.35em').attr('y', 6).text(stance);
+  const legend = mk('div', 'inv-legend');
+  counts.forEach((d) => {
+    const row = mk('div', 'inv-legend-row');
+    const sw = mk('span', 'inv-sw'); sw.style.background = ratingColor(d.rating);
+    row.append(sw, mk('span', '', d.rating), mk('span', 'inv-legend-n', String(d.count)), mk('span', '', '檔'));
+    legend.appendChild(row);
+  });
+  el.append(legend, tip);
+}
+
+const REGIONS = {asia: [[62, -44], [156, 50]], europe: [[-12, 35], [32, 61]], americas: [[-128, -38], [-36, 62]]};
+function renderMap() {
+  const el = $('#map');
+  const rows = D.global || [];
+  if (!WORLD) { el.replaceChildren(mk('div', 'inv-note', '地圖載入失敗')); return; }
+  const W = Math.max(280, el.clientWidth || 800);
+  const H = Math.round(W * (state.region === 'world' ? 0.5 : 0.66));
+  const box = REGIONS[state.region];
+  const proj = box
+    ? d3.geoMercator().fitSize([W, H], {type: 'MultiPoint', coordinates: [box[0], box[1], [box[0][0], box[1][1]], [box[1][0], box[0][1]]]})
+    : d3.geoNaturalEarth1().fitExtent([[4, 4], [W - 4, H - 4]], WORLD);
+  const path = d3.geoPath(proj);
+  const byIso = new Map(rows.map((d) => [String(d.iso), d]));
+  const ids = new Set(WORLD.features.map((f) => String(f.id)));
+  const tipText = (d) => d.market + '｜' + d.index + '：' + num(d.value, d.dec) + '，' + (isNum(d.change_pct) ? pct(d.change_pct) : '暫無資料');
+  const select = (iso) => { state.mapSel = String(iso); renderMap(); };
+  el.replaceChildren();
+  const svg = d3.select(el).append('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img')
+    .attr('aria-label', '全球主要股市最近一個交易日漲跌幅地圖');
+  const tip = addTip(el);
+  const hover = (sel) => sel
+    .on('pointermove', (ev, d) => { const r = d.iso ? d : byIso.get(String(d.id)); if (!r) return; tip.hidden = false; tip.textContent = tipText(r); placeTip(tip, el, ev); })
+    .on('pointerleave', () => { tip.hidden = true; })
+    .on('click', (ev, d) => { const r = d.iso ? d : byIso.get(String(d.id)); if (r) select(r.iso); });
+  svg.append('g').selectAll('path').data(WORLD.features).join('path')
+    .attr('d', path)
+    .attr('class', (f) => (byIso.has(String(f.id)) ? 'has' : '') + (String(f.id) === state.mapSel ? ' sel' : ''))
+    .style('fill', (f) => { const r = byIso.get(String(f.id)); return r ? heat(r.change_pct, 'var(--panel)', 2, 45).replace(/^var\(--panel\)$/, 'var(--neutral)') : 'var(--land)'; })
+    .call(hover);
+  svg.select('path.sel').raise();
+  const dots = rows.filter((d) => !ids.has(String(d.iso)) && isNum(d.lon) && isNum(d.lat));
+  svg.append('g').selectAll('circle').data(dots).join('circle')
+    .attr('cx', (d) => proj([+d.lon, +d.lat])[0]).attr('cy', (d) => proj([+d.lon, +d.lat])[1])
+    .attr('r', state.region === 'world' ? 5 : 7)
+    .attr('class', (d) => String(d.iso) === state.mapSel ? 'sel' : '')
+    .style('fill', (d) => heat(d.change_pct, 'var(--panel)', 2, 45).replace(/^var\(--panel\)$/, 'var(--neutral)')).call(hover);
+  if (state.region !== 'world') {
+    const placed = [];
+    const lg = svg.append('g');
+    rows.filter((d) => isNum(d.lon) && isNum(d.lat)).forEach((d) => {
+      const p = proj([+d.lon, +d.lat]);
+      if (p[0] < 0 || p[0] > W || p[1] < 0 || p[1] > H) return;
+      const t = lg.append('text').attr('class', 'lbl').text(d.market + ' ' + (isNum(d.change_pct) ? pct(d.change_pct) : '—'));
+      const tw = t.node().getComputedTextLength(), th = 14;
+      const cands = [[-tw / 2, 4], [10, 4], [-tw - 10, 4], [-tw / 2, -10], [-tw / 2, 20], [10, -10], [10, 20], [-tw - 10, -10], [-tw - 10, 20], [-tw / 2, 34], [-tw / 2, -24]];
+      let best = cands[0];
+      for (const c of cands) {
+        const b = {x0: p[0] + c[0] - 2, x1: p[0] + c[0] + tw + 2, y0: p[1] + c[1] - th + 2, y1: p[1] + c[1] + 3};
+        if (b.x0 < 0 || b.x1 > W) continue;
+        if (!placed.some((q) => b.x0 < q.x1 && b.x1 > q.x0 && b.y0 < q.y1 && b.y1 > q.y0)) { best = c; placed.push(b); break; }
+      }
+      t.attr('x', p[0] + best[0]).attr('y', p[1] + best[1]);
+    });
+  }
+  const sel = byIso.get(state.mapSel) || rows[0];
+  const det = $('#map-detail');
+  det.replaceChildren();
+  if (sel) {
+    const top = mk('div', 'inv-item-top');
+    const nm = mk('div');
+    nm.append(mk('span', 'inv-item-name', sel.market), mk('span', 'inv-item-sym', sel.index));
+    top.append(nm, mk('span', 'inv-chg ' + cls(sel.change_pct), isNum(sel.change_pct) ? pct(sel.change_pct) : '暫無資料'));
+    det.append(top, mk('div', 'num', num(sel.value, sel.dec)));
+    if (sel.note) det.appendChild(mk('p', 'inv-item-why', sel.note));
+  }
+  const chips = $('#map-chips');
+  chips.replaceChildren(...rows.slice().sort((a, b) => (isNum(b.change_pct) ? +b.change_pct : -99) - (isNum(a.change_pct) ? +a.change_pct : -99)).map((d) => {
+    const b = mk('button', 'inv-chipbtn'); b.type = 'button';
+    b.setAttribute('aria-pressed', String(d.iso) === state.mapSel ? 'true' : 'false');
+    b.append(mk('span', '', d.market), mk('span', 'inv-chg ' + cls(d.change_pct), isNum(d.change_pct) ? pct(d.change_pct) : '—'));
+    b.addEventListener('click', () => select(d.iso));
+    return b;
+  }));
+}
+
+function renderTiles() {
+  const hist = D.history || [];
+  document.querySelectorAll('[data-tiles]').forEach((el) => {
+    const g = el.getAttribute('data-tiles');
+    el.replaceChildren(...(D.markets || []).filter((d) => d.group === g).map((d) => {
+      const c = cls(d.change_pct);
+      const t = mk('div', 'inv-tile' + (c === 'inv-up' ? ' inv-b-up' : (c === 'inv-down' ? ' inv-b-down' : '')));
+      t.appendChild(mk('div', 'inv-tile-name', d.name));
+      const line = mk('div');
+      line.appendChild(mk('span', 'inv-tile-val', num(d.value, d.dec)));
+      if (d.unit) line.appendChild(mk('span', 'inv-tile-unit', d.unit));
+      t.appendChild(line);
+      if (isNum(d.change_pct)) t.appendChild(mk('div', 'inv-chg ' + c, (+d.change_pct > 0 ? '▲ ' : (+d.change_pct < 0 ? '▼ ' : '')) + pct(d.change_pct)));
+      const pts = hist.filter((h) => h.id === d.id && isNum(h.value)).sort((a, b) => String(a.date) < String(b.date) ? -1 : 1);
+      if (pts.length >= 2) t.appendChild(sparkline(pts, d.dec, t));
+      if (d.note) t.appendChild(mk('div', 'inv-tile-note', d.note));
+      return t;
+    }));
+  });
+}
+
+function renderMoves() {
+  const data = (D.markets || []).filter((d) => isNum(d.change_pct)).sort((a, b) => b.change_pct - a.change_pct)
+    .map((d) => ({name: d.name, v: +d.change_pct, label: pct(d.change_pct), tip: d.name + '：' + num(d.value, d.dec) + (d.unit ? ' ' + d.unit : '') + '，單日 ' + pct(d.change_pct)}));
+  drawBars($('#moves'), data, '各市場最近一個交易日的單日漲跌幅，由漲最多排到跌最多');
+}
+
+function renderFlows() {
+  const data = (D.flows || []).filter((d) => isNum(d.net_buy))
+    .map((d) => ({name: d.investor, v: +d.net_buy, label: d3.format('+,.2f')(+d.net_buy), tip: d.investor + '：' + (+d.net_buy >= 0 ? '買超 ' : '賣超 ') + d3.format(',.2f')(Math.abs(+d.net_buy)) + ' 億元'}));
+  drawBars($('#flows'), data, '台股三大法人最近一個交易日的買賣超金額，單位新台幣億元');
+}
+
+function renderWatch() {
+  document.querySelectorAll('[data-watch]').forEach((el) => {
+    const g = el.getAttribute('data-watch');
+    const rows = (D.watchlist || []).filter((d) => d.group === g);
+    if (!rows.length) { el.replaceChildren(); return; }
+    const sel = rows.find((d) => String(d.symbol) === state.watchSel[g]) || rows[0];
+    const grid = mk('div', 'inv-heatgrid');
+    rows.forEach((d) => {
+      const b = mk('button', 'inv-heat'); b.type = 'button';
+      b.setAttribute('aria-pressed', d === sel ? 'true' : 'false');
+      b.style.background = heat(d.change_pct, 'var(--panel)', 4);
+      b.append(mk('span', 'inv-heat-name', d.name), mk('span', 'inv-heat-chg', pct(d.change_pct)), mk('span', 'inv-heat-rate', d.rating || '—'));
+      b.addEventListener('click', () => { state.watchSel[g] = String(d.symbol); renderWatch(); });
+      grid.appendChild(b);
+    });
+    const det = mk('div', 'inv-detail');
+    const top = mk('div', 'inv-item-top');
+    const nm = mk('div');
+    nm.append(mk('span', 'inv-item-name', sel.name), mk('span', 'inv-item-sym', sel.symbol));
+    top.append(nm, mk('span', 'inv-chip ' + ratingCls(sel.rating), sel.rating || '—'));
+    const px = mk('div');
+    px.append(mk('span', 'num', num(sel.close, sel.dec)), mk('span', 'inv-tile-unit', sel.currency || ''));
+    det.append(top, px, mk('p', 'inv-item-why', sel.reason || ''));
+    el.replaceChildren(grid, det);
+  });
+}
+
+function renderLists() {
+  document.querySelectorAll('[data-points]').forEach((el) => {
+    const k = el.getAttribute('data-points');
+    el.replaceChildren(...(D.points || []).filter((d) => d.kind === k).map((d) => mk('li', '', d.text)));
+  });
+  $('#events').replaceChildren(...(D.events || []).map((d) => {
+    const li = mk('li');
+    li.append(mk('div', 'inv-time-when', d.when), mk('div', 'inv-item-name', d.event), mk('p', 'inv-item-why', d.why));
+    return li;
+  }));
+  $('#links').replaceChildren(...(D.sources || []).map((d) => {
+    const li = mk('li');
+    const a = mk('a', '', d.title);
+    if (String(d.url).indexOf('https://') === 0) { a.href = String(d.url); a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    li.appendChild(a);
+    return li;
+  }));
+}
+
+function renderAll() {
+  renderSummary(); renderMix(); renderMap(); renderTiles(); renderMoves(); renderFlows(); renderWatch(); renderLists();
+}
+
+document.querySelectorAll('.inv-seg button').forEach((b) => b.addEventListener('click', () => {
+  document.querySelectorAll('.inv-seg button').forEach((o) => o.setAttribute('aria-pressed', o === b ? 'true' : 'false'));
+  state.region = b.getAttribute('data-region');
+  renderMap();
+}));
+
+const bust = '?t=' + Date.now();
+const getJson = (u) => fetch(u, {cache: 'no-store'}).then((r) => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
+Promise.all([
+  Promise.all(FILES.map((f) => getJson('data/' + f + '.json' + bust).then((j) => { D[f] = j; }))),
+  getJson('world.json').then((j) => { WORLD = j; }).catch(() => { WORLD = null; })
+]).then(renderAll).catch((e) => {
+  $('#headline').replaceChildren(mk('div', 'inv-err', '資料載入失敗，請稍後重新整理。（' + e.message + '）'));
+});
+
+let rz = null, lastW = window.innerWidth;
+window.addEventListener('resize', () => {
+  if (window.innerWidth === lastW) return;
+  lastW = window.innerWidth;
+  clearTimeout(rz); rz = setTimeout(() => { if (D.summary) { renderMap(); renderMoves(); renderFlows(); } }, 150);
+});
+</script>
+</body>
+</html>

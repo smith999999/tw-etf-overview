@@ -1,0 +1,152 @@
+[
+ {
+  "id": "twii",
+  "group": "台股",
+  "name": "加權指數",
+  "value": 43675.12,
+  "dec": 2,
+  "unit": "點",
+  "change_pct": 1.35,
+  "note": "成交值 9,162.55 億元"
+ },
+ {
+  "id": "otc",
+  "group": "台股",
+  "name": "櫃買指數",
+  "value": 342.41,
+  "dec": 2,
+  "unit": "點",
+  "change_pct": 1.99,
+  "note": ""
+ },
+ {
+  "id": "txf_night",
+  "group": "台股",
+  "name": "台指期夜盤",
+  "value": 43706,
+  "dec": 0,
+  "unit": "點",
+  "change_pct": -0.3,
+  "note": "11/14 清晨收盤，跌 133 點"
+ },
+ {
+  "id": "dji",
+  "group": "美股",
+  "name": "道瓊工業",
+  "value": 52347.55,
+  "dec": 2,
+  "unit": "點",
+  "change_pct": 0.1,
+  "note": ""
+ },
+ {
+  "id": "spx",
+  "group": "美股",
+  "name": "標普 500",
+  "value": 7561.67,
+  "dec": 2,
+  "unit": "點",
+  "change_pct": -0.4,
+  "note": "週漲 2.5%"
+ },
+ {
+  "id": "ixic",
+  "group": "美股",
+  "name": "那斯達克",
+  "value": 25136.27,
+  "dec": 2,
+  "unit": "點",
+  "change_pct": -0.91,
+  "note": "週漲 2.3%"
+ },
+ {
+  "id": "sox",
+  "group": "美股",
+  "name": "費城半導體",
+  "value": 10146.32,
+  "dec": 2,
+  "unit": "點",
+  "change_pct": -3.43,
+  "note": ""
+ },
+ {
+  "id": "us10y",
+  "group": "債券與匯率",
+  "name": "美國 10 年期公債殖利率",
+  "value": 5.13,
+  "dec": 2,
+  "unit": "%",
+  "change_pct": null,
+  "note": "各來源收盤介於 5.13–5.15%"
+ },
+ {
+  "id": "dxy",
+  "group": "債券與匯率",
+  "name": "美元指數",
+  "value": 103.41,
+  "dec": 2,
+  "unit": "",
+  "change_pct": null,
+  "note": "2025 年 4 月以來最高"
+ },
+ {
+  "id": "usdtwd",
+  "group": "債券與匯率",
+  "name": "美元兌新台幣",
+  "value": 32.838,
+  "dec": 3,
+  "unit": "元",
+  "change_pct": null,
+  "note": "台北匯市 11/13 收盤"
+ },
+ {
+  "id": "gold",
+  "group": "商品與加密貨幣",
+  "name": "黃金期貨",
+  "value": 3886.3,
+  "dec": 2,
+  "unit": "美元/盎司",
+  "change_pct": 0.03,
+  "note": "單週 -4.8%，6 月以來最差"
+ },
+ {
+  "id": "wti",
+  "group": "商品與加密貨幣",
+  "name": "WTI 原油",
+  "value": 88.56,
+  "dec": 2,
+  "unit": "美元/桶",
+  "change_pct": -0.2,
+  "note": ""
+ },
+ {
+  "id": "brent",
+  "group": "商品與加密貨幣",
+  "name": "布蘭特原油",
+  "value": 95.84,
+  "dec": 2,
+  "unit": "美元/桶",
+  "change_pct": 0.02,
+  "note": ""
+ },
+ {
+  "id": "btc",
+  "group": "商品與加密貨幣",
+  "name": "比特幣",
+  "value": 68237,
+  "dec": 0,
+  "unit": "美元",
+  "change_pct": -4.35,
+  "note": "約略值，8 月以來最低"
+ },
+ {
+  "id": "eth",
+  "group": "商品與加密貨幣",
+  "name": "以太幣",
+  "value": 1922,
+  "dec": 0,
+  "unit": "美元",
+  "change_pct": -4.72,
+  "note": "約略值"
+ }
+]
