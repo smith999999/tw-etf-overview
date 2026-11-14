@@ -1,0 +1,22 @@
+name: Daily Dashboard Telegram Notify
+
+on:
+  schedule:
+    # 台灣時間週一至週六 07:00（UTC 週日至週五 23:00）
+    - cron: '0 23 * * 0-5'
+  workflow_dispatch: # 允許手動觸發，用來測試
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Send Telegram message
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 .github/scripts/dashboard_notify.py
