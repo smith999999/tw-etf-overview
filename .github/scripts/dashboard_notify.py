@@ -1,4 +1,8 @@
-"""Build the Telegram text for the daily investment dashboard and send it."""
+"""Send the daily investment dashboard message to Telegram.
+
+Triggered by Claude's daily update task (workflow_dispatch with inputs)
+after it publishes the dashboard. Skips Sundays (Taiwan time) unless forced.
+"""
 import json
 import os
 import sys
@@ -6,29 +10,35 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
-URL = "https://smith999999.github.io/tw-etf-overview/daily/"
+URL = "https://claude.ai/artifact/QPtbEdhy8CZb8SX8WrQvcP"
 token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
 if not token or not chat_id:
     sys.exit("TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID secret is not set")
 
-try:
-    with open("public/daily/data/summary.json", encoding="utf-8") as f:
-        s = json.load(f)[0]
-except Exception as e:  # still send the link if the data file is unreadable
-    s = {}
-    print(f"could not read summary.json: {e}")
+status = os.environ.get("STATUS", "").strip()
+stance = os.environ.get("STANCE", "").strip()
+headline = os.environ.get("HEADLINE", "").strip()
+as_of = os.environ.get("DATA_AS_OF", "").strip()
+force = os.environ.get("FORCE", "").strip().lower() == "true"
 
-today = datetime.now(timezone(timedelta(hours=8))).strftime("%Y/%m/%d")
-updated = str(s.get("updated_at", ""))
-if updated.startswith(today):
+now = datetime.now(timezone(timedelta(hours=8)))
+if now.weekday() == 6 and not force:
+    print("Sunday in Taiwan: no message sent")
+    sys.exit(0)
+
+if status == "updated":
     lines = ["📈 今日投資儀表板已更新"]
+elif status == "failed":
+    lines = ["⚠️ 投資儀表板：今日資料更新失敗，頁面仍是前一次的內容"]
 else:
-    lines = ["⚠️ 投資儀表板：今日資料尚未更新" + (f"（目前是 {updated} 的內容）" if updated else "")]
-if s.get("stance"):
-    lines.append(f"整體判讀：{s['stance']}")
-if s.get("headline"):
-    lines.append(str(s["headline"]))
+    lines = ["📈 每日投資儀表板"]
+if as_of:
+    lines.append(f"行情截至 {as_of}")
+if stance:
+    lines.append(f"整體判讀：{stance}")
+if headline:
+    lines.append(headline[:300])
 lines.append(URL)
 
 data = urllib.parse.urlencode({

@@ -1,10 +1,30 @@
 name: Daily Dashboard Telegram Notify
 
+# 由 Claude 每日更新儀表板的排程任務在發布完成後觸發（也可手動執行測試）。
+# 不再使用 GitHub 定時排程：它常延遲數小時。台灣時間週日不發送。
 on:
-  schedule:
-    # 台灣時間週一至週六 07:00（UTC 週日至週五 23:00）
-    - cron: '0 23 * * 0-5'
-  workflow_dispatch: # 允許手動觸發，用來測試
+  workflow_dispatch:
+    inputs:
+      status:
+        description: 'updated / failed（留空則只送連結）'
+        required: false
+        default: ''
+      stance:
+        description: '整體判讀（偏多／中性／偏空）'
+        required: false
+        default: ''
+      headline:
+        description: '一句話重點'
+        required: false
+        default: ''
+      data_as_of:
+        description: '行情截至哪一天'
+        required: false
+        default: ''
+      force:
+        description: '週日也發送（測試用）'
+        required: false
+        default: 'false'
 
 jobs:
   notify:
@@ -19,4 +39,9 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          STATUS: ${{ inputs.status }}
+          STANCE: ${{ inputs.stance }}
+          HEADLINE: ${{ inputs.headline }}
+          DATA_AS_OF: ${{ inputs.data_as_of }}
+          FORCE: ${{ inputs.force }}
         run: python3 .github/scripts/dashboard_notify.py
