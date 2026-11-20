@@ -5809,10 +5809,18 @@
   },
   {
     "time": "2026-11-19",
+    "open": 27.0,
+    "high": 27.4,
+    "low": 26.4,
+    "close": 26.45,
+    "volume": 11504084
+  },
+  {
+    "time": "2026-11-20",
     "open": NaN,
     "high": NaN,
     "low": NaN,
     "close": NaN,
-    "volume": 11537007
+    "volume": 13402795
   }
 ]
